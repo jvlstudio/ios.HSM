@@ -8,39 +8,130 @@
 
 #import "AppDelegate.h"
 
+#import "Opening.h"
+#import "Home.h"
+
 @implementation AppDelegate
+
+@synthesize revealSideViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = PP_AUTORELEASE([[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]);
+    
+    // Let the device know we want to receive push notifications
+    [Parse setApplicationId:PARSE_APP_ID
+                  clientKey:PARSE_APP_SECRET];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+	[application registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+	// local notifications..
+    [application cancelAllLocalNotifications];
+    
+    // Clear application badge when app launches
+    application.applicationIconBadgeNumber = 0;
+    
+    // reveal slide view controller didn't work with this below
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    // background..
+    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_bg.png"]];
+    [[self window] addSubview:background];
+    
+    self.window.rootViewController = [self openingWithAnimation];
+    [self.window makeKeyAndVisible];
+    
+    // ...
+    [self customizeAppearance];
+    
+    // return..
     return YES;
 }
-							
-- (void)applicationWillResignActive:(UIApplication *)application
+
+
+#pragma mark -
+#pragma mark Opening Methods
+
+- (UIViewController*) openingWithAnimation
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    Opening *opening = [[Opening alloc] initWithNibName:NIB_OPENING bundle:nil];
+    return opening;
+}
+- (UIViewController*) openingWithoutAnimation
+{
+    // Override point for customization after application launch.
+    // RevealSlideController..
+    self.viewController         = [[Home alloc] initWithNibName:NIB_HOME bundle:nil];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+    revealSideViewController    = [[PPRevealSideViewController alloc] initWithRootViewController:nav];
+    revealSideViewController.delegate = self;
+    
+    return revealSideViewController;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+#pragma mark -
+#pragma mark UIDevice Methods
+
+- (BOOL)checkIsDeviceVersionHigherThanRequiredVersion:(NSString *)requiredVersion
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
+    
+    if ([currSysVer compare:requiredVersion options:NSNumericSearch] != NSOrderedAscending)
+    {
+        return YES;
+    }
+    
+    return NO;
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void) customizeAppearance
 {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+	// Customize the title text for *all* UINavigationBars
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+      NSForegroundColorAttributeName,
+      [[NSShadow alloc] shadowBlurRadius],
+      NSShadowAttributeName,
+      [UIFont fontWithName:FONT_BOLD size:26.0],
+      NSFontAttributeName,
+      nil]];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+#pragma mark -
+#pragma mark APNS Configuration
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    NSLog(@"Local Notification: App está ativo.");
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [PFPush storeDeviceToken:devToken]; // Send parse the device token
+    // Subscribe this user to the broadcast channel, ""
+    [PFPush subscribeToChannelInBackground:@"" block:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Successfully subscribed to the broadcast channel.");
+        } else {
+            NSLog(@"Failed to subscribe to the broadcast channel.");
+        }
+    }];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+#if !TARGET_IPHONE_SIMULATOR
+	NSLog(@"Error in registration. Error: %@", error);
+#endif
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [PFPush handlePush:userInfo];
 }
 
 @end

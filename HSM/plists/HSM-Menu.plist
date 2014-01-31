@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>label</key>
+		<string>Home</string>
+		<key>slug</key>
+		<string>home</string>
+		<key>is_active</key>
+		<string>kYes</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>Eventos</string>
+		<key>slug</key>
+		<string>events</string>
+		<key>is_active</key>
+		<string>kYes</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>Network</string>
+		<key>slug</key>
+		<string>network</string>
+		<key>is_active</key>
+		<string>kYes</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>HSM Editora</string>
+		<key>slug</key>
+		<string>books</string>
+		<key>is_active</key>
+		<string>kYes</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>Revistas</string>
+		<key>slug</key>
+		<string>issues</string>
+		<key>is_active</key>
+		<string>kNo</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>HSM Vídeos</string>
+		<key>slug</key>
+		<string>tv</string>
+		<key>is_active</key>
+		<string>kNo</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>Educação</string>
+		<key>slug</key>
+		<string>education</string>
+		<key>is_active</key>
+		<string>kNo</string>
+	</dict>
+</array>
+</plist>

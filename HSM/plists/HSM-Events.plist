@@ -1,0 +1,3339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Seminário HSM - Damodaran on Valuation</string>
+		<key>slug</key>
+		<string>damodaran</string>
+		<key>dates</key>
+		<string>27 e 28 de março, 2014</string>
+		<key>date</key>
+		<string>27 e 28 de março</string>
+		<key>hours</key>
+		<string>14h às 18h, 9h às 17h30</string>
+		<key>local</key>
+		<string>WTC Torre Empresarial</string>
+		<key>tiny_description</key>
+		<string>Como as empresas criam ou destroem valor</string>
+		<key>description</key>
+		<string>(Participação especial: Ricardo José de Almeida) 
+Neste seminário de dois dias, Aswath Damodaran, considerado a maior autoridade mundial em Valuation e o mais consagrado professor de Finanças em todo o mundo, proporcionará aos participantes uma verdadeira imersão no tema “Como as empresas criam ou destroem valor”. O evento será dividido em duas sessões:
+
+•	Sessão I – Valor: criação, crescimento e destruição
+
+•	Sessão II – Valuation
+
+Os participantes também contarão com a presença do professor Ricardo José de Almeida,  um grande especialista em valuation de empresas no Brasil, que será o responsável por trazer o conteúdo nacional para este evento. 
+Uma rara oportunidade de reflexão e inspiração para um grupo restrito e privilegiado que poderá interagir com dois brilhantes pensadores do management da atualidade. </string>
+		<key>show_passes</key>
+		<string>kYes</string>
+		<key>did_happen</key>
+		<string>kNo</string>
+		<key>color</key>
+		<dict>
+			<key>red</key>
+			<string>5.0</string>
+			<key>green</key>
+			<string>68.0</string>
+			<key>blue</key>
+			<string>110.0</string>
+		</dict>
+		<key>panelists</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Ricardo José de Almeida</string>
+				<key>slug</key>
+				<string>ricardo_jose_de_almeida</string>
+				<key>speech</key>
+				<string>Entendendo o que faz o valor da empresa</string>
+				<key>theme</key>
+				<string>Entendendo o que faz o valor da empresa
+• O que a empresa deve entregar para criar valor para os acionistas
+• A relação entre o que acontece na economia, no setor e na própria empresa para criar (ou destruir) valor para os acionistas
+• Entendendo o modelo de avaliar uma empresa
+• Como decidir a distribuição de lucros entre os acionistas para criar valor
+• Se vender uma empresa, vai investir em quê? Como dimensionar o custo de oportunidade dos investidores
+• Como analisar se o modelo que direcionou o valor está realista
+• Como extrair os value drivers usados pelo avaliador da empresa
+• Como alinhar a estratégia da empresa no valuation.</string>
+				<key>info_date</key>
+				<string>27 de março</string>
+				<key>info_hour</key>
+				<string>14h às 18h</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-03-27T17:00:00Z</date>
+						<key>minutes</key>
+						<string>240</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É doutor e mestre em Administração de Empresas com especialização em Finanças pela USP. É sócio-diretor da RJA Assessoria e Treinamento, tendo já trabalhado com muitas das principais empresas do País, como Banco Itaú, Bradesco, Cyrela, Aché Laboratórios Farmacêuticos, Amil, Volvo e BR Foods, entre outras.
+Especialista em valuation de empresas no Brasil, o foco de seu trabalho tem sido o uso de valuation para diagnosticar a estratégia da empresa e também equilibrar, econômica e financeiramente, concessões públicas.
+Almeida é professor de cursos de pós-graduação na área de Finanças nas melhores escolas do País, como FIA, Insper e HSM Educação.
+É coautor dos livros Fusões e aquisições: aspectos econômicos e jurídicos e O valor da empresa e a influência dos stakeholders.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Aswath Damodaran</string>
+				<key>slug</key>
+				<string>aswath_damodaran</string>
+				<key>speech</key>
+				<string>2 sessões</string>
+				<key>theme</key>
+				<string>Sessão I — Valor: criação, crescimento e destruição
+• Por que a maximização de valor deve ser, se não o único, pelo menos o objetivo principal das empresas
+• Como se aumenta o valor de um negócio? Caminhos disponíveis para a empresa criar valor
+• Por que a criação de valor é uma responsabilidade compartilhada por todos na organização, e o que fazer a respeito
+• Quais são os caminhos que geram e, às vezes, destroem valor, e como percorrê-los
+• Quais as ferramentas de avaliação que podem ser usadas para determinar se uma decisão é criadora ou destruidora de valor e como escolher a melhor em cada situação
+• Como utilizar evidências empíricas de criação ou destruição de valor
+• O papel da estratégia corporativa e da interação entre finanças corporativas e as demais áreas funcionais da empresa na criação de valor
+Sessão II — Valuation
+• Quais são os fundamentos, limitações e riscos de cada abordagem de avaliação — e quais os melhores exemplos de aplicação de cada uma delas
+• Por que a avaliação não é uma busca objetiva de valor “real” — e por que achamos que é
+• Como escolher o modelo certo de avaliação para cada empresa específica
+• Por que modelos quantitativos nem sempre implicam avaliações melhores — e por que utilizá-los mesmo assim
+• Como ampliar seu repertório de habilidades de avaliação em fusões e aquisições
+• Por que os mercados tendem a ser ineficientes e equivocados na avaliação de valor e como os modelos de avaliação devem ser usados em decisões de investimento.</string>
+				<key>info_date</key>
+				<string>28 de março</string>
+				<key>info_hour</key>
+				<string>9h às 17h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-03-28T12:00:00Z</date>
+						<key>minutes</key>
+						<string>510</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Considerado a maior autoridade em valuation e o mais consagrado professor de Finanças em todo o mundo, Aswath Damodaran é autor de dez livros, usados nos principais programas de finanças em todo o mundo. Entre eles estão: Investment valuation (Avaliação de investimentos), Damodaran on valuation, Corporate finance (Finanças corporativas) e Strategic risk taking (Gestão estratégica do risco).
+É professor na Stern School of Business, da New York University, onde recebeu por sete vezes o prêmio por Excelência em Ensino. Foi professor visitante na University of California, Berkeley, sendo agraciado com o Prêmio Earl F. Cheit, também por Excelência em Ensino. Foi destacado pela revista Businessweek como um dos 12 melhores professores do mundo segundo a rede social Poets and Quants. Seu blog, Musing on Markets, foi escolhido pelo Times de Londres como um dos melhores do mundo sobre o mercado de ações. Suas avaliações influenciam investidores nos quatro continentes e previram a sobrevalorização das ações do Facebook.
+Damodaran tem diversos artigos publicados no The Journal of Finance, Journal of Financial Economics e no Journal of Financial and Quantitative Analysis (JFQA), entre outras publicações.
+Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela University of California, em Los Angeles.</string>
+			</dict>
+		</array>
+		<key>agenda</key>
+		<array>
+			<dict>
+				<key>day</key>
+				<date>2014-03-27T17:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>ricardo_jose_de_almeida</string>
+						<key>label</key>
+						<string>Entendendo o que faz o valor da empresa</string>
+						<key>hour</key>
+						<string>14h às 18h</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2014-03-28T12:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>aswath_damodaran</string>
+						<key>label</key>
+						<string>2 sessões</string>
+						<key>hour</key>
+						<string>9h às 17h30</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>passes</key>
+		<dict>
+			<key>gold</key>
+			<dict>
+				<key>event_name</key>
+				<string>Seminário HSM - Damodaran on Valuation</string>
+				<key>label</key>
+				<string>Passe Premium</string>
+				<key>description</key>
+				<string>Válido para os 2 dias do evento</string>
+				<key>value</key>
+				<string>2.750,00</string>
+				<key>value_site</key>
+				<string>2.200,00</string>
+				<key>value_app</key>
+				<string>2.090,00</string>
+				<key>show_dates</key>
+				<string>kNo</string>
+				<key>multiple</key>
+				<string>kNo</string>
+				<key>dates</key>
+				<array/>
+			</dict>
+			<key>red</key>
+			<dict>
+				<key>event_name</key>
+				<string>Seminário HSM - Damodaran on Valuation</string>
+				<key>label</key>
+				<string>Passe Corporate</string>
+				<key>description</key>
+				<string>Válido por 5 Passes Premium</string>
+				<key>value</key>
+				<string>11.500,00</string>
+				<key>value_site</key>
+				<string>9.200,00</string>
+				<key>value_app</key>
+				<string>8.740,00</string>
+				<key>show_dates</key>
+				<string>kNo</string>
+				<key>multiple</key>
+				<string>kYes</string>
+				<key>dates</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fórum HSM - Gestão e Liderança 2014</string>
+		<key>slug</key>
+		<string>gestao_lideranca_2014</string>
+		<key>date</key>
+		<string>1 e 2 de abril</string>
+		<key>dates</key>
+		<string>1 e 2 de abril, 2014</string>
+		<key>hours</key>
+		<string>9h às 17h, 9h às 17h30</string>
+		<key>local</key>
+		<string>Teatro Alfa – Hotel Transamérica</string>
+		<key>tiny_description</key>
+		<string>Liderança e Gestão em um mundo de Rupturas</string>
+		<key>description</key>
+		<string>O Brasil em 2014 estará no foco do mundo e, especialmente, dos negócios com os eventos esportivos e acontecimentos políticos e econômicos. E por isso, os líderes têm um papel estratégico neste panorama de visibilidade e rupturas para as empresas.
+Seus líderes estão preparados para esse cenário? 
+No Fórum HSM Gestão e Liderança, os gestores poderão se preparar para esse momento do mercado nacional, ouvindo conteúdos inéditos dos principais mentores, conceitos e práticas de sucesso, além vivenciar um ambiente propício para o networking e para geração de novos negócios. 
+Um encontro de dois dias que provoca reflexões e inspira descobertas para aqueles que já têm ou terão a missão de conduzir os negócios nesse mundo de mudanças e transformações. </string>
+		<key>show_passes</key>
+		<string>kYes</string>
+		<key>did_happen</key>
+		<string>kNo</string>
+		<key>color</key>
+		<dict>
+			<key>red</key>
+			<string>5.0</string>
+			<key>green</key>
+			<string>68.0</string>
+			<key>blue</key>
+			<string>110.0</string>
+		</dict>
+		<key>panelists</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Rosabeth Moss Kanter</string>
+				<key>slug</key>
+				<string>rosabeth_moss_kanter</string>
+				<key>speech</key>
+				<string>Liderança resiliente</string>
+				<key>theme</key>
+				<string>A mais importante habilidade de liderança agora que as surpresas são a nova realidade.• Por que a rapidez das mudanças provocadas pela tecnologia no nosso mundo interconectado e a complexidade de fazer negócios em escala global tornam a liderança ainda mais desafiadora
+• Por que, nesta época de rupturas, a capacidade de se recuperar rapidamente de reveses distingue as empresas vencedoras das perdedoras
+• Quais são os problemas potenciais resultantes de choques inesperados no ambiente — e como lidar com eles
+• Quais são as novas habilidades pessoais que os líderes precisam cultivar para adquirir resiliência em face das mudanças
+• Resiliência: muito mais do que flexibilidade e agilidade
+• Resiliência e força de caráter: causas e reciprocidade
+• Os valores básicos que motivam o líder resiliente a superar dificuldades e a prosseguir caminhando até o sucesso
+• Por que a presunção, a arrogância e a ganância acabam com a resiliência — e como a humildade e um propósito nobre alimentam-na.</string>
+				<key>info_date</key>
+				<string>01 de abril</string>
+				<key>info_hour</key>
+				<string>9h às 10h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-01T12:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Consagrada professora da Harvard Business School, é uma das maiores autoridades mundiais em estratégia, inovação e gestão da mudança. Kanter tem sido repetidamente incluída nas listas “50 mulheres mais poderosas do mundo” (Times de Londres) e “50 pensadores de management mais influentes do mundo” (Thinkers 50). Há mais de 30 anos seus insights estratégicos têm orientado dezenas de líderes das principais empresas do mundo inteiro.
+É autora de 18 livros, entre eles SuperCorp, Confidence, Word class, When giants learn to dance, Rosabeth Moss Kanter on the frontiers of management e o best-seller mundial The change masters.
+Kanter recebeu 23 títulos de doutor honoris causa, além de inúmeros prêmios de liderança e homenagens por sua contribuição ao management. Entre eles estão: Distinguished Career da Academy of Management, Visionária do Ano da Comunidade de Inteligência e Liderança Internacional da Association of Leadership Professionals.
+Obteve o Ph.D. pela University of Michigan.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Clay Shirky</string>
+				<key>slug</key>
+				<string>clay_shirky</string>
+				<key>speech</key>
+				<string>A Nova Empresa Aberta</string>
+				<key>theme</key>
+				<string>A Arte de liderar e administrar em um mundo conectado por redes.
+• Por que as novas ferramentas de auto-organização são vitais no atual ambiente de negócios e por que são elas que determinam como a empresa opera
+• A erosão do rígido controle que as instituições tinham sobre a informação
+• A capacidade de os clientes encontrarem, disseminarem e até mesmo gerarem informações, o que costumava ser prerrogativa exclusiva da empresa
+• A aplicabilidade desses mesmos princípios aos funcionários da própria empresa
+• Por que a principal ameaça a você não é a perda de controle sobre as informações e as mensagens — isso já aconteceu — e sim conduzir a sua empresa como se ainda detivesse esse controle
+• A capacidade de explorar novas ideias e modelos de negócio de modo mais rápido e barato
+• A oportunidade de abrir novos mercados, aprendendo o que os clientes querem e observando o que eles já fazem por conta própria
+• Por que as concepções tradicionais de liderança — “visão grandiosa” e “microgerenciamento” — existem nas extremidades erradas do espectro da liderança contemporânea
+• Por que os líderes que atuam hoje — de Linus Torvalds a Jeff Bezos — muitas vezes têm de escolher as partes do trabalho sobre as quais exercerão rígido controle e as que eles sabem que terão de ser compartilhadas com os usuários
+• Implicações para o Brasil e as empresas brasileiras.</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>9h às 10h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T12:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Considerado uma das maiores autoridades sobre a revolução digital, Shirky apresenta uma visão perspicaz e diferenciada das redes, softwares sociais e efeitos da tecnologia na sociedade e nas empresas.
+É autor dos best-sellers Lá vem todo mundo: o poder de organizar sem organizações e A cultura da participação: criatividade e generosidade no mundo conectado. Em Lá vem todo mundo, eleito pelo The Guardian um dos 100 melhores livros de não ficção de todos os tempos, Shirky examina como as organizações e setores inteiros da economia estão sendo abalados por redes abertas, colaboração e apropriação pelo usuário da produção e disseminação de conteúdos. Em A cultura da participação, ele revela como as novas tecnologias estão nos transformando de consumidores em colaboradores, libertando uma corrente de produção criativa que transforma o mundo. Foi destacado pela revista Fortune como uma das pessoas mais inteligentes na área de tecnologia.
+Shirky é professor do Programa de Telecomunicações Interativas da New York University (NYU) e escritor emérito residente do Departamento de Jornalismo da mesma universidade. É também membro do Berkman Center for Internet &amp; Society, da Harvard University.
+Palestrante frequente do TED, consultor com foco especial na ascensão das tecnologias descentralizadas, é autor de artigos publicados pelo The New York Times, Harvard Business Review, The Wall Street Journal e Wired Magazine. Graduou-se pela Yale University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Charles Duhigg</string>
+				<key>slug</key>
+				<string>charles_duhigg</string>
+				<key>speech</key>
+				<string>Os Hábitos das Empresas Vencedoras</string>
+				<key>theme</key>
+				<string>Por que fazemos o que fazemos na vida e nos negócios
+• O que é exatamente um hábito
+• Como as empresas podem utilizar a ciência por trás da formação de hábitos para estudar — e influenciar o que compramos
+• Como as empresas podem atingir o sucesso identificando e aprendendo a mudar os hábitos que moldam seus negócios
+• Mais de 40% de nossas ações no dia a dia não são decisões reais, mas hábitos — as implicações de conduzirmos nossa vida e nossas empresas em “piloto automático”
+• Por que os hábitos podem ser tão difíceis de mudar depois de enraizados
+• Como controlar o loop do hábito e desenvolver novos hábitos que superem ou substituam os antigos
+• Por que os hábitos impedem as empresas de se reinventar
+• Como a mudança de hábitos tem transformado completamente as empresas. Exemplos reais da Starbucks, Procter &amp; Gamble e Target
+• Como as empresas vencedoras cultivam hábitos em sua organização, funcionários e clientes.</string>
+				<key>info_date</key>
+				<string>01 de abril</string>
+				<key>info_hour</key>
+				<string>14h às 15h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-01T17:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É autor do mega best-seller mundial O poder do hábito (incluindo a lista do best-seller da revista Veja), em que explica a ciência de formação de hábitos em nossas vidas, empresas e sociedades e traz à tona um entendimento totalmente novo da natureza humana e seu potencial para a transformação. Duhigg é o premiado jornalista da seção de negócios do The New York Times. Entre seus diversos prêmios, recebeu em 2013 o aclamado Pulitzer pela série intitulada “The iEconomy” sobre a Apple e a influência da empresa nos Estados Unidos e no mundo. Jim Collins destacou os insights de Duhigg como “incisivos, provocadores e práticos”. As realizações de Duhigg o transformaram em palestrante extremamente requisitado por ampla gama de organizações no mundo inteiro.
+É também colaborador regular de programas de televisão e rádio nos Estados Unidos, incluindo NewsHour with Jim Lehrer, Frontline, Dr. Oz e vários outros na CNBC e NPR.
+Formou-se pela Yale University e obteve o MBA pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Christer Windeløv-Lidzélius</string>
+				<key>slug</key>
+				<string>christer_windelov_lidzelius</string>
+				<key>speech</key>
+				<string>Liderança Criativa</string>
+				<key>theme</key>
+				<string>A Arte de fazer pessoas e ideias prosperar
+• O que é liderança criativa
+• O propósito, fundamentos e princípios da liderança criativa
+• Liderar a si mesmo, liderar a equipe, liderar os resultados
+• Espaço de liderança — visão, capacitação e orientação
+• Como desenvolver a criatividade para resolver problemas
+• Da instrução à inspiração
+• O poder das perspectivas e das atitudes
+• Julgamentos e decisões: como liderar com seus filtros e suposições.</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>11h às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T14:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É CEO e reitor da KaosPilot, eleita pelas revistas Fast Company e Businessweek como uma das melhores escolas de design de negócios do mundo. A KaosPilot foi criada em 1991, em Aarhus, Dinamarca, e hoje é reconhecida internacionalmente por ajudar seus alunos a se tornar pensadores e líderes criativos e a transformar seus projetos em organizações de sucesso com larga escala.
+Em sua carreira como executivo, Windeløv-Lidzélius foi CEO de diversas empresas nos mais diferentes setores, entre elas Netfact AS (desenvolvimento de software), Scandpharma (saúde) e Knowledge Creation Lab (desenvolvimento organizacional).
+É formado em Economias e Políticas Sociais pela Uppsala University. Possui MBA pela Heriot-Watt University, em Edimburgo.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Yves Morieux</string>
+				<key>slug</key>
+				<string>yves_morieux</string>
+				<key>speech</key>
+				<string>Simplicidade Inteligente</string>
+				<key>theme</key>
+				<string>Como obter vantagem competitiva simplificando a organização para gerir melhor a complexidade dos negócios
+• Por que a maneira como as empresas tendem a reagir à nova complexidade dos negócios é contraproducente
+
+• Como a complexidade está matando a empresa moderna e tornando mais difícil para as pessoas realizarem seu trabalho
+
+-   Quais são as regras simples e inteligentes para tornar qualquer organização menos complicada
+
+ -   Por que a única resposta eficaz à complexidade crescente é parar de controlá-la
+
+  - Como deixar que as pessoas trabalhem juntas e usem sua própria inteligência para enfrentar desafios  
+
+•  Como mobilizar as pessoas sem impor-lhes mais processos, estruturas ou hierarquias
+
+• O novo papel dos gestores na organização do futuro.</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>14h às 15h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T17:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É sócio e diretor do Boston Consulting Group (BCG), uma das maiores empresas de consultoria do mundo. É renomado especialista em transformações corporativas e no desenvolvimento de formas pioneiras de pensamento organizacional baseadas na “simplicidade inteligente”. Morieux é também pesquisador do BCG e diretor do Instituto de Organizações da divisão global de pessoas e organizações do grupo. O seu livro Six simple rules: how to manage complexity without getting complicated será lançado em breve pela Harvard Business Review Press.
+Morieux é professor no Institut d’Études Politiques (IEP), de Paris. É destaque frequente em artigos sobre a evolução organizacional das empresas em publicações como The Economist, The Wall Street Journal, Fast Company e Le Monde.
+Obteve o mestrado em Sociologia Organizacional pelo IEP e o doutorado em Administração de Empresas pela University of Strathclyde, no Reino Unido.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Fábio Barbosa</string>
+				<key>slug</key>
+				<string>fabio_barbosa</string>
+				<key>speech</key>
+				<string>Liderança pelo exemplo</string>
+				<key>theme</key>
+				<string>Liderança pelo exemplo: valores e gestão no dia a dia</string>
+				<key>info_date</key>
+				<string>01 de abril</string>
+				<key>info_hour</key>
+				<string>16h às 17h</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-01T19:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É um dos maiores ícones empresariais do Brasil. É atualmente presidente da Abril S.A. Foi presidente do ABN Amro Real e, em 2008, com a aquisição do Banco Real, do Santander Brasil, e da Febraban por quatro anos.
+É também presidente do conselho da Fundação Osesp e membro dos conselhos da UM Foundation, Insper, Instituto Empreender Endeavor e do Instituto Ayrton Senna.
+Foi premiado, em 2013, como Líder pela Mudança Social e, em 2011, foi reconhecido como Personalidade do Ano pelas Câmaras Brasil-Estados Unidos de Comércio, em Nova York. Em 2012 recebeu o prêmio Campeões da Terra por sua visão empresarial.
+Graduou-se em Administração de Empresas pela Fundação Getulio Vargas e obteve o MBA pelo IMD, na Suíça.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Luiz Carlos Cabrera</string>
+				<key>slug</key>
+				<string>luiz_carlos_cabrera</string>
+				<key>speech</key>
+				<string>Como construir uma Cultura Vitoriosa nas Empresas do Brasil</string>
+				<key>theme</key>
+				<string>A influência do contexto e da cultura na sustentabilidade do processo de liderança
+• Um panorama atual do contexto empresarial brasileiro
+• Existe uma cultura empresarial brasileira?
+• A evolução dos stakeholders no caso das empresas emergentes
+• O que torna uma liderança sustentável?
+• Como obter colaboração e focar a execução. Uma receita infalível de sucesso na gestão.</string>
+				<key>info_date</key>
+				<string>01 de abril</string>
+				<key>info_hour</key>
+				<string>11h às 11h45</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-01T14:00:00Z</date>
+						<key>minutes</key>
+						<string>45</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É um ícone no Brasil nas áreas de gestão de carreiras e administração de recursos humanos.
+Como fundador da Amrop Panelli Motta Cabrera, empresa pioneira na introdução do conceito de executive search no mercado brasileiro, teve a oportunidade de trabalhar nos últimos 38 anos com as principais empresas brasileiras e multinacionais no País e no exterior, em projetos de contratação de presidentes, diretores e membros do conselho. É membro do Advisory Board do Grupo Amrop, presente em 57 países, e chairman do Brazil National Committee, da Association of Executive Search Consultants (AESC). Em 2011 foi agraciado por essa associação com o prêmio Gardner W. Heidrick, oferecido anualmente a um profissional que tenha dado uma contribuição notável para a atividade de consultoria em executive search.
+É professor há mais de 30 anos no CEAG da Fundação Getulio Vargas e é também professor no Instituto Brasileiro de Governança Corporativa (IBCG).
+É coautor dos livros Transição 2000 e Se eu fosse você, o que faria como gestor de pessoas.
+Formou-se em Engenharia Metalúrgica pela Escola de Engenharia Mauá e fez pós-graduação em Administração na FGV e extensão na University of Southern California.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Marco Tulio Zanini</string>
+				<key>slug</key>
+				<string>marco_tulio_zanini</string>
+				<key>speech</key>
+				<string>Confiança pela excelência</string>
+				<key>theme</key>
+				<string>A força do vínculo para a entrega de resultados excepcionais em ambiente de incerteza
+• Missionários ou mercenários? Qual é a qualidade do vínculo que une sua equipe?
+• Princípios para a ação? Qual o propósito que guia a colaboração em sua empresa?
+• Como líderes constroem confiança e somam inteligências para conquistar resultados excepcionais
+• Unidade na diversidade: sua equipe atinge o nível de competência máxima?
+• Dilemas da colaboração no Brasil — como enfrentar nossos desafios e trabalhar com o que temos de melhor
+• A liderança que constrói (e a que destrói) ativos intangíveis.</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>16h às 17h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T19:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É o pioneiro e a maior autoridade no Brasil em gestão de ativos intangíveis e confiança nas empresas. É sócio-fundador da Symbállein, empresa especializada no diagnóstico estratégico da cultura, ativos intangíveis organizacionais e gestão estratégica de pessoas, tendo trabalhado nos últimos anos com as empresas VALE, Embraer, Petrobras, TAM, Vivo, PepsiCo, Brasken, Neoenergia, entre outras.
+Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior, entre os quais se destacam Confiança — o principal ativo intangível de uma empresa, Gestão integrada de ativos intangíveis, Liderança baseada em valores e Trust within organizations of the new economy, este publicado na Alemanha. Em 2013, foi eleito pela ABTD Personalidade RH do Ano.
+É doutor em Management pela Universidade Otto-von-Guericke, em Magdeburg, Alemanha.</string>
+			</dict>
+		</array>
+		<key>agenda</key>
+		<array>
+			<dict>
+				<key>day</key>
+				<date>2014-04-01T12:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>rosabeth_moss_kanter</string>
+						<key>label</key>
+						<string>Liderança resiliente</string>
+						<key>hour</key>
+						<string>9h às 10h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h30 às 11h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>luiz_carlos_cabrera</string>
+						<key>label</key>
+						<string>Como construir uma Cultura Vitoriosa nas Empresas do Brasil</string>
+						<key>hour</key>
+						<string>11h às 11h45</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>credential</string>
+						<key>label</key>
+						<string>Talk show com Rosabeth Moss Kanter e Luiz Carlos Cabrera</string>
+						<key>hour</key>
+						<string>11h45 às 12h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>12h30 às 14h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>charles_duhigg</string>
+						<key>label</key>
+						<string>Os Hábitos das Empresas Vencedoras</string>
+						<key>hour</key>
+						<string>14h às 15h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>15h30 às 16h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>fabio_barbosa</string>
+						<key>label</key>
+						<string>Liderança pelo exemplo</string>
+						<key>hour</key>
+						<string>16h às 17h</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2014-04-02T12:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>clay_shirky</string>
+						<key>label</key>
+						<string>A Nova Empresa Aberta</string>
+						<key>hour</key>
+						<string>9h às 10h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h30 às 11h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>christer_windelov_lidzelius</string>
+						<key>label</key>
+						<string>Liderança Criativa</string>
+						<key>hour</key>
+						<string>11h às 12h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>12h30 às 14h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>yves_morieux</string>
+						<key>label</key>
+						<string>Simplicidade Inteligente</string>
+						<key>hour</key>
+						<string>14h às 15h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>15h30 às 16h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>marco_tulio_zanini</string>
+						<key>label</key>
+						<string>Confiança pela excelência</string>
+						<key>hour</key>
+						<string>16h às 17h30</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>passes</key>
+		<dict>
+			<key>green</key>
+			<dict>
+				<key>event_name</key>
+				<string>Fórum HSM - Gestão e Liderança 2014</string>
+				<key>label</key>
+				<string>Passe Single</string>
+				<key>description</key>
+				<string>Válido para 1 dia do evento</string>
+				<key>value</key>
+				<string>3.200,00</string>
+				<key>value_site</key>
+				<string>2.560,00</string>
+				<key>value_app</key>
+				<string>2.432,00</string>
+				<key>show_dates</key>
+				<string>kYes</string>
+				<key>multiple</key>
+				<string>kNo</string>
+				<key>dates</key>
+				<array>
+					<string>1 de abril</string>
+					<string>2 de abril</string>
+				</array>
+			</dict>
+			<key>gold</key>
+			<dict>
+				<key>event_name</key>
+				<string>Fórum HSM - Gestão e Liderança 2014</string>
+				<key>label</key>
+				<string>Passe Premium</string>
+				<key>description</key>
+				<string>Válido para os 2 dias do evento</string>
+				<key>value</key>
+				<string>5.270,00</string>
+				<key>value_site</key>
+				<string>4.216,00</string>
+				<key>value_app</key>
+				<string>4.005,20</string>
+				<key>show_dates</key>
+				<string>kNo</string>
+				<key>multiple</key>
+				<string>kNo</string>
+				<key>dates</key>
+				<array/>
+			</dict>
+			<key>red</key>
+			<dict>
+				<key>event_name</key>
+				<string>Fórum HSM - Gestão e Liderança 2014</string>
+				<key>label</key>
+				<string>Passe Corporate</string>
+				<key>description</key>
+				<string>Válido por 5 Passes Premium</string>
+				<key>value</key>
+				<string>22.950,00</string>
+				<key>value_site</key>
+				<string>18.360,00</string>
+				<key>value_app</key>
+				<string>17.442,00</string>
+				<key>show_dates</key>
+				<string>kNo</string>
+				<key>multiple</key>
+				<string>kYes</string>
+				<key>dates</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fórum HSM - Family Business 2014</string>
+		<key>slug</key>
+		<string>family_business_2014</string>
+		<key>dates</key>
+		<string>06 e 07 de maio, 2014</string>
+		<key>date</key>
+		<string>6 e 7 de maio</string>
+		<key>hours</key>
+		<string>9h às 17h30</string>
+		<key>local</key>
+		<string>Golden Hall - WTC - World Trade Center </string>
+		<key>tiny_description</key>
+		<string>A melhor maneira de maximizar o bem-estar geral do seu negócio familiar é ouvir o que os principais experts internacionais e nacionais têm a dizer.</string>
+		<key>description</key>
+		<string>Participe do Fórum HSM Family Business e vivencie um ambiente de reflexão, troca de experiências e desenvolvimento, projetado exclusivamente para atender empresas de controle familiar.
+ 
+Durante o evento, estarão em pauta conceitos fundamentais para criação de riqueza, planejamento sucessório, empreendedorismo, mercados emergentes e capital, entre outros.
+
+Além disso, será apresentado, de forma inédita,  o case de sucesso de Ermenegildo Zegna, que traz o aprendizado da família Zegna nas últimas três gerações.</string>
+		<key>show_passes</key>
+		<string>kYes</string>
+		<key>did_happen</key>
+		<string>kNo</string>
+		<key>color</key>
+		<dict>
+			<key>red</key>
+			<string>5.0</string>
+			<key>green</key>
+			<string>68.0</string>
+			<key>blue</key>
+			<string>110.0</string>
+		</dict>
+		<key>panelists</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>John Davis</string>
+				<key>slug</key>
+				<string>john_davis</string>
+				<key>speech</key>
+				<string>Construindo pontes / Criadores de riqueza</string>
+				<key>theme</key>
+				<string>Sessão I
+Construindo pontes entre as gerações: como os babies boomers (1946-1964), a geração X
+(1965-1980) e a geração Y (1981-2000) podem coexistir pacificamente na família e nos negócios
+
+As diferentes atitudes, comportamentos e valores (sobre o trabalho e a vida) aparentes
+nessas gerações
+O impacto das diferentes atitudes e crenças dessas gerações sobre a sucessão e o desenvolvimento da geração seguinte
+Métodos para desenvolver a geração X e a geração Y
+Técnicas eficazes de comunicação e negociação entre as gerações
+
+Sessão II
+Como formar criadores de riqueza em uma empresa familiar
+
+A necessidade das empresas familiares planejarem com antecedência a expansão do patrimônio financeiro ao longo das gerações
+O papel crítico do “criador de riqueza” em uma empresa familiar: as responsabilidades, atividades e habilidades necessárias para essa função
+Como formar criadores de riqueza em cada geração
+Os últimos resultados da pesquisa pioneira de John Davis sobre riqueza familiar.</string>
+				<key>info_date</key>
+				<string>06 e 07 de maio</string>
+				<key>info_hour</key>
+				<string>9h às 10h30, 16h às 17h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-06T12:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+					<dict>
+						<key>date</key>
+						<date>2014-05-07T19:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>John Davis é considerado a maior autoridade mundial em gestão de empresas familiares. É professor na Harvard Business School, onde lidera o programa de educação executiva Families in Business: from Generation to Generation, que examina as questões fundamentais enfrentadas por empresas de controle familiar. Fundador e presidente da Cambridge Advisors to Family Enterprise, Davis presta consultoria para empresas de controle familiar no mundo inteiro. Nos últimos anos, vem trabalhando com alguns dos principais grupos familiares do Brasil, como  Gerdau e Votorantim. É coautor do best-seller De geração para geração: ciclos de vida das empresas familiares, publicado originalmente pela Harvard Business School Press. Suas teorias e reflexões têm sido citadas por algumas das mais respeitadas publicações em todo o mundo, como The Wall Street Journal, The New York Times, The Economist e Family Business. Davis é mestre em Economia pela University of Wisconsin e doutor em Administração de Empresas pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Douglas Stone</string>
+				<key>slug</key>
+				<string>douglas_stone</string>
+				<key>speech</key>
+				<string>Conversas difíceis em empresas familiares</string>
+				<key>theme</key>
+				<string>Conversas difíceis em empresas familiares: como discutir o que mais importa
+
+Por que os conflitos e as conversas difíceis que todos enfrentam se tornam ainda mais intensos em uma empresa familiar
+
+Quais são e como atuam os padrões inconscientes de comunicação que tornam as conversas em família mais desafiadoras do que precisariam ser
+
+Novas ferramentas e ideias que permitem eliminar esses padrões inconscientes e melhorar o equilíbrio entre averiguação e assertividade
+
+A disjunção entre intenções e impactos e os papéis da emoção e da identidade na gestão da empresa familiar
+
+Por que há tantos interesses divergentes e pontos de vista diferentes sobre o que realmente importa na empresa familiar — e o que fazer a respeito
+
+Como estilos pessoais conflitantes, hierarquia confusa, mistura de vida pessoal e profissional, além de diferentes noções de justiça e competência entre gerações e os ramos da família podem gerar tensão na empresa familiar.</string>
+				<key>info_date</key>
+				<string>06 de maio</string>
+				<key>info_hour</key>
+				<string>11h às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-06T14:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Douglas Stone leciona Negociação e Gestão de Conflitos na Harvard Law School há mais de vinte anos e é sócio-fundador do Triad Consulting Group. Durante dez anos, foi membro e diretor adjunto do Harvard Negotiation Project. 
+
+Ele é coautor de Difficult conversations: how to discuss what matters most, best-seller de negócios do The New York Times, que foi traduzido para 25 idiomas, incluindo português. Em 2014, a Viking/Penguin lançará sua próxima obra: Thanks for the feedback: the science and art of receiving feedback well.
+
+Além de clientes corporativos como Citigroup, Honda, HP, HSBC, Itaú, Merck, Microsoft, Shell e Time Warner Cable, Stone já trabalhou com diplomatas e líderes políticos na África do Sul, Caxemira, Chipre, Oriente Médio e do governo dos Estados Unidos. 
+
+Artigos de Stone sobre negociação e resolução de conflitos foram publicados no The New York Times, Los Angeles Times e The Boston Globe. Além disso, já participou de inúmeros programas de rádio e TV, incluindo o da Oprah Winfrey. Formou-se pela Brown University, em 1980, e pela Harvard Law School, em 1984.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Eduardo Gentil</string>
+				<key>slug</key>
+				<string>eduardo_gentil</string>
+				<key>speech</key>
+				<string>O papel do capital</string>
+				<key>theme</key>
+				<string>O papel do capital na vida das empresas de controle familiar: como as famílias empresárias vencedoras empregam o capital ao longo das gerações
+
+Como a necessidade de capital aumenta com a passagem das gerações
+
+Tensões entre capital para crescimento, liquidez para acionistas e manutenção do controle
+
+Trajetória normal de acesso a capital: dívida, capital privado (private equity) e IPO
+
+Como abordar o uso de capital externo — vantagens e desvantagens de cada opção: 
+(i) private equity, (ii) parceria estratégica e (iii) IPO
+
+Casos de sucesso de parceria entre empresas familiares e private equity (nacional e internacional)
+
+Como a empresa e a família podem se preparar para acessar capital externo
+
+Finalmente, a decisão de abrir o capital: vale a pena? Quais os riscos?</string>
+				<key>info_date</key>
+				<string>06 de maio</string>
+				<key>info_hour</key>
+				<string>14h às 15h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-06T17:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Eduardo Gentil é sócio da Cambridge Advisors to Family Enterprise.
+
+Nos últimos cinco anos, liderou dezenas de projetos da Cambridge com famílias empresárias no Brasil e no exterior, apoiando-as no desenho de suas estruturas de governança, acordos entre acionistas, políticas financeiras, implantação de conselhos de administração e planos de sucessão.
+
+Gentil começou sua carreira no setor financeiro no JP Morgan em Nova York e depois atuou, por dez anos, como diretor-geral do Goldman Sachs no Brasil. Em 2002, foi diretor do Banco Nacional de Desenvolvimento Econômico e Social (BNDES). Em 2004, foi nomeado diretor-geral da Visa do Brasil – o que incluía o cargo de presidente do conselho da Visanet.
+
+É conselheiro da EcoRodovias e da Évora e faz parte do grupo de Facilitators do Families in Business Program, da Harvard Business School, coordenado por John Davis. É graduado em História e Economia pela Universidade de Princeton, com MBA pela Stern School of Business, na Universidade de Nova York.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vikram Bhalla</string>
+				<key>slug</key>
+				<string>vikram_bhalla</string>
+				<key>speech</key>
+				<string>Empresas familiares em mercados emergentes</string>
+				<key>theme</key>
+				<string>Empresas familiares em mercados emergentes: como diferem das do mundo desenvolvido e o que umas podem aprender com as outras
+
+Por que mercados emergentes como o Brasil e a Índia têm parcela maior de empresas dirigidas por famílias
+
+Como a mentalidade, prioridades e desafios das empresas familiares em mercados emergentes diferem dos de empresas familiares do mundo desenvolvido e como isso afeta sua inclusão no mercado mundial
+
+Como o fato de operarem em um contexto social e regulatório diferente, afeta sua dinâmica interna
+
+Por que as aspirações e prioridades de negócios em mercados emergentes são tão diferentes das de empresas familiares do mundo desenvolvido
+
+Por que as práticas e soluções das empresas familiares em mercados emergentes para conquistar o futuro são necessariamente diferentes das de empresas familiares de
+mercados desenvolvidos.</string>
+				<key>info_date</key>
+				<string>06 de maio</string>
+				<key>info_hour</key>
+				<string>16h às 17h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-06T19:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Vikram Bhalla é sócio e diretor do escritório de Mumbai do The Boston Consulting Group (BCG). Ele dirige a divisão de Pessoas e Práticas Organizacionais do grupo na região Ásia-Pacífico e também a Iniciativa de Empresas Familiares em Mercados Emergentes.
+
+Sua experiência como consultor de negócios em família abrange inúmeros aspectos da empresa familiar. Foi ele quem conduziu a transformação de um dos maiores conglomerados familiares indianos, outrora dirigido por membros da família, em um conglomerado de alto valor, dirigido por profissionais sob supervisão familiar.
+
+Inúmeras famílias em mercados emergentes têm sido ajudadas por Bhalla para que se atualizem sobre governança e sucessão familiar. Frequentemente é chamado para resolver conflitos familiares. Seis dos dez maiores conglomerados familiares indianos foram assessorados por ele.
+
+Bhalla é formado pela Universidade de Delhi e obteve seu MBA pelo Indian Institute of Management, Calcutá.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Joachim Schwass</string>
+				<key>slug</key>
+				<string>joachim_schwass</string>
+				<key>speech</key>
+				<string>Trazendo a estratégia para a sucessão</string>
+				<key>theme</key>
+				<string>Trazendo a estratégia para a sucessão: lições das mais importantes empresas familiares do mundo
+
+Por que empresas familiares enfrentam um grau maior de complexidade
+
+Por que as dimensões Família, Propriedade e Negócio se sobrepõem e costumam entrar em conflito entre si
+
+Como o planejamento estratégico abrangente permite avançar de “desafios” para “oportunidades”
+
+Por que vincular as estratégias de crescimento da empresa ao planejamento sucessório é uma combinação poderosa
+
+Insights das principais empresas familiares do mundo
+
+Como criar, expandir e transmitir para as gerações seguintes os negócios e o patrimônio da família de maneira sábia e sustentável.</string>
+				<key>info_date</key>
+				<string>07 de maio</string>
+				<key>info_hour</key>
+				<string>9h às 10h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-07T12:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É professor e diretor do programa Leading the Family Business no IMD, na Suíça, uma das mais renomadas escolas de negócios do mundo. Seu principal foco de ensino são as questões envolvendo os proprietários e a propriedade de empresas familiares, particularmente da perspectiva da próxima geração. Ele já proferiu palestras e organizou programas sobre empresas familiares no mundo inteiro. É autor das obras Wise growth strategies in leading family business e Wise wealth.
+
+Antes de ingressar no IMD, Schwass foi diretor de diversas empresas que pertenciam ao negócio de sua família. Já geriu fábricas na Austrália e nos Estados Unidos e companhias de comércio internacional na Suíça. Além disso, fundou diversas organizações internacionais.
+
+Durante dez anos, Schwass dirigiu o Distinguished Family Business Award e foi diretor executivo da Family Business Network (FBN), onde também foi membro do Conselho de Administração até 2010.
+
+Estudou na Technische Universität de Berlim e na Université de Fribourg, onde obteve mestrado e doutorado em Ciências Políticas.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Ermenegildo Zegna</string>
+				<key>slug</key>
+				<string>ermenegildo_zegna</string>
+				<key>speech</key>
+				<string>Aprendizados de três gerações</string>
+				<key>theme</key>
+				<string>Aprendizados de três gerações na família Zegna</string>
+				<key>info_date</key>
+				<string>07 de maio</string>
+				<key>info_hour</key>
+				<string>11h às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-07T14:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É CEO do Ermenegildo Zegna Group, empresa fundada por seu avô, Ermenegildo Zegna, em 1910. A Zegna tem faturamento anual superior a 1,261 bilhão de Euros, 543 lojas ao redor do mundo, em mais de cem países, e é líder mundial em roupas masculinas de luxo. A empresa é uma organização com integração vertical completa e seu crescimento é baseado em um portfólio cada vez mais amplo e variado de produtos e estilos.
+Zegna é membro do Conselho Consultivo Internacional do IESE Business School da Espanha, vice-presidente da Camera Nazionale della Moda Italiana e membro da diretoria do Consiusa, The Council for the United States and Italy. Em 2011, foi nomeado Cavaliere del Lavoro pelo presidente da Itália.
+
+Formou-se em Economia pela University of London e estudou na Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Michael Roberts</string>
+				<key>slug</key>
+				<string>michael_roberts</string>
+				<key>speech</key>
+				<string>Empreendedorismo em famílias empresárias</string>
+				<key>theme</key>
+				<string>Empreendedorismo em famílias empresárias: como pode dar certo
+
+Por que o empreendedorismo é (tão) importante para o sucesso de uma família empresária
+
+Quais são as vantagens inerentes às famílias empresárias empreendedoras (e quais obstáculos elas têm de superar para fazer o empreendedorismo funcionar)
+
+O que define o empreendedorismo e quais são os modelos que tornam possíveis os negócios empreendedores
+
+Por que alguns empresários são bem-sucedidos e outros não. Como eles avaliam as oportunidades
+
+Como um empreendedor põe ideias à prova e verifica rapidamente quais funcionam
+
+Como os empreendedores avaliam e administram o risco
+
+Como empresas bem estabelecidas estruturam seu esforço empreendedor
+
+Como administrar as relações com investidores.</string>
+				<key>info_date</key>
+				<string>07 de maio</string>
+				<key>info_hour</key>
+				<string>14h às 15h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-07T17:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Foi por 16 anos diretor do Arthur Rock Center for Entrepreneurship, da Harvard Business School. É autor de mais de 150 cases sobre criação e gestão de empresas empreendedoras, dos livros The entrepreneurial venture e New business ventures, este último é adotado por cursos de 
+pós-graduação em mais de cem escolas de negócios no mundo.
+
+Em Harvard, foi professor do curso Avaliação de Oportunidades Empreendedoras para alunos interessados em transformar ideias em negócios reais. É consultor de diversas empresas empreendedoras.
+
+Roberts ocupou grande variedade de cargos no setor privado. Antes e durante a Harvard Business School, trabalhou na McKinsey e Morgan Stanley, respectivamente. Atuou também como diretor de desenvolvimento de negócios internacionais para a Cellular Communications.
+
+Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, com distinção, e doutorado em Administração pela Harvard Business School.</string>
+			</dict>
+		</array>
+		<key>agenda</key>
+		<array>
+			<dict>
+				<key>day</key>
+				<date>2014-05-06T12:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>john_davis</string>
+						<key>label</key>
+						<string>Construindo pontes entre gerações</string>
+						<key>hour</key>
+						<string>9h às 10h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h30 às 11h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>douglas_stone</string>
+						<key>label</key>
+						<string>Conversas difíceis em empresas familiares</string>
+						<key>hour</key>
+						<string>11h às 12h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>12h30 às 14h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>eduardo_gentil</string>
+						<key>label</key>
+						<string>O Papel do Capital</string>
+						<key>hour</key>
+						<string>14h às 15h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>15h30 às 16h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>vikram_bhalla</string>
+						<key>label</key>
+						<string>Empresas familiares em Mercados Emergentes</string>
+						<key>hour</key>
+						<string>16h às 17h30</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2014-05-07T12:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>joachim_schwass</string>
+						<key>label</key>
+						<string>Trazendo a estratégia para a sucessão</string>
+						<key>hour</key>
+						<string>9h às 10h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h30 às 11h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>ermenegildo_zegna</string>
+						<key>label</key>
+						<string>Aprendizados de três gerações</string>
+						<key>hour</key>
+						<string>11h às 12h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>12h30 às 14h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>michael_roberts</string>
+						<key>label</key>
+						<string>Empreendedores em famílias empresárias</string>
+						<key>hour</key>
+						<string>14h às 15h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>15h30 às 16h</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>john_davis</string>
+						<key>label</key>
+						<string>Criadores de riqueza na empresa familiar</string>
+						<key>hour</key>
+						<string>16h às 17h30</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>passes</key>
+		<dict>
+			<key>green</key>
+			<dict>
+				<key>event_name</key>
+				<string>Fórum HSM - Family Business 2014</string>
+				<key>label</key>
+				<string>Passe Single</string>
+				<key>description</key>
+				<string>Válido para 1 dia do evento</string>
+				<key>value</key>
+				<string>3.200,00</string>
+				<key>value_site</key>
+				<string>2.560,00</string>
+				<key>value_app</key>
+				<string>2.432,00</string>
+				<key>show_dates</key>
+				<string>kYes</string>
+				<key>multiple</key>
+				<string>kNo</string>
+				<key>dates</key>
+				<array>
+					<string>6 de maio</string>
+					<string>7 de maio</string>
+				</array>
+			</dict>
+			<key>gold</key>
+			<dict>
+				<key>event_name</key>
+				<string>Fórum HSM - Family Business 2014</string>
+				<key>label</key>
+				<string>Passe Premium</string>
+				<key>description</key>
+				<string>Válido para os 2 dias do evento</string>
+				<key>value</key>
+				<string>5.270,00</string>
+				<key>value_site</key>
+				<string>4.216,00</string>
+				<key>value_app</key>
+				<string>4.005,20</string>
+				<key>show_dates</key>
+				<string>kNo</string>
+				<key>multiple</key>
+				<string>kNo</string>
+				<key>dates</key>
+				<array/>
+			</dict>
+			<key>red</key>
+			<dict>
+				<key>event_name</key>
+				<string>Fórum HSM - Family Business 2014</string>
+				<key>label</key>
+				<string>Passe Corporate</string>
+				<key>description</key>
+				<string>Válido por 5 Passes Premium</string>
+				<key>value</key>
+				<string>22.950,00</string>
+				<key>value_site</key>
+				<string>18.360,00</string>
+				<key>value_app</key>
+				<string>17.442,00</string>
+				<key>show_dates</key>
+				<string>kNo</string>
+				<key>multiple</key>
+				<string>kYes</string>
+				<key>dates</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Auditório Principal</string>
+		<key>slug</key>
+		<string>expo13</string>
+		<key>dates</key>
+		<string>04, 05 e 06 de novembro, 2013</string>
+		<key>hours</key>
+		<string>09:00 às 20:00</string>
+		<key>local</key>
+		<string>Transamérica Expo Center</string>
+		<key>tiny_description</key>
+		<string>Três dias de conhecimento, oportunidade de relacionamento e geração de negócios.</string>
+		<key>description</key>
+		<string>Vem aí o maior encontro de gestão da América Latina que reúne executivos e empresas dos mais diversos setores da economia, de todo país.
+
+De um lado, os maiores nomes do management mundial. De outro, os mais influentes executivos e líderes de todo o país.
+
+HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores oportunidades, os conceitos mais atuais e os exemplos mais inspiradores, para que você possa tomar sempre as melhores decisões e se manter preparado para os novos desafios e as mudanças no mundo dos negócios.</string>
+		<key>show_passes</key>
+		<string>kYes</string>
+		<key>did_happen</key>
+		<string>kYes</string>
+		<key>color</key>
+		<dict>
+			<key>red</key>
+			<string>5.0</string>
+			<key>green</key>
+			<string>68.0</string>
+			<key>blue</key>
+			<string>110.0</string>
+		</dict>
+		<key>panelists</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Walter Isaacson</string>
+				<key>slug</key>
+				<string>walter_isaacson</string>
+				<key>speech</key>
+				<string>Liderança</string>
+				<key>theme</key>
+				<string>Lições reais de liderança de Steve Jobs</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>CEO do Aspen Institute, ex-chairman/CEO da CNN e ex-editor-chefe da revista Time, Walter Isaacson passou dois anos trabalhando na única biografia autorizada do cofundador da Apple Steve Jobs. O livro alcançou o primeiro lugar na lista de best-sellers em praticamente todos os países, com milhões de exemplares vendidos. Formou-se pela Harvard University e Oxford University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Bill George</string>
+				<key>slug</key>
+				<string>bill_george</string>
+				<key>speech</key>
+				<string>Liderança</string>
+				<key>theme</key>
+				<string>Um modelo de liderança para o século XXI: Como desenvolver líderes autênticos</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>09h15 às 10h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T11:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Professor de Management na Harvard Business School, onde leciona Liderança desde 2004, Bill George é ex-chairman e CEO da Medtronic, empresa líder em tecnologia médica. No período em que liderou a empresa, o valor de mercado da Medtronic passou de US$ 1,1 bilhão para US$ 60 bilhões. Ele é autor de quatro best-sellers, entre eles Liderança autêntica, Confie em você e 7 Lessons for leading in crisis. Obteve o MBA pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vijay Govindarajan</string>
+				<key>slug</key>
+				<string>vijay_govindarajan</string>
+				<key>speech</key>
+				<string>Inovação</string>
+				<key>theme</key>
+				<string>As regras vencedoras dos Inovadores Estratégicos</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>11h00 às 12h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T22:00:00Z</date>
+						<key>minutes</key>
+						<string>120</string>
+					</dict>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T13:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>No mais recente ranking global de pensadores de management, Govindarajan obteve o terceiro lugar. Foi o primeiro professor residente e consultor-chefe de inovação da General Electric e, com o CEO da empresa, Jeff Immelt, escreveu “How GE is disrupting itself”, publicado na Harvard Business Review. Ele é autor dos best-sellers Os 10 mandamentos da inovação estratégica e O outro lado da inovação. Sua obra mais recente é Inovação reversa, que entrou para a listados livros mais vendidos do The New York Times e do The Wall Street Journal. Govindarajan já assessorou mais de um quarto das empresas da Fortune 500. Obteve o MBA e o doutorado pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Robert Lloyd</string>
+				<key>slug</key>
+				<string>robert_lloyd</string>
+				<key>speech</key>
+				<string>Inovação</string>
+				<key>theme</key>
+				<string>&quot;The Internet of Everything&quot;: O poder deste novo fenômeno global conhecido como &quot;internet de todas as coisas&quot;</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Robert Lloyd é presidente mundial de desenvolvimento e vendas da Cisco, hoje uma das maiores empresas de tecnologia do mundo e a líder global em soluções de redes e comunicações integradas para a internet, com um faturamento anual de US$ 45 bilhões. A organização que ele comanda é responsável por alinhar e acelerar as inovações tecnológicas da empresa, permitindo que ela reaja mais rapidamente às transições de mercado, torne os clientes mais relevantes e cresça com maior velocidade. Hoje, os esforços de inovação da Cisco estão cada vez mais em sintonia com as exigências e necessidades dos clientes, acelerando o processo de lançamento de produtos. Lloyd também é membro do Comitê Executivo, o órgão que define o direcionamento estratégico de cada segmento de mercado da empresa. Anteriormente, ocupou os cargos de vice-presidente executivo de operações mundiais e vice-presidente sênior para os EUA, Canadá e Japão, quando dirigiu dois dos cinco principais “teatros (de operações)” da empresa. Também foi presidente regional para a Europa, Oriente Médio e África por mais de quatro anos.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Wesley Batista</string>
+				<key>slug</key>
+				<string>wesley_batista</string>
+				<key>speech</key>
+				<string>Estratégia</string>
+				<key>theme</key>
+				<string>Desenvolvendo uma estratégia global: O Caso JBS</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>11h00 às 12h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T13:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Wesley Batista tornou-se presidente global da JBS em fevereiro de 2011. Antes dessa posição, foi presidente da JBS USA, onde liderou o crescimento e o desenvolvimento do mercado dos Estados Unidos após adquirir a Swift &amp; Company em 2007. Sob sua gestão, a JBS USA mais que duplicou sua receita nos últimos quatro anos. Durante os quinze anos prévios, Wesley atuou como Chief Operating Officer das operações da JBS de carne bovina no Brasil e Argentina. Em 2012, comandou a expansão da capacidade de produção no País, ao arrendar ou adquirir frigoríficos. Também promoveu a entrada da companhia no mercado de carne de frango no Brasil, com o aluguel de três unidades da Frangosul e a aquisição da Agrovêneto e Tramonto. Ainda sob sua gestão no comando global da JBS, a companhia entrou no mercado canadense ao assumir as operações da XL Foods. A JBS é a mais internacional das empresas brasileiras e a maior empresa privada do Brasil. É líder mundial em processamento de carne bovina, ovina e de aves, além de ter forte participação na produção de carne suína, e é a maior exportadora de proteína animal, vendendo para mais de 110 países. Com mais de 140 mil colaboradores ao redor do mundo, a companhia possui 307 unidades de produção e atua nas áreas de alimentos, couros, biodiesel, colágeno, embalagens metálicas e produtos de limpeza. Para 2013 está previsto um faturamento de mais de R$ 100 bilhões. A empresa foi fundada em 1953 em Anápolis, Goiás, pelo pai de Wesley, sr. José Batista Sobrinho.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Michael Porter</string>
+				<key>slug</key>
+				<string>michael_porter</string>
+				<key>speech</key>
+				<string>Estratégia</string>
+				<key>theme</key>
+				<string>Total Strategy: Como criar e manter vantagem competitiva estratégica</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>12h00 às 13h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T14:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Consagrado professor da Harvard Business School, Michael Porter é considerado a maior autoridade mundial em estratégia competitiva. De acordo com a edição de novembro de 2012 da revista Fortune, Porter influenciou mais executivos e nações do que qualquer outro professor do planeta. É autor dos maiores best-sellers na área, entre os quais se destacam: Vantagem competitiva, Estratégia competitiva, A vantagem competitiva das nações, Competição e Repensando a saúde. Recebeu cinco vezes o McKinsey Award pelo melhor artigo publicado no ano na Harvard Business Review. Porter lidera, na Harvard Business School (HBS), o programa para novos presidentes de empresas cujo faturamento é superior a US$ 1 bilhão e também o Institute for Strategy and Competitiveness. Continua desempenhando papel importante no assessoramento de governos e empresas líderes em todo o mundo. Porter formou-se em Engenharia Mecânica pela Princeton University e obteve o MBA pela HBS e o Ph.D. em Economia Empresarial pela Harvard University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Philip Kotler</string>
+				<key>slug</key>
+				<string>philip_kotler</string>
+				<key>speech</key>
+				<string>Estratégia</string>
+				<key>theme</key>
+				<string>Redesenhando sua estratégia de crescimento: como atuar no mercado para crescer mais e melhor</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>12h00 às 13h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T14:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Em toda a história da administração somente dois pensadores conseguiram permanecer como a principal referência em suas áreas de conhecimento por mais de quatro décadas: o já falecido Peter Drucker e Philip Kotler. Seu 52º livro, Market your way to growth: 8 ways to win, foi lançado em dezembro de 2012. Já recebeu diversos prêmios por sua contribuição ao marketing e ao management. Em 2005 foi selecionado como o quarto maior expert de negócios pelo Financial Times (atrás de Jack Welch, Bill Gates e Peter Drucker); em 2008 o The Wall Street Journal o listou como a 6ª pessoa mais influente do mundo dos negócios. É professor da Kellogg School of Management, da Northwestern University, e tem prestado consultoria para empresas do porte de General Electric, IBM, At&amp;T, Honeywell, Michelin e Merck, entre outras. Obteve o mestrado pela Universidade de Chicago e o Ph.D. pelo MIT, ambos em Economia.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Ginni Rometty</string>
+				<key>slug</key>
+				<string>ginni_rometty</string>
+				<key>speech</key>
+				<string>Novas Organizações</string>
+				<key>theme</key>
+				<string>A nova era da Computação: uma conversa com Ginni Rometty</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>12h00 às 13h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T14:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Ginni Rometty é presidente e CEO da IBM desde 1º janeiro de 2012 e tornou-se chairman do Conselho de Administração em 1º de outubro de 2012. Rometty iniciou sua carreira na IBM em 1981, em Detroit, Michigan. Desde então, ocupou diversas posições de liderança na empresa, mais recentemente a de vice-presidente sênior e executiva do Grupo de Vendas, Marketing e Estratégia. Nessa função, foi responsável pelos resultados comerciais da empresa nos 170 mercados globais em que opera e teve papel pioneiro na rápida expansão da IBM nas economias emergentes do mundo. Como parte dessa iniciativa, criou a unidade Growth Markets, que deverá contribuir com cerca de 30% do faturamento da IBM até 2015. Anteriormente, Rometty foi vice-presidente sênior da Global Business Services, a unidade de consultoria empresarial da IBM, onde liderou a integração bem-sucedida da IBM com a PricewaterhouseCoopers Consulting. Esta aquisição foi a maior da história do setor de serviços profissionais e criou uma equipe global de mais de 100 mil consultores corporativos e especialistas em serviços. Em reconhecimento por sua liderança no setor de serviços profissionais, Rometty foi homenageada com o Prêmio Carl Sloane em 2006, concedido pela Association of Management Consulting Firms [Associação de Empresas de Consultoria de Gestão]. Rometty foi ainda gerente geral da IBM Global Services para as Américas e também do Global Insurance and Financial Services Sector [Setor de Seguros e Serviços Financeiros Globais] da empresa. Ela participa do Conselho de Relações Exteriores, do Conselho de Curadores da Northwestern University, e dos Conselhos de Supervisores e de Gestores do Memorial Sloan-Kettering Cancer Center [Centro de Oncologia Memorial/Sloan-Kettering]. Rometty formou-se com honras em Ciência da Computação e Engenharia Elétrica pela Northwestern University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Andrew McAfee</string>
+				<key>slug</key>
+				<string>andrew_mcafee</string>
+				<key>speech</key>
+				<string>Novas Organizações</string>
+				<key>theme</key>
+				<string>Big Data: Revolução Gerencial</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>09h15 às 10h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T11:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Autor de inúmeros artigos publicados na Harvard Business Review, Sloan Management Review e The Washington Post. McAfee foi convidado por Gary Hamel para formar uma “brigada independente” de pensadores para elaborar uma lista de desafios que os gestores hoje enfrentam – à qual deram o nome de “Moon shots formanagement”, publicada na Harvard Business Review. Seu mais recente artigo, “Big Data: The Management Revolution”, matéria de capa da Harvard Business Review na edição de outubro de 2012, explora como empresas de classe mundial estão inovando seus modelos de gestão, para vencer em uma era de abundância de dados. Andrew McAfee é um dos mais importantes pesquisadores do MIT Center for Digital Business, da Sloan School of Management. Foi por 10 anos professor da Harvard Business School. Obteve o doutorado pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Gary Hamel</string>
+				<key>slug</key>
+				<string>gary_hamel</string>
+				<key>speech</key>
+				<string>Novas Organizações</string>
+				<key>theme</key>
+				<string>Inventando o Management 2.0: Como vencer em um mundo de mudanças implacáveis, competição feroz e inovação sem fim</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>17h15 às 18h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T19:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Os livros pioneiros de Hamel, Competindo pelo futuro, escrito com C.K. Prahalad, e Liderando a revolução e O futuro da administração, foram traduzidos para mais de 20 idiomas e se tornaram best-sellers mundiais. Seu mais recente livro é What matters now, publicadoem 2012. Ele é autor de três matérias de capa da revista Fortune. Hamel é professor visitante da London BusinessSchool, onde dirige o projeto de construção do primeiro laboratório de inovação gerencial do mundo. Obteve o Ph.D. em Management pela Ross School of Business, da Universidade de Michigan.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Paul Ormerod</string>
+				<key>slug</key>
+				<string>paul_ormerod</string>
+				<key>speech</key>
+				<string>Cenários</string>
+				<key>theme</key>
+				<string>Network Economics: Como o novo pensamento econômico está transformando a Economia Mundial</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>17h15 às 18h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T19:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Ormerod é premiado autor de vários best-sellers, publicados em mais de dez idiomas. Entre eles se destacam Positive linking: how networks and incentives can revolutionise the world, A morte da economia e Why most things fail. Este último foi eleito um dos melhores livros de negócios do ano pela revista Businessweek. Seus livros já venderam mais de 1 milhão de cópias em todo o mundo. Foi fundador do Henley Centre for Forecastinge é cofundador do Volterra Partners, empresa de consultoria econômica. Entre seus clientes destacam-se organizações do porte do World Bank, Unilever, Diageo e Tesco. Foi eleito membro da British Academy of SocialSciences e Distinguished Fellow do Instituto de Estudos Avançados da University of Durham. É formado em Economia pela Cambridge University eobteve o mestrado em Economia e Econometria pela Oxford University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Clóvis de Barros Filho</string>
+				<key>slug</key>
+				<string>clovis_de_barros_filho</string>
+				<key>speech</key>
+				<string>Alta Performance</string>
+				<key>theme</key>
+				<string>Cuidar de pessoas: amor, generosidade e trabalho / &quot;Foco no resultado&quot;: miopia dos (outros) valores / Qualidade de vida ou vida de qualidade?</string>
+				<key>info_date</key>
+				<string>04, 05 e 06 de novembro</string>
+				<key>info_hour</key>
+				<string>16h00 às 16h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T18:00:00Z</date>
+						<key>minutes</key>
+						<string>30</string>
+					</dict>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T18:00:00Z</date>
+						<key>minutes</key>
+						<string>30</string>
+					</dict>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T18:00:00Z</date>
+						<key>minutes</key>
+						<string>30</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Este ano ele volta ao palco da HSM ExpoManagement para trazer, com seu estilo único e bem-humorado, conceitos fundamentais para a gestão de pessoas de alta performance. Clóvis de Barros Filho é professor livre-docente de Ética da Escola de Comunicações e Artes da Universidade de São Paulo. Pesquisador da Unesco indicado por concurso pelo Ministério da Justiça. É autor de 20 livros, nas áreas de ética, filosofia e comunicação. Idealizador e palestrante do Espaço Ética (www.espacoetica.com.br). Consultor em ética corporativa: identificação dos valores morais vigentes, atualização de códigos, esclarecimento dos seus conteúdos normativos, aderência das práticas aos valores da empresa, ouvidoria externa para questões éticas. Ministra cursos nas empresas sobre valores, identidade, eficácia, felicidade e realização no trabalho e temas afins. Obteve Ph.D. pelas Universidades de Paris e de São Paulo.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Michael Beer</string>
+				<key>slug</key>
+				<string>michael_beer</string>
+				<key>speech</key>
+				<string>Alta Performance</string>
+				<key>theme</key>
+				<string>Empresas de Alta Performance e Alto Engajamento</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>18h15 às 19h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T20:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É fundador e chairman da consultoria empresarial TruePoint, com escritórios em Boston, Londres e Estocolmo, que auxilia empresas líderes em todo o mundo a alcançar melhorias significativas e sustentáveis em seus resultados. É autor de diversos artigos da Harvard Business Review e de 11 livros, entre eles os best-sellers Managing human assets, Breaking the code of change e Highcommitment high performance. Seu livro mais recente, Higher ambition: how great leaders create economic and social value, explora os bastidores gerenciais deempresas como Campbell’s Soup, IKEA, Volvo, entre outras. Ao longo de sua carreira acadêmica, Beer foi agraciado com diversos prêmios, entre eles o Scholar-Practitioner Award da Academy of Management. Obteve o Ph.D. em Management pela Ohio State University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Betania Tanure</string>
+				<key>slug</key>
+				<string>betania_tanure</string>
+				<key>speech</key>
+				<string>Alta Performance</string>
+				<key>theme</key>
+				<string>&quot;Inércia&quot; Organizacional x Desempenho Excepcional - o que você está construindo?</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É autora de vários livros, entre eles Estratégia e gestão empresarial, com Sumantra Ghoshal, e A gestão de pessoas no Brasil, com Paul Evans (Insead) e Vladimir Pucik (IMD). Em 2011 lançou três livros em parceria com Roberto Patrus: Natura: a realização de um sonho, com depoimentos de Luiz Seabra; Os dois lados da moeda em fusões e aquisições, com Fabio Barbosa; e A virada estratégica da Fiat do Brasil, com Cledorvino Belini. Tem prestado consultoria para diversas empresas nacionais e internacionais, como Itaú, CPFL, Embraer, Gerdau, IBM, Usiminas, Natura, Vale, Kimberly-Clark, entre outras. Faz parte do Conselho de Administração do Grupo RBS e Vigor. Obteve Ph.D. em Administração pela Brunel University, na Inglaterra.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vicente Falconi</string>
+				<key>slug</key>
+				<string>vicente_falconi</string>
+				<key>speech</key>
+				<string>Alta Performance</string>
+				<key>theme</key>
+				<string>Gestão Eficaz: Práticas de gestão que conduzem a resultados revolucionários</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>11h00 às 12h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T13:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Obteve o Ph.D. em Engenharia Metalúrgica pela Colorado School of Mines.“O professor Falconi é um dos pilares fortes na nossa cultura e tem ajudado muito no desenvolvimento das empresas em que temos participação”, afirmam Jorge Paulo Lemann, Marcel Telles e Carlos Alberto Sicupira. Falconi é, aliás, membro do Conselho de Administração da Ambev e consultor para várias instâncias de governo do País. Autor de seis livros que venderam mais de 1 milhão de exemplares, entre eles O verdadeiro poder. A renda integral da venda desse livro é revertida para o Instituto Social para Motivar, Apoiar e Reconhecer Talentos (ISMART), voltado para apoiar, com educação de primeira qualidade, os jovens de alto potencial que têm menor poder aquisitivo. Falconi foi o único latino-americano indicado como uma das “21 vozes do século 21” pela American Society for Quality. Ainda foi condecorado com a prestigiosa Ordem de Rio Branco pelo governo brasileiro.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Michael Silverstein</string>
+				<key>slug</key>
+				<string>michael_silverstein</string>
+				<key>speech</key>
+				<string>Marketing</string>
+				<key>theme</key>
+				<string>As mulheres querem mais: como conquistar o mercado que mais cresce no mundo</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>18h15 às 19h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T20:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É o coautor de três outros livros, entre eles The $ 10 trillion prize, Treasure hunt e Trading up: why consumers want new luxury goods, este um best-seller da Businessweek. Silverstein é também autor de artigos publicados naHarvard Business Review. Já foi entrevistado inúmeras vezes em programas de TV da CNBC, ABC, NBC e FOX News. É citado regularmente em publicações importantes como The Wall Street Journal, The Times de Londres, Newsweek e Financial Times. Silverstein é sócio do Boston Consulting Group, uma das mais importantes empresas de consultoria domundo, e o atual líder da divisão global de consumo. Formou-se em Economia e História pela Brown University e obteve um MBA com honras pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Jaime Troiano</string>
+				<key>slug</key>
+				<string>jaime_troiano</string>
+				<key>speech</key>
+				<string>Marketing</string>
+				<key>theme</key>
+				<string>O Branding no centro da gestão: da responsabilidade de alguns para o compromisso de todos</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>17h15 às 18h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T19:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Jaime Troiano é um dos mais respeitados profissionais de Branding no Brasil e pioneiro nessa atividade no País. É presidente do Grupo Troiano de Branding, empresa que atua há 20 anos no mercado brasileiro e latino-americano. Já assessorou centenas de organizações em projetos de gestão de marcas e comportamento do consumidor, em setores tais como serviços, consumo, empresas de comunicação, B2B, duráveis e veículos. Foi vice-presidente de planejamento na Young &amp; Rubicam, Lintas e BBDO, para o Brasil e América Latina. Atualmente, é articulista do Portal da HSM e colunista da Rádio BandNews FM, além de escrever para diversos periódicos de negócios, entre eles Meio &amp; Mensagem, Mundo do Marketing e Revista de Marketing Industrial. É autor do livro As marcas no divã: uma análise de consumidores e criação de valor (ed. Globo). Tem dezenas de artigos, papers e estudos publicados no Brasil e exterior sobre análise de marca e comportamento do consumidor. Formado em Engenharia Química pela Faculdade de Engenharia Industrial (FEI) e em Sociologia pela Universidade de São Paulo (USP).</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Regis McKenna</string>
+				<key>slug</key>
+				<string>regis_mckenna</string>
+				<key>speech</key>
+				<string>Marketing</string>
+				<key>theme</key>
+				<string>A convergência do Marketing e da Tecnologia da Informação: novos modelos de negócio</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>18h15 às 19h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T22:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T20:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Foi responsável pela estratégia de marketing e lançamento de muitos dos produtos que vivem transformando o mundo nesta era da informação. McKenna trabalhou nos estágios iniciais de algumas das empresas que se tornaram as mais influentes e inovadoras do mundo, como Apple, Intel, Microsoft, 3COM, entre outras. Foi considerado, pela San Jose Mercury News, uma das 100 pessoas responsáveis pelo Vale do Silício ser oque é hoje. McKenna é autor de cinco best-sellers, publicados em 15 idiomas, que revolucionaram o pensamento de marketing em todo o mundo. Entre eles estão Relationship marketing, Real time e Total access. Formou-se pela Duquesne University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Paul Dickinson</string>
+				<key>slug</key>
+				<string>paul_dickinson</string>
+				<key>speech</key>
+				<string>Sustentabilidade</string>
+				<key>theme</key>
+				<string>Lucrando com a próxima grande onda: como e por que a tecnologia vai liderar o caminho da sustentabilidade</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>09h15 às 10h15</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T11:15:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É especialista em sustentabilidade, diretor e fundador do Carbon Disclosure Project (CDP — Projeto de Divulgação de Informações sobre Emissões de Carbono), entidade que trabalha de perto com as maiores empresas do mundo para reduzir as emissões de carbono e melhorar a gestão da água no planeta. Paul Dickinson é um vigoroso agente de mudanças e um visionário com os pés firmemente plantados no chão. Sua visão e missão envolvem mudar a forma como as empresas atuam para que construam no mundo uma economia sustentável baseada em energia limpa e no uso eficiente de recursos. O Carbon Disclosure Project, ambiciosa organização sem fins lucrativos, foi concebido por Dickinson em 2000, após um simples pedido de informações, e hoje representa US$ 71 trilhões de capital de investimento, incentivando mais de 3 mil grandes empresas de 60 países a divulgar suas emissões de carbono e seu uso de água (incluindo 70% das empresas da S&amp;P 500 e 82% das 500 maiores empresas do mundo). Ao usar todo o poder da informação, Dickinson está na vanguarda de uma transformação verdadeiramente global que vem mudando as regras do jogo nos mercados de capital. Ele utiliza a motivação do lucro como uma força para o bem e reduzir as emissões de carbono e melhorar a gestão da água em todo o planeta. É com extremo charme que ele persuade líderes empresariais a adotar novos níveis de transparência. Foi graças a Dickinson, por exemplo, que o Walmart passou a exigir que os fornecedores divulgassem suas emissões de carbono e enfatizassem a sustentabilidade. Em 2010, Dickinson foi nomeado CEO Responsável do Ano pela revista Corporate Responsibility. Ele acredita apaixonadamente que as organizações globais têm a escala, o alcance e a infraestrutura necessários para implementar normas sustentáveis e promover soluções para as mudanças climáticas. Ele sempre enfatiza as extraordinárias oportunidades que existem para as empresas projetarem e investirem nas tecnologias e soluções que poderão salvar a Terra de uma abrupta transformação do clima. Dickinson é autor publicado, homem de negócios experiente, defensor da tecnologia e especialista em mudanças climáticas. Suas palestras são animadas, inspiradoras e focadas em soluções. Ele apresenta argumentos irrefutáveis para nos persuadir a adotar uma nova maneira — sinergética e não conflituosa — de encarar o mundo dos negócios e o meio ambiente para a criação de um futuro sustentável.</string>
+			</dict>
+		</array>
+		<key>agenda</key>
+		<array>
+			<dict>
+				<key>day</key>
+				<date>2013-11-04T09:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>credential</string>
+						<key>label</key>
+						<string>Credenciamento e Café de Boas-Vindas</string>
+						<key>hour</key>
+						<string>07h30 às 09h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Abertura Oficial em Palco</string>
+						<key>hour</key>
+						<string>09h00 às 09h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>paul_dickinson</string>
+						<key>label</key>
+						<string>Sustentabilidade</string>
+						<key>hour</key>
+						<string>09h15 às 10h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h15 às 11h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>wesley_batista</string>
+						<key>label</key>
+						<string>Estratégia</string>
+						<key>hour</key>
+						<string>11h00 às 12h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>ginni_rometty</string>
+						<key>label</key>
+						<string>Novas Organizações</string>
+						<key>hour</key>
+						<string>12h00 às 13h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>13h00 às 15h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>walter_isaacson</string>
+						<key>label</key>
+						<string>Liderança</string>
+						<key>hour</key>
+						<string>15h00 às 16h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>clovis_de_barros_filho</string>
+						<key>label</key>
+						<string>Espaço Saúde Hospital Sírio-Libanês</string>
+						<key>hour</key>
+						<string>16h00 às 16h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>16h30 às 17h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>paul_ormerod</string>
+						<key>label</key>
+						<string>Cenários</string>
+						<key>hour</key>
+						<string>17h15 às 18h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>michael_silverstein</string>
+						<key>label</key>
+						<string>Marketing</string>
+						<key>hour</key>
+						<string>18h15 às 19h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Happy Hour na Mostra de Conteúdos e Soluções</string>
+						<key>hour</key>
+						<string>19h15 às 20h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>vijay_govindarajan</string>
+						<key>label</key>
+						<string>Sessão Especial | Health Care</string>
+						<key>hour</key>
+						<string>20h00 às 22h00</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2013-11-05T09:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>credential</string>
+						<key>label</key>
+						<string>Credenciamento e Café de Boas-Vindas</string>
+						<key>hour</key>
+						<string>07h30 às 09h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Abertura Oficial em Palco</string>
+						<key>hour</key>
+						<string>09h00 às 09h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>andrew_mcafee</string>
+						<key>label</key>
+						<string>Novas Organizações</string>
+						<key>hour</key>
+						<string>09h15 às 10h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h15 às 11h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>vijay_govindarajan</string>
+						<key>label</key>
+						<string>Inovação</string>
+						<key>hour</key>
+						<string>11h00 às 12h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>michael_porter</string>
+						<key>label</key>
+						<string>Estratégia</string>
+						<key>hour</key>
+						<string>12h00 às 13h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>13h00 às 15h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>robert_lloyd</string>
+						<key>label</key>
+						<string>Inovação</string>
+						<key>hour</key>
+						<string>15h00 às 16h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>clovis_de_barros_filho</string>
+						<key>label</key>
+						<string>Espaço Saúde Hospital Sírio-Libanês</string>
+						<key>hour</key>
+						<string>16h00 às 16h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>16h30 às 17h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>gary_hamel</string>
+						<key>label</key>
+						<string>Novas Organizações</string>
+						<key>hour</key>
+						<string>17h15 às 18h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>michael_beer</string>
+						<key>label</key>
+						<string>Alta Performance</string>
+						<key>hour</key>
+						<string>18h15 às 19h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Happy Hour na Mostra de Conteúdos e Soluções</string>
+						<key>hour</key>
+						<string>19h15 às 20h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>regis_mckenna</string>
+						<key>label</key>
+						<string>Sessão Especial</string>
+						<key>hour</key>
+						<string>20h00 às 21h30</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2013-11-06T09:00:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>credential</string>
+						<key>label</key>
+						<string>Credenciamento e Café de Boas-Vindas</string>
+						<key>hour</key>
+						<string>07h30 às 09h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Abertura Oficial em Palco</string>
+						<key>hour</key>
+						<string>09h00 às 09h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>bill_george</string>
+						<key>label</key>
+						<string>Liderança</string>
+						<key>hour</key>
+						<string>09h15 às 10h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>10h15 às 11h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>vicente_falconi</string>
+						<key>label</key>
+						<string>Alta Performance</string>
+						<key>hour</key>
+						<string>11h00 às 12h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>philip_kotler</string>
+						<key>label</key>
+						<string>Estratégia</string>
+						<key>hour</key>
+						<string>12h00 às 13h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>subtype</key>
+						<string>showonly</string>
+						<key>key</key>
+						<string>Maestro João Carlos Martins</string>
+						<key>label</key>
+						<string>Ticket Cultura apresenta</string>
+						<key>hour</key>
+						<string>13h00 às 13h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>lunch</string>
+						<key>label</key>
+						<string>Almoço</string>
+						<key>hour</key>
+						<string>13h30 às 15h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>betania_tanure</string>
+						<key>label</key>
+						<string>Alta Performance</string>
+						<key>hour</key>
+						<string>15h00 às 16h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>clovis_de_barros_filho</string>
+						<key>label</key>
+						<string>Espaço Saúde Hospital Sírio-Libanês</string>
+						<key>hour</key>
+						<string>16h00 às 16h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>coffee</string>
+						<key>label</key>
+						<string>Coffee Break</string>
+						<key>hour</key>
+						<string>16h30 às 17h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>jaime_troiano</string>
+						<key>label</key>
+						<string>Marketing</string>
+						<key>hour</key>
+						<string>17h15 às 18h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>regis_mckenna</string>
+						<key>label</key>
+						<string>Marketing</string>
+						<key>hour</key>
+						<string>18h15 às 19h15</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Happy Hour na Mostra de Conteúdos e Soluções</string>
+						<key>hour</key>
+						<string>19h15 às 20h00</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>passes</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brasil Design Week</string>
+		<key>slug</key>
+		<string>bdw13</string>
+		<key>dates</key>
+		<string>04, 05 e 06 de novembro, 2013</string>
+		<key>hours</key>
+		<string>11:30 às 20:00</string>
+		<key>local</key>
+		<string>Auditório 11</string>
+		<key>tiny_description</key>
+		<string>A sexta edição da Brasil Design Week é realizada em um espaço de 400m2  dentro da HSM ExpoManagement...</string>
+		<key>description</key>
+		<string>O design brasileiro vive seu momento de maior expressão e relevância. Muita coisa aconteceu ao longo dos últimos anos. O número de escolas e cursos aumentou significativamente, centenas de escritórios se desenvolveram, profissionais talentosos foram exportados para organizações de todo o mundo e uma infinidade de prêmios internacionais foram conquistados. Todo esse processo é resultado do amadurecimento de uma atividade que há mais de quatro décadas vem construindo um espaço relevante na economia brasileira e agora busca ir além: hoje, o design brasileiro propõe-se a ser um agente de transformação da nossa indústria, se apresentando como a grande ferramenta para gerar inovação e inserir o Brasil na economia “criativa”, em âmbito mundial.
+		
+Neste contexto, a ABEDESIGN – Associação Brasileira de Empresas de Design, entidade que representa o setor, em parceria com a ABDI, Apex-Brasil e Sebrae, entendeu este como o momento oportuno para promover a Brasil Design Week, um grande evento destinado a consolidar e estabelecer um novo marco para o design brasileiro, e inspirar empresários e gestores a utilizá-lo como ferramenta estratégica de negócios. 
+Em sua 6ª edição, a Brasil Design Week reafirma a parceria exclusiva com a HSM, realizadora da Expo Management, garantindo assim a inserção do maior evento de design do Brasil na maior agenda de negócios da América Latina.
+
+Mais que uma promoção, este evento é um movimento intenso, com o objetivo de integrar empresas, órgãos governamentais e instituições de apoio ao design, para que juntos possamos construir um Brasil melhor, mais competitivo e cada vez mais inovador.
+
+A sexta edição da Brasil Design Week é realizada em um espaço de 400m2  dentro da HSM ExpoManagement, o maior evento de gestão da América Latina, que recebe mais de 15 mil visitantes.</string>
+		<key>more_info</key>
+		<string>DESIGN TRADE SHOW
+Alguns dos melhores escritórios do mercado brasileiro apresentarão suas principais inovações no campo do design, neste que é o coração do evento. Através de seus trabalhos, irão mostrar que a indústria brasileira de design possui visão estratégica, experiência, dimensão profissional e uma grande capacidade de inovação. Absolutamente imperdível para quem busca novas ideias. 
+Participantes no Design Trade Show:
+Abedesign Regional Pernambuco
+Crama Design Estratégico
+Greco Design
+Komm Design Group
+OZ Design
+Pande
+Tátil
+
+DESIGN IN VIDEO
+Apresentação digital de cases de design dos melhores escritórios do mercado brasileiro. Através de postais posicionados nas paredes e de tablets, o público poderá ter acesso ao conteúdo das empresas participantes.
+LVA Criação
+Crama Design
+Komm::
+Tátil
+Saad branding+design 
+Dezign com Z
+Commgroup
+
+BRASIL DESIGN AWARD
+O mais abrangente prêmio de inovação através do design
+O Brasil Design Award é o prêmio dos prêmios!
+Promovido pela ABEDESIGN, com a Direção de André Poppovic e realização do Centro Brasil Design, os prêmios serão entregues aos trabalhos brasileiros que acumularam o maior numero de premiações selecionadas de design, nacionais e internacionais, no ano de 2013.
+O Brasil Design Award premiará trabalhos na área de Design de Produto  e Design Gráfico, além de personalidades do setor e entidades dedicadas a promoção da categoria no Brasil.
+
+PATROCINIO: Sebrae
+ORGANIZAÇÃO: Centro Brasil Design
+
+PROJETO COMPRADOR RODADA DE NEGÓCIOS
+Em parceria com a Apex-Brasil, o Projeto Comprador fomenta a realização de negócios e gera oportunidades para realização de contatos internacionais entre empresas de design participantes do projeto Brasil Design e potenciais executivos internacionais. Um dos mais eficazes instrumentos de promoção de negócios, organizado a partir de uma dinâmica de encontros empresariais.
+
+PROJETO IMAGEM
+Exclusivo aos participantes do projeto Brasil Design, o Projeto Imagem tem por objetivo trazer jornalistas internacionais para visitar a Brasil Design Week, conhecer as agências de design e promover o design brasileiro internacionalmente. 
+
+COMITÊ ORGANIZADOR
+DIRETORIA ABEDESIGN 
+Gustavo Gelli  – Presidente
+André Poppovic  - Vice-Presidente
+Roger Rieger – Diretor de Promoção Comercial e Eventos
+Gian Franco Rocchiccioli – Diretor de Assuntos Regulatórios e Fomento
+Gisela Schulzinger – Diretora de Capacitação Empresarial
+Giovanni Vannuchi – Diretor de Relações Institucionais
+Ellen Kiss – Diretora de Relações Internacionais
+Gustavo Greco – Diretor de Imagem
+Vinicíus Iubel – Diretor ABEDESIGN Regional Paraná
+Cynthia Massote – Diretora ABEDESIGN Regional Minas Gerais
+Felipe Arcoverde - Diretor ABEDESIGN Regional Bahia
+Allyson Reis – Diretor ABEDESIGN Regional Ceará
+Paulo Oliva – Diretor ABEDESIGN Regional Pernambuco
+Marcos Sebben – Diretor ABEDESIGN Regional Santa Catarina
+Mário Verdi – Diretor ABEDESIGN Regional Rio Grande do Sul
+
+Direção Geral
+Roger Rieger –  KOMM::
+
+Brasil Design Awards
+Curador: André Poppovic  |  Organização: Centro Brasil Design
+
+equipe executiva abedesign
+Anna Carolina Maccarone – Gerente Executiva
+Bruno Fernandes – Gerente Administrativo Financeiro
+Paola Oliveira – Coordenadora do Projeto Interagência  e Inteligência Comercial
+Iara Araújo – Assistente de Atendimento
+
+ESTRATÉGIA E INOVAÇÃO
+Maurício Medeiros
+
+CONSELHO CONSULTIVO
+Manoel Müller | Luciano Deos | Fernando Faria | Frederico Gelli
+Luis Augusto Indio da Costa | Ricardo Leite 
+
+IDENTIDADE VISUAL
+OXX DESIGN
+
+ASSESSORIA DE IMPRENSA
+Lucia Faria Inteligência em Comunicação
+Marco Barone: marco@luciafaria.com.br 
+Telefone: (11) 3277-8891</string>
+		<key>show_passes</key>
+		<string>kNo</string>
+		<key>did_happen</key>
+		<string>kYes</string>
+		<key>color</key>
+		<dict>
+			<key>red</key>
+			<string>17.0</string>
+			<key>green</key>
+			<string>118.0</string>
+			<key>blue</key>
+			<string>187.0</string>
+		</dict>
+		<key>panelists</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Suzana Apelbaum</string>
+				<key>slug</key>
+				<string>suzana_apelbaum</string>
+				<key>speech</key>
+				<string>Marcas e Você Fazendo o Bem</string>
+				<key>info_date</key>
+				<string>04 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-04T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Vivendo em NY e para sempre brasileira, Suzana trabalha há quase 20 anos como Diretora de Criação publicitária. Ela passou por agências como Africa, JWT e Anomaly, onde criou campanhas digitais, projetos de conteúdo e inovação premiados internacionalmente, para marcas como Converse, Coca-Cola, Google, Fiat, Red Bull, entre outras. Suzana é também consultora de Transmedia no Asas da Imaginação, um coletivo que cria projetos de arte e entretenimento, em parceria com a Bossa Nova Filmes.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Gustavo Gelli</string>
+				<key>slug</key>
+				<string>gustavo_gelli</string>
+				<key>speech</key>
+				<string>Abertura Brasil Design Week</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>11h30 às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T13:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Sócio fundador e CFO da Tátil Design de Ideias, agência responsável pelo desenvolvimento das marcas dos Jogos Olímpicos e Paralímpicos Rio 2016, Gustavo Gelli tem 45 anos e é formado em Administração de Empresas e tem pós-graduação em Finanças pelo IBMEC. Tomou posse no dia 28 de maio como presidente da Associação Brasileira de Empresas de Design (Abedesign) para o biênio 2013/2015. Integrante da associação desde sua fundação, em 2006, está conduzindo um processo junto à economia criativa com a definição de marcos regulatórios para o setor. Gustavo integra também o colegiado que representa a área de Design na Secretaria de Economia Criativa, em Brasília.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Gian Franco Rocchiccioli</string>
+				<key>slug</key>
+				<string>gian_franco_rocchiccioli</string>
+				<key>speech</key>
+				<string>Fórum de Políticas Governamentais e Fomento</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>11h30 às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T13:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Formado em publicidade pela FIAM/SP trabalha com design há mais de 20 anos. Ao longo destes anos, liderou como estrategista o processo de desenvolvimento e gestão de grandes marcas como: Santander Global Banking and Markets, Bauducco, Banco Toyota, Grupo Pão de Açúcar e Hellmann’s Latin América. É atualmente Chief Strategy Officer da Pande e Chief Design Officer do Stetik Group, atuando como especialista em design da Holding. Atua como Diretor de Assuntos Regulatórios e Fomento na ABEDESIGN (Associação Brasileira das Empresas de Design) liderando a pasta de Promoção Comercial, foi Coordenador Geral da Brasil Design Week, um dos maiores eventos corporativos de Design do mercado brasileiro, de 2008 a 2011 e Coordenador Geral da Missão Empresarial ABEDESIGN-APEX em Cannes 2011.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Marcelo Coimbra</string>
+				<key>slug</key>
+				<string>marcelo_coimbra</string>
+				<key>speech</key>
+				<string>Fórum de Políticas Governamentais e Fomento</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>11h30 às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T13:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Marcelo Coimbra, graduado e mestre em Direito pela USP. Coordenador do MBA em Governança Corporativa da FIPECAFI/USP. Coordenador do Comitê de Ética Empresarial e Governança Corporativa da Câmara de Comércio Brasil-Alemanha. Assessor Jurídico da Abedesign. </string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Gabriel Patrocínio</string>
+				<key>slug</key>
+				<string>gabriel_patrocinio</string>
+				<key>speech</key>
+				<string>Fórum de Políticas Governamentais e Fomento</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>11h30 às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T13:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Gabriel Patrocinio graduou-se pela ESDI/UERJ (1982), escola da qual foi vice-diretor (2000-2004) e diretor (2004-2008). Além de sua atuação profissional como designer e consultor de design propriedade industrial, foi membro do Grupo Consultivo de Design do Governo do Estado do Rio de Janeiro, e um dos articuladores do Fórum Brasil Design. Fez palestras e workshops sobre design brasileiro na Europa e Asia, além de ter organizado dois seminários internacionais sobre politicas de design (BNDES 2004 e Brasil Design Week 2008). Faz parte do grupo consultivo do Victoria and Albert Museum, Londres, para a exposição Brazil Design Now (2016). Finalizou recentemente (maio de 2013), doutorado em design pela Universidade de Cranfield, no Reino Unido, sobre políticas nacionais e regionais de design, como bolsista do CNPq. É membro da recém-eleita diretoria da ADG, Associação de Designers Gráficos (2013-2015). Mantém ainda um blog, em português e inglês, sobre o assunto (www.designpolicies.com / www.politicasdedesign.com).</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Rafael Prado</string>
+				<key>slug</key>
+				<string>rafael_prado</string>
+				<key>speech</key>
+				<string>Fórum de Políticas Governamentais e Fomento</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>11h30 às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T13:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tokie Esaka</string>
+				<key>slug</key>
+				<string>tokie_esaka</string>
+				<key>speech</key>
+				<string>Storytelling: A essência da marca Disney</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>13h30 às 14h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T15:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Formada na FAU-USP (Faculdade de Arquitetura e Urbanismo da USP), especialização em Design de Interiores na Interior Design School em Tokyo, possui vivência professional internacional (trabalhou por 4 anos como Diretora de Arte na Asia Advertising Agency em Tokyo, atendendo clientes como Toyota, Aiwa, Banco de Tokyo, entre outros).  Alguns prêmios de Design conquistados: International Awards in Packaging (London Design, Award, New York Design Award) e alguns prêmios nacionais como Fernando Pini de Excelência Gráfica
+Atua como professora de Branding no Master de Transport Design no IED (Instituto Europeo di Design) em São Paulo em 2012 e trabalha há 14 anos na Walt Disney Company (Brasil) como responsável pela area de criação para todas as linhas de negócio: produtos de consume, cinema, DVD/Blu-Ray, Eventos, Rádio Disney, Online e canais Disney. Responsável pelo branding da Disney Brasil. Alguns prêmios e projetos encabeçados na Disney: Cinemagico (Disney movie-theater project), Global Branding Guide (coordination of Branding Guide produced in Brazil, with Global Team), Stationery Cluster Guide (Best Product Development in 2004 Global Stationery Meeting to Brazil), Best Retail Program (Casas Bahia - 2008 / 2009), Disney Magic Run, Expo Disney</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Allyson Reis</string>
+				<key>slug</key>
+				<string>allyson_reis</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Formado em Design pelo Centro Design Ceará do Instituto Dragão do Mar de Arte e Cultura e em Design Estratégico pelo Istituto Europeo di Design, é sócio-diretor da Abracadabra, consultoria de design estratégico e Branding que fundou no ano de 2008 em Fortaleza.
+Ao longo dos últimos 14 anos têm atuado na estratégia e criação de projetos de branding e design, e teve alguns de seus projetos selecionados por importantes eventos nacionais, como o Prêmio Design Museu da Casa Brasileira (2005 e 2008), Salão Design Movelsul 2006 e a Bienal Brasileira de Design 2010. Com a Abracadabra ganhou destaque em 2009 ao receber dois Prêmios Brazil Design Awards. É também diretor da regional Ceará da Associação Brasileira de Empresas de Design (ABEDESIGN) e sócio-fundador da Associação Ceará Design (ACDESIGN).</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Felipe Arcoverde</string>
+				<key>slug</key>
+				<string>felipe_arcoverde</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string></string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Felipe Arcoverde, designer gráfico pela Unijorge (Centro Universitário Jorge Amado), é sócio-diretor do escritório Person Design, diretor regional Bahia da Abedesign (Associação Brasileira de Empresas de Design), membro do Comitê Gestor do Projeto Brasil Design (Abedesign e Apex-Brasil), membro do Setorial de Design da Bahia e co-criador do Portal #DesignBaiano.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Felipe Arcoverde</string>
+				<key>slug</key>
+				<string>felipe_arcoverde</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Felipe Arcoverde, designer gráfico pela Unijorge (Centro Universitário Jorge Amado), é sócio-diretor do escritório Person Design, diretor regional Bahia da Abedesign (Associação Brasileira de Empresas de Design), membro do Comitê Gestor do Projeto Brasil Design (Abedesign e Apex-Brasil), membro do Setorial de Design da Bahia e co-criador do Portal #DesignBaiano.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Paulo Oliva</string>
+				<key>slug</key>
+				<string>paulo_oliva</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Cyhrhia Massote</string>
+				<key>slug</key>
+				<string>cyhrhia_massote</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Vinicius Iubel</string>
+				<key>slug</key>
+				<string>vinicius_iubel</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Vinícius Iubel, diretor regional da Abedesign Paraná, diretor também da ProdesignPR (Associação dos Profissionais de Design do Paraná), e diretor da Megabox Design, escritório especializado no desenvolvimento de produtos da criação a produção, com diversos prêmios nacionais e internacionais, e mais de 15 anos de atuação no mercado de design.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Marcos Sebben</string>
+				<key>slug</key>
+				<string>marcos_sebben</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Mario Verdi</string>
+				<key>slug</key>
+				<string>mario_verdi</string>
+				<key>speech</key>
+				<string>Design Brasileiro</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Bruno Monte Jorge</string>
+				<key>slug</key>
+				<string>bruno_monte_jorge</string>
+				<key>speech</key>
+				<string>Plataforma de conteúdo transmídia para O Boticário Viva Linda</string>
+				<key>info_date</key>
+				<string>05 de novembro</string>
+				<key>info_hour</key>
+				<string>16h30 às 17h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-05T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Roselle Faria Lemos</string>
+				<key>slug</key>
+				<string>roselle_faria_lemos</string>
+				<key>speech</key>
+				<string>Bienal Brasileira de Design - Florianópolis 2015</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>13h30 às 14h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T15:30:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Cristiana Grether</string>
+				<key>slug</key>
+				<string>cristiana_grether</string>
+				<key>speech</key>
+				<string>Yes, I Can Design</string>
+				<key>info_date</key>
+				<string>06 de novembro</string>
+				<key>info_hour</key>
+				<string>15h00 às 16h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2013-11-06T17:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Graduada pela PUC-RJ em Design, Cristiana Grether ganhou uma bolsa de estudos da OEA para fazer Mestrado em Visual Communications &amp; Tipography na Pratt Institute, em Nova Iorque. Acabou morando 6 anos lá, quando trabalhou na KPE Interactive e depois com o Designer de Moda Giovanni Bianco.
+Em 2002 retornou ao Brasil e se juntou ao time da Ana Couto Branding &amp; Design, focando na gestão de marcas Corporativas, e depois a Tátil Design de Idéias, liderando um time que atendia clientes como Nokia, Procter e Gamble e focando em Estratégia de Retail e Experiências de Marca.
+Em 2007 foi chamada pela Landor Associates de Londres para se juntar a seu time de design, desenvolvendo Sistemas de Identidades Visuais para clientes como British Gas, KLM Airlines, Ernst&amp;Young, Invensys, Sony e Jetlite.
+Atualmente está de volta ao Brasil liderando a área local de Design da he Coca-Cola Company</string>
+			</dict>
+		</array>
+		<key>agenda</key>
+		<array>
+			<dict>
+				<key>day</key>
+				<date>2013-11-04T13:30:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Design Trade Show</string>
+						<key>hour</key>
+						<string>11h30 às 11h45</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Projeto Comprador/Imagem</string>
+						<key>hour</key>
+						<string>11h30 às 18h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Design como Ferramenta de Inovação</string>
+						<key>sublabel</key>
+						<string>para Micro e Pequenas Empresas - SEBRAE</string>
+						<key>hour</key>
+						<string>13h30 às 14h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Marcas e Você fazendo o bem</string>
+						<key>sublabel</key>
+						<string>com Suzana Apelbaum</string>
+						<key>hour</key>
+						<string>15h00 às 16h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>&quot;Quais as fronteiras do Design Brasileiro&quot;</string>
+						<key>sublabel</key>
+						<string>Mediação: Regina Augusto (Meio e Mensagem)</string>
+						<key>hour</key>
+						<string>16h30 às 17h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Cerimônia Brasil Design Awards</string>
+						<key>hour</key>
+						<string>18h00 às 19h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Happy Hour</string>
+						<key>hour</key>
+						<string>19h00 às 20h00</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2013-11-05T13:30:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Abertura Oficial Brasil Design Week 2013</string>
+						<key>sublabel</key>
+						<string>com Gustavo Gelli e Roger Rieger</string>
+						<key>hour</key>
+						<string>11h30 às 11h45</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Fórum: &quot;Fomento e Políticas Públicas de Incentivo ao Design&quot;</string>
+						<key>hour</key>
+						<string>11h45 às 12h45</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Projeto Comprador/Imagem</string>
+						<key>hour</key>
+						<string>11h30 às 18h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Design Trade Show - para visitantes</string>
+						<key>hour</key>
+						<string>11h30 às 20h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Storytelling: A Essência da Marca Disney</string>
+						<key>sublabel</key>
+						<string>com Tokie Esaka/Disney</string>
+						<key>hour</key>
+						<string>13h00 às 14h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Design Brasileiro - Um panorama do Design Nacional</string>
+						<key>sublabel</key>
+						<string>através da visão dos diretores regionais da ABEDesign</string>
+						<key>hour</key>
+						<string>15h00 às 18h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Plataforma de Conteúdo Transmídia: O Boticário Viva</string>
+						<key>sublabel</key>
+						<string>com Bruno Monte Jorge/O Boticário</string>
+						<key>hour</key>
+						<string>18h00 às 19h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Foto Geral Brasil Design Week</string>
+						<key>hour</key>
+						<string>19h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Happy Hour</string>
+						<key>hour</key>
+						<string>19h00 às 20h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Sessão Especial HSM com Regis McKenna</string>
+						<key>sublabel</key>
+						<string>&quot;A Sabedoria e Inspiração de Steve Jobs&quot;</string>
+						<key>hour</key>
+						<string>20h00 às 21h00</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>day</key>
+				<date>2013-11-06T13:30:00Z</date>
+				<key>schedule</key>
+				<array>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Design Trade Show - para visitantes</string>
+						<key>hour</key>
+						<string>11h30 às 20h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Reunião Fórum Brasil Design</string>
+						<key>hour</key>
+						<string>11h30 às 13h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Projeto Comprador/Imagem</string>
+						<key>hour</key>
+						<string>11h30 às 18h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Bienal Florianópolis 2015</string>
+						<key>sublabel</key>
+						<string>Roselie Faria Lemos</string>
+						<key>hour</key>
+						<string>13h30 às 14h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>Yes, I Can Design</string>
+						<key>sublabel</key>
+						<string>Cristina Grether (Coca-Cola)</string>
+						<key>hour</key>
+						<string>15h00 às 16h00</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>show</string>
+						<key>key</key>
+						<string></string>
+						<key>label</key>
+						<string>C.E.S.A.R.</string>
+						<key>sublabel</key>
+						<string>(Centro de Estudos e Sistemas Avançados do Recife)</string>
+						<key>hour</key>
+						<string>16h30 às 17h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>break</string>
+						<key>key</key>
+						<string>happyhour</string>
+						<key>label</key>
+						<string>Confraternização ABEDESIGN</string>
+						<key>hour</key>
+						<string>20h00 às 21h00</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>passes</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mostra de Conteúdos e Soluções</string>
+		<key>slug</key>
+		<string>mostra13</string>
+		<key>dates</key>
+		<string>04, 05 e 06 de novembro, 2013</string>
+		<key>hours</key>
+		<string>09:00 às 20:00</string>
+		<key>local</key>
+		<string>Auditórios 1 ao 11</string>
+		<key>tiny_description</key>
+		<string>Você vai vivenciar o que há de mais inovador no mundo do management, ingressando gratuitamente, na Mostra de Conteúdos e Soluções.</string>
+		<key>description</key>
+		<string>Um formato especialmente desenhado para proporcionar networking, apresentação de soluções e oportunidades de novos negócios.
+
+Além de poder participar da Mostra com 50 empresas participantes, a sua credencial ainda lhe permite assistir a mais de 120 palestras gratuitas, nos núcleos temáticos das Estações de Conhecimento (Brasil: Gestão para o Futuro, Sustentabilidade, Brasil Design Week – Inovação e Design, Atelier de Líderes e CBN Young Professionals) e nos 10 auditórios patrocinados do Ciclo de Palestras, aprofundando-se em temas que, acreditamos, sejam de seu total interesse.</string>
+		<key>show_passes</key>
+		<string>kNo</string>
+		<key>did_happen</key>
+		<string>kYes</string>
+		<key>color</key>
+		<dict>
+			<key>red</key>
+			<string>60.0</string>
+			<key>green</key>
+			<string>25.0</string>
+			<key>blue</key>
+			<string>23.0</string>
+		</dict>
+		<key>panelists</key>
+		<array/>
+		<key>agenda</key>
+		<array>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>HSM</string>
+				<key>slug</key>
+				<string>hsm</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=93</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>ESPM</string>
+				<key>slug</key>
+				<string>espm</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=94</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Café Filosófico</string>
+				<key>slug</key>
+				<string>cafe-filosofico</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=95</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Mackenzie</string>
+				<key>slug</key>
+				<string>mackenzie</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=96</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Nexial</string>
+				<key>slug</key>
+				<string>nexial</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=97</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Sustentabilidade</string>
+				<key>slug</key>
+				<string>sustentabilidade</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=98</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>CBN Young Professional</string>
+				<key>slug</key>
+				<string>cbn-young-professional</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=99</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Brasil: Gestão para o Futuro</string>
+				<key>slug</key>
+				<string>brasil-gestao-para-o-futuro</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=100</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Atelier de Líderes</string>
+				<key>slug</key>
+				<string>atelier-de-lideres</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=101</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Fórum VAGAS</string>
+				<key>slug</key>
+				<string>vagas</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=102</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string></string>
+				<key>sublabel</key>
+				<string>Brasil Design Week</string>
+				<key>slug</key>
+				<string>bdw</string>
+				<key>link</key>
+				<string>http://agenda.expositoronline.com.br/?eventid=8&amp;idAuditorio=103</string>
+			</dict>
+		</array>
+		<key>agenda2</key>
+		<array>
+			<dict>
+				<key>label</key>
+				<string>Estação do Conhecimento</string>
+				<key>sublabel</key>
+				<string>Brasil: Gestão para o futuro</string>
+				<key>slug</key>
+				<string>brasil-gestao-para-o-futuro</string>
+				<key>more_info</key>
+				<string>Uma iniciativa HSM pela valorização da gestão empresarial brasileira.
+
+A Estação irá abordar a gestão para o futuro, com um olhar para as oportunidades e desafios que o país irá enfrentar, trazendo informações e discussões importantes para as decisões empresariais.
+
+Quais as mudanças de cenário que irão influenciar as decisões dos líderes brasileiros?
+O que é necessário para prosperar neste novo Brasil?
+
+Como alguns dos principais setores da economia estão se organizando para competir em um cenário de competição global?
+
+Para ajudar a responder a essas e outras perguntas, construímos uma grade que une uma visão prática com grandes estudiosos sobre temas como: empreendedorismo, ética, economia, digital, varejo, entre outros.</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string>Estação do Conhecimento</string>
+				<key>sublabel</key>
+				<string>Estação Sustentabilidade</string>
+				<key>slug</key>
+				<string>estacao-sustentabilidade-cidades-do-futuro</string>
+				<key>more_info</key>
+				<string>O objetivo deste espaço é reunir grupos de lideranças, formadores de opinião, para promover o diálogo sobre as políticas públicas existentes no Brasil. Por meio dessa discussão, queremos engajar o público presente e transformar o local em um ambiente de criação coletiva e troca de experiências.
+
+E, para que esta discussão sobre as políticas públicas possa ser enriquecedora, os contextos problemáticos atuais da sociedade brasileira serão utilizados como exemplo na busca das definições necessárias para a construção do país das Cidades do Futuro.</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string>Estação do Conhecimento</string>
+				<key>sublabel</key>
+				<string>Atelier de Líderes</string>
+				<key>slug</key>
+				<string>atelier-de-lideres</string>
+				<key>more_info</key>
+				<string>Conhecimento e inspiração para o desenvolvimento de grandes líderes.
+
+Comandado por César Souza, um dos maiores especialistas em liderança no País e curador de conteúdo do espaço, esta Estação visa contribuir para o incremento da capacidade de gestão dos líderes brasileiros, em conversas com empresários e executivos, discutindo, analisando e apontando caminhos para combater a atual escassez de líderes em diversas áreas. Iniciativa da HSM e da Empreenda.</string>
+			</dict>
+			<dict>
+				<key>label</key>
+				<string>Estação do Conhecimento</string>
+				<key>sublabel</key>
+				<string>CBN Young Professional</string>
+				<key>slug</key>
+				<string>cbn-young-professional</string>
+				<key>more_info</key>
+				<string>Construindo uma nova geração de executivos.
+
+A 3ª Edição do CBN Young Professional apresenta conteúdos para jovens profissionais que desejam ampliar suas visões sobre gestão e negócios. Durantes os 3 dias, âncoras e comentaristas da CBN apresentarão para o jovem profissional aspectos ligados a sua carreira, economia, gestão, educação e sucesso.
+
+Ao final de cada palestra, participe ainda da rodada de perguntas e respostas com Mário Sérgio Cortela, Juca Kfouri, Max Gehringer entre outros.</string>
+			</dict>
+		</array>
+		<key>passes</key>
+		<array/>
+	</dict>
+</array>
+</plist>
