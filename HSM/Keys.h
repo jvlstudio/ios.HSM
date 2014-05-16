@@ -40,6 +40,7 @@
 #define KEY_COVER                   @"cover"
 #define KEY_PICTURE                 @"picture"
 #define KEY_IMAGE                   @"image"
+#define KEY_IMAGE_EXP               @"image_exp"
 #define KEY_NUMBER                  @"number"
 #define KEY_VERSION                 @"version"
 #define KEY_DATA                    @"data"
@@ -72,6 +73,8 @@
 #define KEY_TINY_DESCRIPTION        @"tiny_description"
 #define KEY_MORE_INFO               @"more_info"
 #define KEY_THEME                   @"theme"
+#define KEY_DID_HAPPEN              @"did_happen"
+#define KEY_VALIDATE                @"validate"
 
 #define KEY_SPEECH                  @"speech"
 #define KEY_DATES                   @"dates"

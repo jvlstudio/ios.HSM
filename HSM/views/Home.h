@@ -8,9 +8,11 @@
 
 #import "KDViewController.h"
 
-@interface Home : KDViewController
+@interface Home : KDViewController <UIScrollViewDelegate>
 {
     IBOutlet UIScrollView *scr;
+    IBOutlet UIScrollView *scrDisplay;
+    IBOutlet UIPageControl *pageControl;
     IBOutlet UIView *v;
     
     IBOutlet UIButton *butExpo;

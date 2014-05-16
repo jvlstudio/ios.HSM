@@ -7,9 +7,11 @@
 //
 
 #import "Agenda.h"
+
 #import "AgendaCell.h"
 #import "AgendaBreakCell.h"
 #import "AgendaShowCell.h"
+#import "AgendaButtonDay.h"
 
 #import "EventManager.h"
 
@@ -21,58 +23,30 @@
 #define CELL_IDENTIFIER         @"agendaCell"
 #define CELL_BREAK_IDENTIFIER   @"agendaBreakCell"
 #define CELL_SHOW_IDENTIFIER    @"agendaShowCell"
-#define CELL_BG                 @"hsm_agenda_cell.png"
-#define CELL_BG_2               @"hsm_agenda_cell_2.png"
-#define CELL_BG_3               @"hsm_agenda_cell2.png"
+#define CELL_BG                 @"hsm_v5_agenda_cell_speech.png"
+#define CELL_BG_2               @"hsm_v5_agenda_cell_speech_sel.png"
+#define CELL_BG_3               @"hsm_v5_agenda_cell.png"
 
-#define BUT_DAY1_OFF            @"hsm_agenda_bt_day1.png"
-#define BUT_DAY2_OFF            @"hsm_agenda_bt_day2.png"
-#define BUT_DAY3_OFF            @"hsm_agenda_bt_day3.png"
-#define BUT_DAY1_ON             @"hsm_agenda_bt_day1_on.png"
-#define BUT_DAY2_ON             @"hsm_agenda_bt_day2_on.png"
-#define BUT_DAY3_ON             @"hsm_agenda_bt_day3_on.png"
+#pragma mark - Interface
 
 @interface Agenda ()
-- (void) deselectButtons;
+- (void) manageButtons;
 @end
+
+#pragma mark - Implementation
 
 @implementation Agenda
 {
-    FRTools *tools;
     EventManager *manager;
 }
 
-- (void)viewDidLoad
+#pragma mark -
+#pragma mark Controller Methods
+
+- (void) viewDidLoad
 {
     [super viewDidLoadWithBackButton];
-    //[self setTitle:[NSString stringWithFormat:@"Agenda: %@", [[self dictionary] objectForKey:KEY_NAME]]];
-    [self setTitle:@"Agenda"];
-    
-    // ...
-    tools       = [[FRTools alloc] initWithTools];
-    manager     = [[EventManager alloc] initWithEvent:[self dictionary]];
-    
-    // data ..
-    // ...
-    // agenda init with an array with all event's days (dictionaries)
-    // we have to split'em in X arraies, where X is the total number
-    agendaDays  = [manager agenda];
-    // scheduleDays: array with the "tableData"'s
-    scheduleDays= [NSMutableArray array];
-    for (NSDictionary *agendaObject in agendaDays)
-    {
-        [scheduleDays addObject:[agendaObject objectForKey:KEY_SCHEDULE]];
-    }
-    // finally, we set the current
-    // array for table (the first) ..
-    // ...
-    tableData   = [scheduleDays objectAtIndex:ZERO];
-    
-    [table setTableHeaderView:tableHeader];
-    
-    // ad..
-    Advertising *ad = [[Advertising alloc] initOnView:[self view]];
-    [ad correctRectOfView:table];
+    [self setConfigurations];
 }
 - (void) viewWillAppear:(BOOL)animated
 {
@@ -82,38 +56,71 @@
 }
 
 #pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
+    //[self setTitle:[NSString stringWithFormat:@"Agenda: %@", [[self dictionary] objectForKey:KEY_NAME]]];
+    [self setTitle:@"Agenda"];
+    
+    // ...
+    tools       = [[FRTools alloc] initWithTools];
+    manager     = [[EventManager alloc] initWithEvent:[self dictionary]];
+    
+    CGRect rect = table.frame;
+    rect.size.height -= IPHONE5_COEF;
+    [table setFrame:rect];
+    
+    // data ..
+    // ...
+    // agenda init with an array with all event's days (dictionaries)
+    // we have to split'em in X arraies, where X is the total number
+    agendaDays  = [manager agenda];
+    // scheduleDays: array with the "tableData"'s
+    scheduleDays= [NSMutableArray array];
+    for (NSDictionary *agendaObject in agendaDays){
+        [scheduleDays addObject:[agendaObject objectForKey:KEY_SCHEDULE]];
+    }
+    // finally, we set the current
+    // array for table (the first) ..
+    // ...
+    tableData   = [scheduleDays objectAtIndex:ZERO];
+    
+    [table setTableHeaderView:tableHeader];
+    [self manageButtons];
+    
+    // ad..
+    //Advertising *ad = [[Advertising alloc] initOnView:[self view]];
+    //[ad correctRectOfView:table];
+    if ([adManager hasAdWithCategory:kAdBannerFooter])
+        [adManager addAdTo:table type:kAdBannerFooter];
+}
+
+#pragma mark -
 #pragma mark IBActions
 
-- (IBAction) pressDay1:(id)sender
+- (IBAction) segmentChanged:(UISegmentedControl*)sender
 {
-    [self deselectButtons];
-    [imgButDay1 setImage:[UIImage imageNamed:BUT_DAY1_ON]];
-    tableData = [scheduleDays objectAtIndex:0];
-    [table reloadData];
-}
-- (IBAction) pressDay2:(id)sender
-{
-    [self deselectButtons];
-    [imgButDay2 setImage:[UIImage imageNamed:BUT_DAY2_ON]];
-    tableData = [scheduleDays objectAtIndex:1];
-    [table reloadData];
-}
-- (IBAction) pressDay3:(id)sender
-{
-    [self deselectButtons];
-    [imgButDay3 setImage:[UIImage imageNamed:BUT_DAY3_ON]];
-    tableData = [scheduleDays objectAtIndex:2];
+    tableData = [scheduleDays objectAtIndex:sender.selectedSegmentIndex];
     [table reloadData];
 }
 
 #pragma mark -
-#pragma mark Methods
+#pragma mark Private Methods
 
-- (void) deselectButtons
+- (void) manageButtons
 {
-    [imgButDay1 setImage:[UIImage imageNamed:BUT_DAY1_OFF]];
-    [imgButDay2 setImage:[UIImage imageNamed:BUT_DAY2_OFF]];
-    [imgButDay3 setImage:[UIImage imageNamed:BUT_DAY3_OFF]];
+    if ([agendaDays count] < 3)
+        [segment removeSegmentAtIndex:2 animated:NO];
+    
+    for (uint i=0; i<[agendaDays count]; i++) {
+        NSDictionary *event = [agendaDays objectAtIndex:i];
+        NSArray *text = [tools explode:[event objectForKey:KEY_LABEL] bySeparator:@"-"];
+        [segment setTitle:[NSString stringWithFormat:@"%@ %@", [text objectAtIndex:0], [text objectAtIndex:1]] forSegmentAtIndex:i];
+    }
+    
+    [segment setSelectedSegmentIndex:0];
 }
 
 #pragma mark -
@@ -177,8 +184,13 @@
         [[cell labHourInit] setText:[hours objectAtIndex:0]];
         [[cell labHourFinal] setText:[hours objectAtIndex:1]];
         
+        NSLog(@"%@", strImg);
+        
         [[cell labText] alignBottom];
         [[cell labSubText] alignTop];
+        
+        [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:15.0]];
+        //[[cell labSubText] setFont:[UIFont fontWithName:FONT_REGULAR size:12.0]];
     }
     // agenda show cell..
     // ...
@@ -212,6 +224,7 @@
             [[cell labHourFinal] setText:KEY_EMPTY];
         
         [[cell labText] alignBottom];
+        [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:15.0]];
     }
     // agenda break cell..
     // ...
@@ -229,6 +242,7 @@
         [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
         [[cell labHourInit] setText:[hours objectAtIndex:0]];
         [[cell labHourFinal] setText:[hours objectAtIndex:1]];
+        [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:15.0]];
     }
     
     return cell;

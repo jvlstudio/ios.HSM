@@ -4,6 +4,282 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Confiança Criativa</string>
+		<key>slug</key>
+		<string>confianca-criativa</string>
+		<key>subtitle</key>
+		<string>Libere sua criatividade e implemente suas idéias</string>
+		<key>price</key>
+		<string>consulte</string>
+		<key>description</key>
+		<string>A inovação e a criatividade são reconhecidas como os principais elementos por trás do sucesso nos negócios e, atualmente, são tidas como características fundamentais em líderes. Mas muitos acham que a criatividade é exclusiva de alguns poucos “tipos criativos” — pintores, escultores, designers ou escritores profissionais. Em Confiança criativa, os irmãos Kelley nos lembram que todos temos muitas ideias e insights para oferecer. Eles mostram que a criatividade é uma abordagem proativa na busca por soluções. Nem todos somos artistas, mas podemos ser advogados, médicos, gerentes ou vendedores mais criativos.
+
+Inspirados em casos da IDEO e da d.school em Stanford, os irmãos Kelley nos estimulam a beber da nascente da criatividade e da imaginação ao lidar com os problemas. Revelam estratégias específicas para libertar a inventividade de cada um, pois, segundo eles, a criatividade e a capacidade de inovação são como os músculos:
+
+— John Maeda, presidente e CEO da Rhode Island School of Design quanto mais você usa, mais fortes ficam.
+
+Confiança criativa nos dá a coragem de fazer a diferença e nos inspira a combinar ideias arrojadas com ações efetivas, que contribuem tanto para a empresa e a carreira quanto para a vida.
+
+
+
+Comentários sobre o livro:
+
+“Confiança criativa é um livro que destrói mitos e constrói músculos. Primeiro, ele acaba com a lenda de que só algumas pessoas são criativas, para depois fornecer um plano de ação prático e perspicaz para alavancar sua capacidade de inovação. Se você quer se tornar mais criativo, leia as palavras dos irmãos Kelley, siga os conselhos e, então — como eles mesmos dizem — faça alguma coisa!”
+
+Daniel H. Pink, autor de Drive, a whole new mind e de Saber vender é da natureza humana
+
+“Este livro mudou minha vida. Confiança criativa é uma rara combinação entre lições de liderança, emoção e exercícios práticos que inspiram a reacender a paixão criativa e a coragem de inovar. Já me sinto mais corajosa.”
+
+Brené Brown, PhD, autora do best-seller A coragem de ser imperfeito
+
+“Numa mistura entre aquele famoso discurso de formatura de Steve Jobs sobre a criatividade e a versão moderna de Qual a cor de seu paraquedas?, os irmãos Kelley nos oferecem ferramentas simples, porém eficazes, para pessoas que não se consideram criativas: líderes de negócios e profissionais em busca de uma maior confiança para inovar.”</string>
+		<key>dimensions</key>
+		<string>15,5 x 23 cm</string>
+		<key>pages</key>
+		<string>264</string>
+		<key>codebar_book</key>
+		<string>9 788567 389073</string>
+		<key>codebar_ebook</key>
+		<string>978-85-67389-07-3</string>
+		<key>author_name</key>
+		<string>David Kelley &amp; Tom Kelley</string>
+		<key>author_description</key>
+		<string>David Kelley - em 1978, participou da criação da IDEO, empresa de design que criou vários ícones da geração digital: o primeiro mouse da Apple, o primeiro Treo, os botões polegar pra cima/polegar pra baixo do controle remoto da Tivo, só para mencionar alguns. Recentemente, em 2006, liderou a fundação da inovadora Stanford d.school, reforçando sua maior contribuição na área de design: estimular a cultura da inovação e libertar o potencial criativo de pessoas e organizações, para que todos possam inovar constantemente.
+
+Tom Kelley - é autor de best-sellers além de sócio da renomada consultoria de design e inovação, IDEO. Como palestrante, aborda temas como o fomento da cultura de inovação por meio da exploração do potencial criativo nas organizações, somando cursos em mais de 30 países. Além disso, ajudou a IDEO a passar de 15 para mais de 600 designers, enquanto liderava diversas áreas, como Novos Negócios, Marketing, Recursos Humanos e Operações.
+
+Líderes da inovação — David Kelley, fundador da IDEO e da Stanford D.SCHOOL e Tom Kelley dois autores de best-sellers — constroem uma narrativa equilibrada e envolvente sobre como despertar, cultivar e fortalecer a criatividade que está em cada um de nós.</string>
+		<key>link</key>
+		<string>http://www.hsm.com.br/livros/livro-confianca-criativa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Levando as pessoas com você</string>
+		<key>slug</key>
+		<string>levando-as-pessoas-com-voce</string>
+		<key>subtitle</key>
+		<string>A única maneira de fazer grandes coisas acontecerem</string>
+		<key>price</key>
+		<string>consulte</string>
+		<key>description</key>
+		<string>David Novak aprendeu que não é possível liderar uma organização bem sucedida, de qualquer tamanho, sem fazer com que as pessoas estejam alinhadas, entusiasmadas e focadas incansavelmente em um grande objetivo.
+
+Este livro traz lições objetivas sobre o tipo de liderança que pode levar uma organização para adiante e que deve ser abraçada por todos que queiram progredir nos negócios e na vida, estejam no início de suas carreiras ou tenham já galgado alguns degraus na hierarquia organizacional.
+
+Levando as pessoas com você apresenta ferramentas específicas no fim de cada capítulo que vão desafiá-lo a refletir sobre como realmente está se saindo em aspectos-chave da liderança.</string>
+		<key>dimensions</key>
+		<string>15,5 x 23 cm</string>
+		<key>pages</key>
+		<string>264</string>
+		<key>codebar_book</key>
+		<string>978-85-65482-10-3</string>
+		<key>codebar_ebook</key>
+		<string>978-85-65482-10-3</string>
+		<key>author_name</key>
+		<string>David Novak</string>
+		<key>author_description</key>
+		<string>David Novak é presidente do conselho de administração e CEO da Yum! Brands, Inc., que funciona em mais de 117 países e emprega 1,4 milhões de pessoas. As três redes de restaurantes da empresa – KFC, Pizza Hut e Taco Bell – são líderes globais em fast food. Antes de liderar a Yum!, ele foi presidente da KFC e da Pizza Hut e exerceu cargos de liderança na PepsiCo. Ele mora em Louisville, Kentucky.
+
+Em seus 15 anos na Yum!Brands, Novak desenvolveu o programa Levando as pessoas com você. Ele passa várias semanas por ano ensinando essa metodologia, pessoalmente, a milhares de gestores no mundo todo. Ele os convence de que nunca vão fazer coisas grandiosas até que aprendam a trazer as pessoas para o lado deles. Nenhuma habilidade de negócios é mais importante. E o extraordinário sucesso da Yum! (crescimento anual de dois dígitos nos últimos nove anos) é prova disso.</string>
+		<key>link</key>
+		<string>http://www.hsm.com.br/livros/livro-levando-as-pessoas-com-voce</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Capitalismo Consciente</string>
+		<key>slug</key>
+		<string>capitalismo-consciente</string>
+		<key>subtitle</key>
+		<string>Como libertar o espírito heróico dos negócios</string>
+		<key>price</key>
+		<string>consulte</string>
+		<key>description</key>
+		<string>O que empresas como Google, Southwest Airlines, Whole Foods Market, Patagonia, e UPS tem em comum? Todas elas incorporam em sua gestão alguns aspectos construtivos e promissores do capitalismo, atuando de maneira a criar valor não só para si mesmas, mas também para seus clientes, funcionários, fornecedores, investidores, a comunidade e o meio ambiente.
+Criadores do movimento do Capitalismo Consciente, John Mackey, um dos fundadores do Whole Foods Market e Raj Sisodia, professor de marketing da Universidade de Bentley, explicam como algumas empresas aplicam os princípios deste movimento inovador na construção de estruturas sólidas e lucrativas.
+O livro oferece uma defesa ardorosa e uma redefinição consistente do capitalismo de livre-iniciativa, em uma análise valiosa tanto para os profissionais como para as empresas que apostam em um futuro mais cooperativo e mais humano.</string>
+		<key>dimensions</key>
+		<string>15,5 x 23 cm</string>
+		<key>pages</key>
+		<string>368</string>
+		<key>codebar_book</key>
+		<string>9-788567-389042</string>
+		<key>codebar_ebook</key>
+		<string>978-85-67389-04-2</string>
+		<key>author_name</key>
+		<string>John Mackey &amp; Raj Sisodia</string>
+		<key>author_description</key>
+		<string>John Mackey – Fundador e co-CEO do Whole Foods Market, comandou a transformação de sua loja de produtos naturais e orgânicos em uma empresa avaliada em US$ 11 bilhões. Mackey figura entre os “empreendedores do ano” da Ernest Young; os “melhores CEOs do ano nos Estados Unidos”, da Institucional Investor, e “empreendedor do ano”, segundo a Fortune. Defensor dos princípios do livre mercado, foi um dos criadores do movimento do Capitalismo Consciente.
+
+Raj Sisodia – Um dos fundadores do movimento do Capitalismo Consciente e professor de marketing na Universidade de Bentley. Escreveu mais de cem artigos acadêmicos e sete livros, entre eles Os segredos das empresas mais queridas que foi considerado um dos melhores do livro do ano pela Amazon. Foi apontado como um dos “cem maiores líderes do pensamento em negócios” pela Trust Across America em 2010 e 2011. Atuou como consultor em empresas como AT&amp;T, Nokia, LG, Siemens, Sprint, Volvo, IBM, Walmart, MCDonald e Grupo Pão de Açúcar.</string>
+		<key>link</key>
+		<string>http://www.hsm.com.br/livros/livro-capitalismo-consciente</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>O Executivo e o Martelo</string>
+		<key>slug</key>
+		<string>o-executivo-e-o-martelo</string>
+		<key>subtitle</key>
+		<string>Reflexões fora da caixa sobre ética nos negócios</string>
+		<key>price</key>
+		<string>consulte</string>
+		<key>description</key>
+		<string>Logo na abertura da apresentação deste livro os autores anunciam que pretendem “oferecer uma reflexão filosófica, sociológica e psicanalítica de fácil compreensão sobre os principais temas polêmicos do dia-a-dia das grandes corporações&quot;. De fato, as colocações dos professores Clóvis de Barros Filho e Arthur Meucci são facilmente compreensíveis por qualquer leitor interessado no tema central da obra: a ética empresarial.Mas são muito mais do que isso.
+
+Os autores se inspiram, entre muitas outras fontes, no pensamento do filósofo alemão Friedrich Nietzsche, que recomenda golpear duramente, se necessário com um imaginário martelo, os preconceitos e a hipocrisia dissimulados em verdades estabelecidas – ou aquilo que Francis Bacon chama de “ídolos”. Com esse espírito, e frequentemente em tom bem-humorado, Barros Filho e Meucci demolem os “discursos dominantes no campo da administração”, em particular as “fórmulas mágicas do sucesso”.
+
+A leitura desta obra seminal é um saudável e provocador convite a que o executivo adestrado apenas para bater metas descubra que tem capacidade para muito mais: basta confiar no uso de sua própria razão e no bom senso.</string>
+		<key>dimensions</key>
+		<string>14 x 21 cm</string>
+		<key>pages</key>
+		<string>272</string>
+		<key>codebar_book</key>
+		<string>9-788565-482202</string>
+		<key>codebar_ebook</key>
+		<string>978-85-65482-20-2</string>
+		<key>author_name</key>
+		<string>Clóvis de Barros Filho &amp; Arthur Meucci</string>
+		<key>author_description</key>
+		<string>Clóvis de Barros Filho – Bacharel em Direito pela Universidade de São Paulo e em Jornalismo pela Faculdade Cásper Libero, doutor em Direito pela Universidade de Paris e doutor em Comunicação pela Escola de Comunicações e Artes da USP. Professor do HSM Educação e Livre-Docente de Ética e Ciência Política na Escola de Comunicação e Artes da USP. Representante da UNESCO na área de publicidade infantil. É sócio-fundador do Espaço Ética, onde presta consultoria e que objetivam aproximar a academia do mercado. É considerado o melhor palestrante do Brasil pelos especialistas em Recursos Humanos. É colunista de Ética na Revista Filosofia Ciência &amp; Vida. Em coautoria com Arthur Meucci escreveu o livro A vida que vale a pena ser vivida pela editora Vozes e com Júlio Pompeu o livro A Filosofia explica as Grandes Questões da Humanidade pela editora Casa da Palavra.
+
+Arthur Meucci - Bacharel, licenciado e mestre em Filosofia pela Universidade de São Paulo e doutorando em Educação, Arte e História da Cultura pela Universidade Presbiteriana Mackenzie. Formou-se em Psicanálise pelo IBCP, com aperfeiçoamento em Psicanálise de Casal e Família pelo Sedes Sapientiae. Professor do HSM Educação e conferencista de Ética e Ciência Política na Escola de Comunicação e Artes da USP. Trabalha como consultor e produtor de conteúdo do Espaço Ética e como psicanalista e ethical coaching do Espaço Psicanalítico Integra em São Paulo. É colunista de Ética na Revista Filosofia Ciência &amp; Vida. Em coautoria com Clóvis de Barros Filho escreveu o livro A vida que vale a pena ser vivida e com Flávio Tonnetti a Coleção Miniensaios de Filosofia, ambos pela editora Vozes.</string>
+		<key>link</key>
+		<string>http://www.hsm.com.br/livros/livro-o-executivo-e-o-martelo</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Empresas feitas para Vencer</string>
+		<key>slug</key>
+		<string>empresas-feitas-para-vencer</string>
+		<key>subtitle</key>
+		<string>Good to Great</string>
+		<key>price</key>
+		<string>consulte</string>
+		<key>description</key>
+		<string>Considerado, pela Time Magazine, um dos livros de negócios mais importantes de todos os tempos, esta obra seminal de Jim Collins responde a seguinte pergunta: Como empresas boas, medianas e até ruins podem atingir uma qualidade duradoura?
+
+Empresas feitas para vencer mostra como as grandes empresas triunfam no decorrer do tempo e como o desempenho sustentável a longo prazo pode ser inserido no DNA de uma organização desde sua concepção.
+
+Collins apresenta exemplos que desafiam a lógica e transformam a mediocridade em uma superioridade duradoura. O autor apresenta também quais são as características universais que levam uma empresa a se tornar excelente e outras não.
+
+Os resultados do estudo irão surpreender muitos leitores e lançar novas abordagens sobre quase todas as áreas da gestão.
+
+Comentários sobre o livro:
+
+“Algumas de nossas decisões empresariais mais importantes foram tomadas com o apoio do raciocínio lógico de Jim Collins”
+
+ Jorge Paulo Lemman
+
+“Um dos livros de negócios mais importante de todos os tempos.”
+
+ Time Magazine
+
+“Collins é o melhor no método da pesquisa empírica no mundo dos negócios.”
+
+The Economist
+
+“Jim Collins é o mais influente pensador dos negócios da atualidade.”
+
+ Fortune
+
+“Para Collins, nenhum problema é grande demais”
+
+ New York Times</string>
+		<key>dimensions</key>
+		<string>15,5 x 23 cm</string>
+		<key>pages</key>
+		<string>368</string>
+		<key>codebar_book</key>
+		<string>9-788567-389028</string>
+		<key>codebar_ebook</key>
+		<string>978-85-67389-02-8</string>
+		<key>author_name</key>
+		<string>Jim Collins</string>
+		<key>author_description</key>
+		<string>Collins é autor ou coautor de seis livros, que no total, já venderam mais de 10 milhões de exemplares no mundo todo, incluindo os best-sellers Como as gigantes caem e Vencedoras por opção.
+
+Começou suas pesquisas e sua carreira acadêmica na Stanford Graduate School of Business.
+
+Lidera hoje um laboratório de gestão em Boulder, EUA, onde faz pesquisas e dá aulas e consultoria para executivos dos setores corporativo.</string>
+		<key>link</key>
+		<string>http://www.hsm.com.br/livros/livro-empresas-feitas-para-vencer</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>O Futuro</string>
+		<key>slug</key>
+		<string>o-futuro</string>
+		<key>subtitle</key>
+		<string>Seis desafios para mudar o mundo</string>
+		<key>price</key>
+		<string>consulte</string>
+		<key>description</key>
+		<string>Al Gore, ex-vice-presidente dos Estados Unidos, nos apresenta mais uma “ver­dade inconveniente”.
+
+Mantendo a mesma paixão com que abordou o desafio das mudanças climá­ticas, e amparado em décadas de experiência à frente das políticas globais, o autor analisa o horizonte nublado de nosso planeta e, apresentando uma avaliação sóbria e fundamentada, identifica os seis principais desafios para o nosso mundo em mudança: a crescente globalização econômica, que gerou uma entidade integrada e holística que se relaciona de forma totalmente nova com o capital, o mer­cado de trabalho, os mercados consumidores e os governos.
+
+• A comunicação digital globalizada, que reúne os pensamentos e as emoções de bilhões de pessoas e conecta equipamentos, robôs, sensores onipresentes e bases de dados.
+
+• A alteração do equilíbrio do poder político, econômico e militar do mundo – transferido dos Estados Unidos para um conjunto de centros de poder emergentes.
+
+• Um sistema de avaliação econômica impreciso, que nos conduz ao cresci­mento insustentável do consumo.
+
+• A revolução nos estudos dos genomas e nas ciências da vida, que está trans­ferindo o controle da evolução para as mãos humanas.
+
+• A ruptura radical nas relações entre os seres humanos e os ecossistemas da Terra.
+
+Desde o início de sua vida pública, Al Gore tem alertado para os perigos e as promessas das verdades emergentes, por mais “inconvenientes” que sejam esses avisos. Ao mesmo tempo envolvente e visionário, O Futuro oferece um mapa do mundo que parece se aproximar, elaborado por um homem que vem se destacando por pensar à frente – e que já comprovou estar certo.
+
+  Comentários sobre o livro:
+
+ “Magistral...as páginas deste livro são uma verdadeira luz”
+
+ Bloomberg
+
+ “Se você se preocupa com as imensas mudanças que o mundo começa a encarar, precisa ler este livro. Se não tem essa preocupação, a leitura é obrigatória!”
+
+ Tim Berners‐Lee, inventor da World Wide Web
+
+ “Neste livro, Al Gore aborda um tema cuja grandeza se equipara às suas conquistas e ambições.”
+
+ The New York Times Book Review
+
+ “Com clara base histórica…A força de Al Gore está em sua paixão pelo tema e na capacidade de fazer uma avaliação mais ampla, colocando os fatos atuais em um contexto histórico.”
+
+ Publishers Weekly
+
+ “Provocador, inteligente, com argumentação sólida…Uma proeza do pensamento em escala maior.”
+
+ Kirkus Reviews
+
+ “Uma análise luminosa e inteligente, envolvida em ideias e fatos impressionantes.”
+
+The Guardian
+
+ “Excelente livro. Durante a leitura, muitas vezes me perguntei quem mais poderia ter escrito uma obra com essa abrangência e o único nome que me ocorreu foi o de Thomas Jefferson.”
+
+ E. O. Wilson, Harvard University, duas vezes vencedor do Prêmio Pulitzer.</string>
+		<key>dimensions</key>
+		<string>15,5 x 23 cm</string>
+		<key>pages</key>
+		<string>610</string>
+		<key>codebar_book</key>
+		<string>9-788567-389004</string>
+		<key>codebar_ebook</key>
+		<string>978-85-67389-00-4</string>
+		<key>author_name</key>
+		<string>Al Gore</string>
+		<key>author_description</key>
+		<string>Al Gore foi vice-presidente dos Estados Unidos. Integra o conselho de administração da Apple. Dedica a maior parte de seu tempo ao co­mando do Climate Reality Project, organização não governamental voltada para a busca de soluções para a crise climática.
+
+Nos Estados Unidos, foi eleito deputado quatro vezes e cumpriu dois mandatos como senador.
+
+É autor dos livros A Terra em balanço: ecologia e o es­pírito humano; Uma verdade incon­veniente – o que devemos saber (e fazer) sobre o aquecimento global; O ataque à razão e Nossa escolha – um plano para solucionar a crise climática. Em 2007, foi um dos ga­nhadores do Prêmio Nobel da Paz.</string>
+		<key>link</key>
+		<string>http://www.hsm.com.br/livros/livro-o-futuro</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Negocie para Vencer</string>
 		<key>slug</key>
 		<string>negocie-para-vencer</string>

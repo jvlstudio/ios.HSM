@@ -20,11 +20,13 @@
 #define PADDING_BOTTOM  20
 #define DELAY_ANIMATION 0.4f
 
-#define V_HEIGHT        411
+#define V_HEIGHT        339 //411
 #define ELASTIC_HEIGHT  0
 #define DATES_HEIGHT    209
 #define BOTTOM_Y        V_HEIGHT
 #define NEGATIVE_INDEX  190
+
+#pragma mark - Typedef
 
 typedef enum EventInfoType : NSInteger
 {
@@ -34,14 +36,19 @@ typedef enum EventInfoType : NSInteger
 }
 EventInfoType;
 
+#pragma mark - Interface
+
 @interface EventSingle ()
-- (void) configurate;
 - (void) updateRootScrollFrame;
 - (void) eventExpandForType:(EventInfoType) type;
 - (void) eventRetrive;
 /**/
 - (BOOL) isMostra;
+/**/
+- (NSDictionary*) passesForKey:(NSString*) key;
 @end
+
+#pragma mark - Implementation
 
 @implementation EventSingle
 {
@@ -49,107 +56,45 @@ EventInfoType;
     EventManager *manager;
 }
 
+#pragma mark -
+#pragma mark Controller Methods
+
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:[[self dictionary] objectForKey:KEY_NAME]];
     
     manager = [[EventManager alloc] initWithEvent:[self dictionary]];
     
-    [labTinyDescription setText:[[self dictionary] objectForKey:KEY_TINY_DESCRIPTION]];
-    [labTinyDescription alignBottom];
+    CGRect rect = scr.frame;
+    rect.size.height -= IPHONE5_COEF;
+    [scr setFrame:rect];
     
     // ..
     contentOpen = kTypeNone;
-    [self configurate];
     
     // ad..
-    Advertising *ad = [[Advertising alloc] initOnView:[self view]];
-    [ad correctRectOfView:scr];
-}
-
-#pragma mark -
-#pragma mark IBActions
-
-- (IBAction) pressAgenda:(id)sender
-{
-    Agenda *vc = [[Agenda alloc] initWithNibName:NIB_AGENDA andDictionary:[manager event]];
-    [[self navigationController] pushViewController:vc animated:YES];
-}
-- (IBAction) pressPanelist:(id)sender
-{
-    Panelist *vc = [[Panelist alloc] initWithNibName:NIB_PANELIST andArray:[manager panelists]];
-    [[self navigationController] pushViewController:vc animated:YES];
-}
-- (IBAction) pressPasses:(id)sender
-{
-    if ([[[self dictionary] objectForKey:KEY_SHOW_PASSES] isEqualToString:KEY_YES])
+    //Advertising *ad = [[Advertising alloc] initOnView:[self view]];
+    //[ad correctRectOfView:scr];
+    if ([adManager hasAdWithCategory:kAdBannerFooter])
+        [adManager addAdTo:scr type:kAdBannerFooter];
+    
+    // configurate ..
+    if (![[[self dictionary] objectForKey:KEY_DID_HAPPEN] isEqualToString:KEY_NO])
     {
-        Passes *vc = [[Passes alloc] initWithNibName:NIB_PASSES andDictionary:[manager passes]];
-        [[self navigationController] pushViewController:vc animated:YES];
-    }
-    else {
-        EventEmpty *vc = [[EventEmpty alloc] initWithNibName:NIB_EVENT_EMPTY andDictionary:[self dictionary]];
-        [vc setTitle:@"Mais informações"];
-        [[self navigationController] pushViewController:vc animated:YES];
-    }
-}
-- (IBAction) pressRooms:(id)sender
-{
-    EventMiddle *vc     = [[EventMiddle alloc] initWithNibName:@"EventMiddle" bundle:nil];
-    [[self navigationController] pushViewController:vc animated:YES];
-}
-- (IBAction) pressCicle:(id)sender
-{
-    NSArray *content  = [[self dictionary] objectForKey:@"agenda"];
-    EventMultiple *vc = [[EventMultiple alloc] initWithNibName:NIB_EVENT_MULTIPLE andArray:content];
-    [vc setTitle:@"Ciclo de Palestras"];
-    [[self navigationController] pushViewController:vc animated:YES];
-}
-- (IBAction) pressGrade:(id)sender
-{
-    NSString *strURL = @"http://agenda.expositoronline.com.br/?eventid=8";
-    NSURL *url = [ [ NSURL alloc ] initWithString: strURL ];
-    [[UIApplication sharedApplication] openURL:url];
-}
-- (IBAction) pressPassRed:(id)sender
-{
-    NSString *strURL = @"http://www.expositoronline.com.br/Collaboration/Mailling/Registration.aspx?ca=1338&fe=73&pr=127&co=2";
-    NSURL *url = [ [ NSURL alloc ] initWithString: strURL ];
-    [[UIApplication sharedApplication] openURL:url];
-}
-- (IBAction) pressContent:(id)sender
-{
-    if(contentOpen == kTypeInfo)
-    {
-        [self eventRetrive];
-        [butContent setAlpha:0.3];
-        return;
+        [butPasses setEnabled:NO];
+        [butPasses setAlpha:0.5];
     }
     
-    [self eventExpandForType:kTypeInfo];
-    [butContent setAlpha:1];
-    [butDates setAlpha:0.3];
-}
-- (IBAction) pressDates:(id)sender
-{
-    if(contentOpen == kTypeDates)
-    {
-        [self eventRetrive];
-        [butDates setAlpha:0.3];
-        return;
-    }
-    
-    [self eventExpandForType:kTypeDates];
-    [butDates setAlpha:1];
-    [butContent setAlpha:0.3];
-}
-
-#pragma mark -
-#pragma mark Methods
-
-- (void) configurate
-{
     if (![[[self dictionary] objectForKey:KEY_SHOW_PASSES] isEqualToString:KEY_YES])
     {
         [butPasses setTitle:@"Mais informações" forState:UIControlStateNormal];
@@ -158,13 +103,9 @@ EventInfoType;
         [butPanelist setAlpha:0.5];
     }
     
-    NSString *strImg    = [NSString stringWithFormat:@"hsm_events_%@.png", [[self dictionary] objectForKey:KEY_SLUG]];
+    NSString *strImg    = [NSString stringWithFormat:@"hsm_v5_events_single_%@.png", [[self dictionary] objectForKey:KEY_SLUG]];
     [imgCover setImage:[UIImage imageNamed:strImg]];
-    
-    NSDictionary *dictColor = [[self dictionary] objectForKey:KEY_COLOR];
-    [elasticView setBackgroundColor:[UIColor colorWithRed:[[dictColor objectForKey:KEY_COLOR_RED] floatValue]/255.0
-                                                    green:[[dictColor objectForKey:KEY_COLOR_GREEN] floatValue]/255.0
-                                                     blue:[[dictColor objectForKey:KEY_COLOR_BLUE] floatValue]/255.0 alpha:1]];
+    [elasticView setBackgroundColor:[UIColor colorWithRed:35.0/255.0 green:34.0/255.0 blue:46.0/255.0 alpha:1]];
     
     NSArray *arrPan     = [[self dictionary] objectForKey:@"panelists"];
     if ([arrPan count] < 1)
@@ -236,7 +177,123 @@ EventInfoType;
     // ..
     [self updateRootScrollFrame];
     [scr addSubview:v];
+    
+    [[butAgenda titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [[butPanelist titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [[butPasses titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [[butPassRed titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [[butRooms titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [[butGrade titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [[butCicle titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
 }
+
+#pragma mark -
+#pragma mark IBActions
+
+- (IBAction) pressAgenda:(id)sender
+{
+    Agenda *vc = [[Agenda alloc] initWithNibName:NIB_AGENDA andDictionary:[manager event]];
+    [[self navigationController] pushViewController:vc animated:YES];
+}
+- (IBAction) pressPanelist:(id)sender
+{
+    Panelist *vc = [[Panelist alloc] initWithNibName:NIB_PANELIST andArray:[manager panelists]];
+    [[self navigationController] pushViewController:vc animated:YES];
+}
+- (IBAction) pressPasses:(id)sender
+{
+    if ([[[self dictionary] objectForKey:KEY_SHOW_PASSES] isEqualToString:KEY_YES])
+    {
+        // passes..
+        UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [indicator startAnimating];
+        [indicator setCenter:CGPointMake(WINDOW_WIDTH/2, WINDOW_HEIGHT/2)];
+        UIView *loaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT)];
+        [loaderView setAlpha:0.8];
+        [loaderView setBackgroundColor:[UIColor blackColor]];
+        [loaderView addSubview:indicator];
+        [[self view] addSubview:loaderView];
+        // ...
+        [tools requestUpdateFrom:URL_PASSES success:^{
+            [loaderView removeFromSuperview];
+            NSArray *results = [[tools JSONData] objectForKey:KEY_DATA];
+            [tools propertyListWrite:results forFileName:PLIST_PASSES_VALUES];
+            NSDictionary *passesDict = [self passesForKey:[[self dictionary] objectForKey:KEY_SLUG]];
+            Passes *vc = [[Passes alloc] initWithNibName:NIB_PASSES andDictionary:passesDict];
+            [[self navigationController] pushViewController:vc animated:YES];
+        } fail:^{
+            [loaderView removeFromSuperview];
+            // ...
+            NSArray *plistPasses = [tools propertyListRead:PLIST_PASSES_VALUES];
+            if ([plistPasses count] > 0) {
+                NSDictionary *passesDict = [self passesForKey:[[self dictionary] objectForKey:KEY_SLUG]];
+                Passes *vc = [[Passes alloc] initWithNibName:NIB_PASSES andDictionary:passesDict];
+                [[self navigationController] pushViewController:vc animated:YES];
+            }
+            else {
+                [tools dialogWithMessage:@"Não foi possível carregar os Passes deste evento. Por favor, verifique sua conexão à internet."];
+            }
+        }];
+    }
+    else {
+        EventEmpty *vc = [[EventEmpty alloc] initWithNibName:NIB_EVENT_EMPTY andDictionary:[self dictionary]];
+        [vc setTitle:@"Mais informações"];
+        [[self navigationController] pushViewController:vc animated:YES];
+    }
+}
+- (IBAction) pressRooms:(id)sender
+{
+    EventMiddle *vc     = [[EventMiddle alloc] initWithNibName:@"EventMiddle" bundle:nil];
+    [[self navigationController] pushViewController:vc animated:YES];
+}
+- (IBAction) pressCicle:(id)sender
+{
+    NSArray *content  = [[self dictionary] objectForKey:@"agenda"];
+    EventMultiple *vc = [[EventMultiple alloc] initWithNibName:NIB_EVENT_MULTIPLE andArray:content];
+    [vc setTitle:@"Ciclo de Palestras"];
+    [[self navigationController] pushViewController:vc animated:YES];
+}
+- (IBAction) pressGrade:(id)sender
+{
+    NSString *strURL = @"http://agenda.expositoronline.com.br/?eventid=8";
+    NSURL *url = [ [ NSURL alloc ] initWithString: strURL ];
+    [[UIApplication sharedApplication] openURL:url];
+}
+- (IBAction) pressPassRed:(id)sender
+{
+    NSString *strURL = @"http://www.expositoronline.com.br/Collaboration/Mailling/Registration.aspx?ca=1338&fe=73&pr=127&co=2";
+    NSURL *url = [ [ NSURL alloc ] initWithString: strURL ];
+    [[UIApplication sharedApplication] openURL:url];
+}
+- (IBAction) pressContent:(id)sender
+{
+    [imgBottom setImage:[UIImage imageNamed:@"hsm_v5_events_single_card_bottom_about.png"]];
+    if(contentOpen == kTypeInfo)
+    {
+        [self eventRetrive];
+        //[butContent setAlpha:0.3];
+        [imgBottom setImage:[UIImage imageNamed:@"hsm_v5_events_single_card_bottom.png"]];
+        return;
+    }
+    
+    [self eventExpandForType:kTypeInfo];
+}
+- (IBAction) pressDates:(id)sender
+{
+    [imgBottom setImage:[UIImage imageNamed:@"hsm_v5_events_single_card_bottom_infos.png"]];
+    if(contentOpen == kTypeDates)
+    {
+        [self eventRetrive];
+        [imgBottom setImage:[UIImage imageNamed:@"hsm_v5_events_single_card_bottom.png"]];
+        return;
+    }
+    
+    [self eventExpandForType:kTypeDates];
+}
+
+#pragma mark -
+#pragma mark Methods
+
 - (void)updateRootScrollFrame
 {
     float bottomHeight = 0;
@@ -392,6 +449,23 @@ EventInfoType;
         return YES;
     else
         return NO;
+}
+
+/**/
+
+- (NSDictionary*) passesForKey:(NSString*) key
+{
+    FRTools *ftools = [[FRTools alloc] initWithTools];
+    NSMutableDictionary *new = [NSMutableDictionary dictionary];
+    NSArray *plist = [ftools propertyListRead:PLIST_PASSES_VALUES];
+    
+    for (NSDictionary *dict in plist) {
+        if ([[dict objectForKey:@"event_slug"] isEqualToString:key]) {
+            [new setObject:dict forKey:[dict objectForKey:KEY_COLOR]];
+        }
+    }
+    
+    return [new copy];
 }
 
 @end

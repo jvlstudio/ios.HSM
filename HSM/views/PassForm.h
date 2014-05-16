@@ -15,6 +15,7 @@ UIPickerViewDelegate, UIPickerViewDataSource>
     NSArray *plist;
     NSDictionary *passData;
     NSArray *passSections;
+    NSArray *dates;
     
     IBOutlet UITableView *table;
     IBOutlet UIView *tableHeader;

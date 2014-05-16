@@ -16,19 +16,12 @@
     
     IBOutlet UITableView *table;
     IBOutlet UIView *tableHeader;
-    IBOutlet UIButton *butDay1;
-    IBOutlet UIButton *butDay2;
-    IBOutlet UIButton *butDay3;
-    IBOutlet UIImageView *imgButDay1;
-    IBOutlet UIImageView *imgButDay2;
-    IBOutlet UIImageView *imgButDay3;
+    IBOutlet UISegmentedControl* segment;
 }
 
 #pragma mark -
 #pragma mark IBActions
 
-- (IBAction) pressDay1:(id)sender;
-- (IBAction) pressDay2:(id)sender;
-- (IBAction) pressDay3:(id)sender;
+- (IBAction) segmentChanged:(UISegmentedControl*)sender;
 
 @end

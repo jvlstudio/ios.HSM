@@ -7,6 +7,7 @@
 //
 
 #import "EventManager.h"
+#import "FRTools.h"
 
 #define KEY_PANELISTS           @"panelists"
 #define KEY_AGENDA              @"agenda"

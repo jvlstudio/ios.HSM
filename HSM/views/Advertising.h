@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRTools.h"
 
 @interface Advertising : UIViewController
 

@@ -8,10 +8,11 @@
 
 #import "KDBarButton.h"
 
-#define BUTTON_MENU     @"hsm_bt_menu.png"
-#define BUTTON_BACK     @"hsm_bt_back.png"
+#define BUTTON_MENU     @"hsm_v5_nav_menu.png"
+#define BUTTON_BACK     @"hsm_v5_nav_back.png"
 #define BUTTON_CLOSE    @"hsm_bt_close.png"
-#define BUTTON_SCAN     @"hsm_bt_scan.png"
+#define BUTTON_SCAN     @"hsm_v5_nav_scan.png"
+#define BUTTON_EMPTY    @"hsm_v5_nav_empty.png"
 
 @implementation KDBarButton
 
@@ -44,6 +45,12 @@
     UIButton *button = [self newButton:BUTTON_SCAN];
     [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     
+    self = [super initWithCustomView:button];
+    return self;
+}
+- (id) initWithEmpty
+{
+    UIButton *button = [self newButton:BUTTON_EMPTY];
     self = [super initWithCustomView:button];
     return self;
 }

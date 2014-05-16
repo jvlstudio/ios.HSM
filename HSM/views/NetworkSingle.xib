@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetworkSingle">
@@ -12,6 +12,7 @@
                 <outlet property="butSendEmail" destination="c8b-hk-Dvn" id="jrU-lE-c1s"/>
                 <outlet property="imgColor" destination="PSH-Sj-UM2" id="iyC-wX-KiU"/>
                 <outlet property="imgQRCode" destination="zc9-fU-dNQ" id="le9-5N-QYD"/>
+                <outlet property="imgZoom" destination="g4G-yM-kkK" id="87s-GR-4bE"/>
                 <outlet property="labCompany" destination="HgP-Ve-sTK" id="rdp-4X-XdI"/>
                 <outlet property="labEmail" destination="FvD-tf-FJw" id="jhL-kQ-gpC"/>
                 <outlet property="labMobile" destination="Ljg-70-8jQ" id="Vya-SH-aKD"/>
@@ -27,7 +28,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_network_bg_single.png" id="nUk-9I-QTa">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_network_single_bg.png" id="nUk-9I-QTa">
                     <rect key="frame" x="0.0" y="64" width="320" height="492"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -42,8 +43,7 @@
                     <rect key="frame" x="85" y="399" width="150" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="Enviar e-mail" backgroundImage="hsm_bt_tiny_clear.png">
-                        <color key="titleColor" red="0.14901961389999999" green="0.50588238240000005" blue="0.72156864399999998" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="Enviar e-mail" backgroundImage="hsm_v5_bt_tiny_clear.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -53,7 +53,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CaD-bL-nPQ">
                     <rect key="frame" x="262" y="84" width="38" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_but_plus.png">
+                    <state key="normal" backgroundImage="hsm_v5_but_plus.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -64,60 +64,60 @@
                     <rect key="frame" x="250" y="124" width="62" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <color key="textColor" red="0.082352943720000002" green="0.2588235438" blue="0.4274510145" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0DH-Ke-gZ9">
-                    <rect key="frame" x="85" y="73" width="160" height="42"/>
+                    <rect key="frame" x="104" y="73" width="141" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" red="0.1960784495" green="0.49411767719999999" blue="0.71764707569999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O2R-HA-TNQ">
                     <rect key="frame" x="25" y="197" width="134" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" red="0.1960784495" green="0.49411767719999999" blue="0.71764707569999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" red="0.180392161" green="0.1764705926" blue="0.24313727020000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eVv-Lu-JoQ">
                     <rect key="frame" x="25" y="251" width="134" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.1960784495" green="0.49411767719999999" blue="0.71764707569999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FvD-tf-FJw">
                     <rect key="frame" x="25" y="272" width="134" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.1960784495" green="0.49411767719999999" blue="0.71764707569999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GXY-gy-6yY">
                     <rect key="frame" x="25" y="293" width="134" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.1960784495" green="0.49411767719999999" blue="0.71764707569999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ljg-70-8jQ">
                     <rect key="frame" x="25" y="315" width="134" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.1960784495" green="0.49411767719999999" blue="0.71764707569999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="HgP-Ve-sTK">
-                    <rect key="frame" x="104" y="114" width="141" height="21"/>
+                    <rect key="frame" x="104" y="116" width="141" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PSH-Sj-UM2">
-                    <rect key="frame" x="8" y="75" width="16" height="16"/>
+                    <rect key="frame" x="84" y="86" width="16" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view hidden="YES" contentMode="scaleToFill" id="28E-gc-dNy">
@@ -128,6 +128,10 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zc9-fU-dNQ">
                     <rect key="frame" x="174" y="215" width="125" height="125"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_network_zoom.png" id="g4G-yM-kkK">
+                    <rect key="frame" x="198" y="239" width="77" height="77"/>
+                    <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yQ7-v6-Jxm">
                     <rect key="frame" x="174" y="215" width="125" height="125"/>
@@ -147,8 +151,9 @@
         </view>
     </objects>
     <resources>
-        <image name="hsm_bt_tiny_clear.png" width="150" height="44"/>
-        <image name="hsm_but_plus.png" width="38" height="40"/>
-        <image name="hsm_network_bg_single.png" width="320" height="492"/>
+        <image name="hsm_v5_bt_tiny_clear.png" width="153" height="44"/>
+        <image name="hsm_v5_but_plus.png" width="38" height="38"/>
+        <image name="hsm_v5_network_single_bg.png" width="320" height="492"/>
+        <image name="hsm_v5_network_zoom.png" width="77" height="77"/>
     </resources>
 </document>

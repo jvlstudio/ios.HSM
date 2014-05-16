@@ -10,6 +10,10 @@
 #import "PassConstants.h"
 
 @interface PassViewController : KDViewController
+{
+    PassColor passColor;
+    UIView *vLoading;
+}
 
 @property (nonatomic) PassColor passColor;
 @property (nonatomic, strong) UIView *vLoading;

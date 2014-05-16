@@ -17,9 +17,7 @@
     IBOutlet UIView *bottom2View;
     IBOutlet UIView *datesView;
     IBOutlet UITextView *tvDescription;
-    IBOutlet UILabel *labTinyDescription;
     IBOutlet UIImageView *imgCover;
-    IBOutlet UIImageView *imgLine;
     
     IBOutlet UILabel *labDates;
     IBOutlet UILabel *labHours;
@@ -38,6 +36,7 @@
     /**/
     
     IBOutlet UIImageView *img1;
+    IBOutlet UIImageView *imgBottom;
 }
 
 #pragma mark -

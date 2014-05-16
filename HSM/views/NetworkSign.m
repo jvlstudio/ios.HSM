@@ -8,14 +8,9 @@
 
 #import "NetworkSign.h"
 
-@interface NetworkSign ()
-
-@end
-
 @implementation NetworkSign
 {
     CGPoint currentOffset;
-    FRTools *tools;
 }
 
 #pragma mark -
@@ -24,9 +19,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoadWithCloseButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Criar meu cartão"];
     
-    tools       = [[FRTools alloc] initWithTools];
+    for (UIView *vv in [v subviews]) {
+        if ([vv isKindOfClass:[UITextField class]]) {
+            UITextField *tf = (UITextField*)vv;
+            [tf setValue:COLOR_DESCRIPTION forKeyPath:@"_placeholderLabel.textColor"];
+        }
+    }
+    
+    [[butCreate titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:18.0]];
     
     [scr setContentSize:CGSizeMake(v.frame.size.width, v.frame.size.height)];
     [scr addSubview:v];

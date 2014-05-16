@@ -12,28 +12,41 @@
 
 #define CELL_IDENTIFIER     @"panelistCell"
 
+#pragma mark - Interface
+
 @interface Panelist ()
 - (void) pressPanelist:(id) sender;
 @end
 
-@implementation Panelist
-{
-    FRTools *tools;
-}
+#pragma mark - Implementation
 
-@synthesize panelists;
-@synthesize scr, v;
+@implementation Panelist
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Palestrantes"];
     
     // table data..
-    tools       = [[FRTools alloc] initWithTools];
     panelists   = [self array];
     v           = [[UIView alloc] initWithFrame:self.view.frame];
     [v setBackgroundColor:[UIColor clearColor]];
+    
+    CGRect rect = scr.frame;
+    rect.size.height -= IPHONE5_COEF;
+    [scr setFrame:rect];
     
     int point   = 0;
     int rows    = 3;
@@ -58,13 +71,13 @@
         
         // rects ..
         CGRect rectPan       = panelistView.frame;
-        rectPan.origin.y    += 75; // correct..
+        //rectPan.origin.y    += 75; // correct..
         rectPan.origin.y    += col;
         rectPan.origin.x     = 10+(rectPan.size.width*row);
         [panelistView setFrame:rectPan];
         
         CGRect rectV         = v.frame;
-        rectV.size.height    = col+75; // +correct..
+        rectV.size.height    = col; // +correct..
         // finish.. (correct)
         if (point == ([panelists count]-1))
             rectV.size.height += panelistView.frame.size.height;
@@ -79,9 +92,10 @@
     [scr addSubview:v];
     
     // ad..
-    Advertising *ad = [[Advertising alloc] initOnView:[self view]];
-    [ad correctRectOfView:scr];
-    
+    //Advertising *ad = [[Advertising alloc] initOnView:[self view]];
+    //[ad correctRectOfView:scr];
+    if ([adManager hasAdWithCategory:kAdBannerFooter])
+        [adManager addAdTo:scr type:kAdBannerFooter];
 }
 
 #pragma mark -

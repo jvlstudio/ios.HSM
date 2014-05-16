@@ -11,23 +11,52 @@
 #import "NetworkSingle.h"
 #import "NetworkSign.h"
 
-@interface Network ()
-- (void) setInfo;
-@end
-
 @implementation Network
-{
-    FRTools *tools;
-}
 
-@synthesize zBarSymbolData, zBarReader;
-@synthesize tableData, table;
-@synthesize selfColor, selfSubtitle, selfTitle, selfView;
-@synthesize butCreate, butSelf, createView;
+@synthesize table;
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithMenuButton];
+    [self setConfigurations];
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    tableData   = [tools propertyListRead:PLIST_NETWORK];
+    [table reloadData];
+    
+    // ...
+    NSDictionary *dict  = [tools propertyListRead:PLIST_MYCONTACT];
+    
+    [selfTitle setText:[dict objectForKey:KEY_NAME]];
+    [selfSubtitle setText:[dict objectForKey:KEY_COMPANY]];
+    
+    NSString *strImg    = [NSString stringWithFormat:@"hsm_ball_%@.png", [dict objectForKey:KEY_BARCOLOR]];
+    [selfColor setImage:[UIImage imageNamed:strImg]];
+    
+    [[butCreate titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+    [selfTitle setFont:[UIFont fontWithName:FONT_REGULAR size:selfTitle.font.pointSize]];
+    
+    // ...
+    if ([self hasCreatedSelfCard])
+    {
+        [createView setHidden:YES];
+        [table setTableHeaderView:nil];
+    }
+    else
+        [table setTableHeaderView:[self edge]];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Network"];
     
     tools   = [[FRTools alloc] initWithTools];
@@ -40,36 +69,6 @@
     CGRect rectv    = createView.frame;
     rectv.origin.y  -= IPHONE5_COEF;
     [createView setFrame:rectv];
-}
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    tableData   = [tools propertyListRead:PLIST_NETWORK];
-    [table reloadData];
-    
-    [self setInfo];
-    
-    if ([self hasCreatedSelfCard])
-    {
-        [createView setHidden:YES];
-        [table setTableHeaderView:nil];
-    }
-    else
-        [table setTableHeaderView:[self edge]];
-}
-
-#pragma mark -
-#pragma mark Methods
-
-- (void) setInfo
-{
-    NSDictionary *dict  = [tools propertyListRead:PLIST_MYCONTACT];
-    
-    [selfTitle setText:[dict objectForKey:KEY_NAME]];
-    [selfSubtitle setText:[dict objectForKey:KEY_COMPANY]];
-    
-    NSString *strImg    = [NSString stringWithFormat:@"hsm_ball_%@.png", [dict objectForKey:KEY_BARCOLOR]];
-    [selfColor setImage:[UIImage imageNamed:strImg]];
 }
 
 #pragma mark -
@@ -139,6 +138,8 @@
     
     [[cell labText] setText:[dict objectForKey:KEY_NAME]];
     [[cell labSubtext] setText:[dict objectForKey:KEY_COMPANY]];
+    
+    [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labText.font.pointSize]];
     
     NSString *strColor  = [NSString stringWithFormat:@"hsm_ball_%@.png", [dict objectForKey:KEY_BARCOLOR]];
     [[cell imgColor] setImage:[UIImage imageNamed:strColor]];

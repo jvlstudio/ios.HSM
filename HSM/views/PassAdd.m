@@ -17,7 +17,6 @@
 
 @implementation PassAdd
 {
-    FRTools *tools;
     CGPoint currentOffset;
 }
 
@@ -37,12 +36,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Adicionar Participante"];
     
-    tools = [[FRTools alloc] initWithTools];
-    
-    [scr setContentSize:CGSizeMake(v.frame.size.width, v.frame.size.height)];
+    [scr setContentSize:CGSizeMake(scr.contentSize.width, v.frame.size.height+50)];
     [scr addSubview:v];
+    
+    [[self view] setBackgroundColor:[UIColor colorWithRed:45.0/255.0 green:45.0/255.0 blue:60.0/255.0 alpha:1]];
     
     // set delegate ..
     NSArray *subviews = [v subviews];
@@ -54,6 +62,7 @@
             [tf setDelegate:self];
             [tf addTarget:self action:@selector(textFieldDidEndOnExit:) forControlEvents:UIControlEventEditingDidEnd];
             [tf addTarget:self action:@selector(textFieldDidEndOnExit:) forControlEvents:UIControlEventEditingDidEndOnExit];
+            [tf setValue:COLOR_DESCRIPTION forKeyPath:@"_placeholderLabel.textColor"];
         }
     }
     
@@ -61,7 +70,6 @@
     // check if participant was touched
     [self fillIfHasParticipant];
 }
-
 
 #pragma mark -
 #pragma mark IBActions
@@ -79,6 +87,9 @@
         // ...
         [self recordParticipant:mutDict atIndexPath:indexPath];
         [[self navigationController] popViewControllerAnimated:YES];
+    }
+    else {
+        [tools dialogWithMessage:@"Por favor, preencha os campos corretamente."];
     }
 }
 

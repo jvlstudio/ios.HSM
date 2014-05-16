@@ -34,7 +34,9 @@ typedef enum HSMIndexCell : NSUInteger
     kCellNetwork        = 6,
     kCellAgendaShow     = 7,
     kCellEventMultiple  = 8,
-    kCellAdvertising    = 9
+    //kCellAdvertising    = 9,
+    kCellAgendaButton   = 9,
+    kCellMagazine       = 10
 }
 HSMIndexCell;
 

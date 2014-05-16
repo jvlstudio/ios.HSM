@@ -19,6 +19,7 @@
     IBOutlet UILabel *greenDescription;
     IBOutlet UILabel *greenValue;
     IBOutlet UILabel *greenValueSpecial;
+    IBOutlet UILabel *greenValidate;
     
     // gold
     IBOutlet UIView *goldView;
@@ -26,6 +27,7 @@
     IBOutlet UILabel *goldDescription;
     IBOutlet UILabel *goldValue;
     IBOutlet UILabel *goldValueSpecial;
+    IBOutlet UILabel *goldValidate;
     
     // red
     IBOutlet UIView *redView;
@@ -33,6 +35,7 @@
     IBOutlet UILabel *redDescription;
     IBOutlet UILabel *redValue;
     IBOutlet UILabel *redValueSpecial;
+    IBOutlet UILabel *redValidate;
     
     IBOutlet UIButton *butGreen;
     IBOutlet UIButton *butGold;

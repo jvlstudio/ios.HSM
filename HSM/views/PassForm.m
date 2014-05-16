@@ -26,8 +26,6 @@
 
 @implementation PassForm
 {
-    FRTools *tools;
-    // ...
     NSIndexPath *touchedIndexPath;
 }
 
@@ -37,12 +35,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self reloadTableData];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Pré-Compra"];
     
-    NSLog(@"%@", [self dictionary]);
+    dates = [tools explode:[[self dictionary] objectForKey:KEY_DATES] bySeparator:@","];
     
     // ...
-    tools       = [[FRTools alloc] initWithTools];
     [self reloadTableData];
     
     NSString *strImg    = [NSString stringWithFormat:TITLE_BG, [self stringForPassColor:[self passColor]]];
@@ -57,12 +69,6 @@
     [pvPayment setFrame:RECT_PICKER_HIDE];
     [[self view] addSubview:pvDates];
     [[self view] addSubview:pvPayment];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self reloadTableData];
 }
 
 #pragma mark -
@@ -156,7 +162,7 @@
             if(!cell)
                 cell = (PassPickerCell*)[xib objectAtIndex:kCellTypePicker];
             
-            [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
+            [[cell labText] setText:@"Selecione..."];
             
             // background..
             imgBg   = [[UIImageView alloc] initWithImage:[UIImage imageNamed:CELL_PICKER_BG]];
@@ -299,14 +305,14 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     if (pickerView == pvDates)
-        return [[[self dictionary] objectForKey:KEY_DATES] count];
+        return [dates count];
     else
         return [VALUES_PAYMENT count];
 }
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     if (pickerView == pvDates)
-        return [[[self dictionary] objectForKey:KEY_DATES] objectAtIndex:row];
+        return [dates objectAtIndex:row];
     else
         return [VALUES_PAYMENT objectAtIndex:row];
 }
@@ -316,8 +322,8 @@
     if (pickerView == pvDates)
     {
         PassPickerCell *cell = (PassPickerCell*)[table cellForRowAtIndexPath:touchedIndexPath];
-        [[cell labText] setText:[[[self dictionary] objectForKey:KEY_DATES] objectAtIndex:row]];
-        [self recordValue:[[[self dictionary] objectForKey:KEY_DATES] objectAtIndex:row] forKey:KEY_LABEL atIndexPath:touchedIndexPath];
+        [[cell labText] setText:[dates objectAtIndex:row]];
+        [self recordValue:[dates objectAtIndex:row] forKey:KEY_LABEL atIndexPath:touchedIndexPath];
     }
     // payment..
     else {

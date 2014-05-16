@@ -21,7 +21,6 @@
     IBOutlet UILabel *labSpeech;
     IBOutlet UILabel *labDate;
     IBOutlet UILabel *labHour;
-    IBOutlet UILabel *labTitle;
     
     IBOutlet UIButton *butSchedule;
     IBOutlet UIImageView *imgPicture;

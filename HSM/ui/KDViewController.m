@@ -17,12 +17,13 @@
 
 @implementation KDViewController
 
+@synthesize adManager;
+@synthesize delegate;
+@synthesize tools;
 @synthesize dictionary;
 @synthesize array;
-@synthesize imgBackground;
-@synthesize imgBackgroundBlur;
-@synthesize imgBackgroundNavBar;
 @synthesize edge;
+@synthesize titleLabel;
 
 #pragma mark -
 #pragma mark Init Methods
@@ -61,27 +62,29 @@
     [super viewDidLoad];
     [self setHSMConfigurations];
     [self setMenuButton];
+    [self setNothingOnRight];
 }
 - (void) viewDidLoadWithBackButton
 {
     [super viewDidLoad];
     [self setHSMConfigurations];
     [self setBackButton];
+    [self setNothingOnRight];
 }
 - (void)viewDidLoadWithCloseButton
 {
     [super viewDidLoad];
     [self setHSMConfigurations];
     [self setCloseButton];
+    [self setNothingOnLeft];
 }
 - (void) viewDidLoadWithNothing
 {
     [super viewDidLoad];
     [self setHSMConfigurations];
-    [self setNothing];
+    [self setNothingOnLeft];
+    [self setNothingOnRight];
 }
-
-/* */
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -91,10 +94,35 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     // left (menu)
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(preloadLeft) object:nil];
     [self performSelector:@selector(preloadLeft) withObject:nil afterDelay:0.3];
+}
+
+- (void) setTitle:(NSString *)title
+{
+	[super setTitle:title];
+	
+	//title = [title uppercaseString];
+	
+	// ...
+	titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(ZERO, ZERO, WINDOW_WIDTH, 30)];
+    [titleLabel setText:title];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [titleLabel setTextColor:[UIColor whiteColor]];
+    [titleLabel setFont:[UIFont fontWithName:FONT_REGULAR size:16.0]];
+    
+    [[self navigationItem] setTitleView:titleLabel];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    delegate    = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    tools       = [[FRTools alloc] initWithTools];
+    adManager   = [[HSMAd alloc] initWithManager];
 }
 
 #pragma mark -
@@ -104,7 +132,7 @@
 {
     UIBarButtonItem *bt = [[KDBarButton alloc] initWithMenu:@selector(pressMenuButton:) toTarget:self];
     self.navigationItem.hidesBackButton = YES;
-    self.navigationItem.leftBarButtonItem = PP_AUTORELEASE(bt);
+    self.navigationItem.leftBarButtonItem = bt;
     
     // reinit the bouncing directions (should not be done in your own implementation, this is just for the sample)
     [self.revealSideViewController setDirectionsToShowBounce:PPRevealSideDirectionLeft];
@@ -125,9 +153,16 @@
     UIBarButtonItem *bt = [[KDBarButton alloc] initWithScan:select toTarget:self];
     self.navigationItem.rightBarButtonItem = bt;
 }
-- (void) setNothing
+- (void) setNothingOnLeft
 {
+    UIBarButtonItem *bt = [[KDBarButton alloc] initWithEmpty];
+    [[self navigationItem] setLeftBarButtonItem:bt];
     self.navigationItem.hidesBackButton = YES;
+}
+- (void) setNothingOnRight
+{
+    UIBarButtonItem *bt = [[KDBarButton alloc] initWithEmpty];
+    [[self navigationItem] setRightBarButtonItem:bt];
 }
 
 #pragma mark -
@@ -174,22 +209,16 @@
 {
     [[self view] setBackgroundColor:[UIColor clearColor]];
     
-    imgBackground       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_bg.png"]];
-    imgBackgroundBlur   = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_bg_blur.png"]];
-    imgBackgroundNavBar = [UIImage imageNamed:@"hsm_bg_navbar_2.png"];
+    imgBackgroundNavBar = [UIImage imageNamed:@"hsm_v5_navbar_2.png"];
     edge                = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WINDOW_WIDTH, 64)];
     
     // background...
-    [[self view] addSubview:imgBackground];
-    [[self view] addSubview:imgBackgroundBlur];
-    [[self view] sendSubviewToBack:imgBackgroundBlur];
-    [[self view] sendSubviewToBack:imgBackground];
+    [[self view] setBackgroundColor:COLOR_BACKGROUND];
     [edge setBackgroundColor:[UIColor clearColor]];
     
     // navigation bar...
     [[[self navigationController] navigationBar] setTintColor:[UIColor whiteColor]];
     [[[self navigationController] navigationBar] setTranslucent:YES];
-    
     [[[self navigationController] navigationBar] setBackgroundImage:imgBackgroundNavBar forBarMetrics:UIBarMetricsDefault];
 }
 

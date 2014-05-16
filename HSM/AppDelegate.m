@@ -8,10 +8,27 @@
 
 #import "AppDelegate.h"
 
+#import "HSMAd.h"
 #import "Opening.h"
 #import "Home.h"
 
+#pragma mark - Category
+
+@interface UINavigationController (White)
+@end
+@implementation UINavigationController (White)
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+@end
+
+#pragma mark - Implementation
+
 @implementation AppDelegate
+{
+    HSMAd *adManager;
+}
 
 @synthesize revealSideViewController;
 
@@ -35,20 +52,24 @@
     // reveal slide view controller didn't work with this below
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    // background..
-    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_bg.png"]];
-    [[self window] addSubview:background];
+    adManager = [[HSMAd alloc] initWithManager];
+    if ([adManager hasAdWithCategory:kAdSuperstitial]) {
+        self.window.rootViewController = [self openingWithAnimation];
+    }
+    else {
+        self.window.rootViewController = [self openingWithoutAnimation];
+    }
     
-    self.window.rootViewController = [self openingWithAnimation];
     [self.window makeKeyAndVisible];
     
     // ...
     [self customizeAppearance];
     
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     // return..
     return YES;
 }
-
 
 #pragma mark -
 #pragma mark Opening Methods
@@ -80,9 +101,7 @@
     NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
     
     if ([currSysVer compare:requiredVersion options:NSNumericSearch] != NSOrderedAscending)
-    {
         return YES;
-    }
     
     return NO;
 }

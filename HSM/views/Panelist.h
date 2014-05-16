@@ -9,10 +9,11 @@
 #import "KDViewController.h"
 
 @interface Panelist : KDViewController
-
-@property (nonatomic, strong) NSArray *panelists;
-
-@property (nonatomic, strong) IBOutlet UIScrollView *scr;
-@property (nonatomic, strong) UIView *v;
+{
+    NSArray *panelists;
+    
+    IBOutlet UIScrollView *scr;
+    UIView *v;
+}
 
 @end

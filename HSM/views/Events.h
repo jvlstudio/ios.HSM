@@ -11,7 +11,15 @@
 @interface Events : KDViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSArray *tableData;
+    
     IBOutlet UITableView *table;
+    IBOutlet UIView *tableHeader;
+    IBOutlet UISegmentedControl *segment;
 }
+
+#pragma mark -
+#pragma mark IBActions
+
+- (IBAction) changedValue:(UISegmentedControl*)sender;
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "HSMAd.h"
+
 @interface Menu : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *tableData;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Network">
@@ -35,7 +35,7 @@
                     <rect key="frame" x="0.0" y="493" width="320" height="75"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_bg_bt_large.png" id="T1F-e9-AY7">
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_body_button.png" id="T1F-e9-AY7">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
@@ -43,7 +43,7 @@
                             <rect key="frame" x="11" y="13" width="298" height="42"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="Criar meu cartão" backgroundImage="hsm_bt_large_blue.png">
+                            <state key="normal" title="Criar meu cartão" backgroundImage="hsm_v5_bt_large_purple.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -62,33 +62,33 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
         <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="LXe-Jg-mBy">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_network_cell2.png" id="n2c-DS-V5Y">
-                    <rect key="frame" x="0.0" y="64" width="320" height="95"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_network_cell_me.png" id="n2c-DS-V5Y">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" id="Ojf-yr-qbl" customClass="KDLabel">
-                    <rect key="frame" x="83" y="69" width="189" height="41"/>
+                    <rect key="frame" x="111" y="5" width="161" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.97922335599999999" green="0.97375283450000005" blue="0.98469387760000004" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fWO-rc-WmI">
-                    <rect key="frame" x="9" y="71" width="16" height="16"/>
+                    <rect key="frame" x="85" y="18" width="16" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="company" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ujl-hP-3ta" customClass="KDLabel">
-                    <rect key="frame" x="102" y="109" width="170" height="22"/>
+                    <rect key="frame" x="111" y="45" width="161" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="502-Uz-txU">
-                    <rect key="frame" x="0.0" y="64" width="320" height="95"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,8 +103,8 @@
         </view>
     </objects>
     <resources>
-        <image name="hsm_bg_bt_large.png" width="320" height="75"/>
-        <image name="hsm_bt_large_blue.png" width="298" height="42"/>
-        <image name="hsm_network_cell2.png" width="320" height="95"/>
+        <image name="hsm_v5_body_button.png" width="320" height="75"/>
+        <image name="hsm_v5_bt_large_purple.png" width="291" height="45"/>
+        <image name="hsm_v5_network_cell_me.png" width="320" height="95"/>
     </resources>
 </document>

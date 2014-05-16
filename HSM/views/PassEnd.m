@@ -15,9 +15,21 @@
 
 @implementation PassEnd
 
+#pragma mark -
+#pragma mark Controller Methods
+
 - (void)viewDidLoad
 {
     [super viewDidLoadWithNothing];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Obrigado"];
     
     [scr setContentSize:CGSizeMake(v.frame.size.width, v.frame.size.height)];

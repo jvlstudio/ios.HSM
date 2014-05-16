@@ -8,16 +8,31 @@
 
 #import <UIKit/UIKit.h>
 #import "Advertising.h"
+#import "AppDelegate.h"
+#import "FRTools.h"
+#import "HSMAd.h"
 
 @interface KDViewController : UIViewController
+{
+    FRTools *tools;
+    AppDelegate *delegate;
+    HSMAd *adManager;
+    
+    NSDictionary *dictionary;
+    NSArray *array;
+    
+    UIView *edge;
+    UIImage *imgBackgroundNavBar;
+    UILabel *titleLabel;
+}
 
+@property (nonatomic, strong) FRTools *tools;
+@property (nonatomic, strong) AppDelegate *delegate;
+@property (nonatomic, strong) HSMAd *adManager;
 @property (nonatomic, strong) NSDictionary *dictionary;
 @property (nonatomic, strong) NSArray *array;
-
-@property (nonatomic, strong) UIImageView *imgBackground;
-@property (nonatomic, strong) UIImageView *imgBackgroundBlur;
-@property (nonatomic, strong) UIImage *imgBackgroundNavBar;
 @property (nonatomic, strong) UIView *edge;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 #pragma mark -
 #pragma mark Init Methods
@@ -35,13 +50,19 @@
 - (void) viewDidLoadWithNothing;
 
 #pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations;
+
+#pragma mark -
 #pragma mark BarButton Methods
 
 - (void) setMenuButton;
 - (void) setBackButton;
 - (void) setCloseButton;
 - (void) setScanButtonWithSelector:(SEL)select;
-- (void) setNothing;
+- (void) setNothingOnLeft;
+- (void) setNothingOnRight;
 
 #pragma mark -
 #pragma mark IBAction Methods

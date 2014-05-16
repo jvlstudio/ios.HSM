@@ -14,9 +14,6 @@
 @end
 
 @implementation PassViewController
-{
-    FRTools *tools;
-}
 
 @synthesize passColor;
 @synthesize vLoading;
@@ -31,7 +28,7 @@
     
     CGRect rect = CGRectMake(ZERO, ZERO, WINDOW_WIDTH, WINDOW_HEIGHT);
     vLoading    = [[UIView alloc] initWithFrame:rect];
-    [vLoading setBackgroundColor:[UIColor colorWithRed:184.0/255.0 green:215.0/255.0 blue:236.0/255.0 alpha:1]];
+    [vLoading setBackgroundColor:COLOR_BACKGROUND];
     [vLoading setAlpha:0.7];
     UILabel *lab= [[UILabel alloc] initWithFrame:rect];
     [lab setTextAlignment:NSTextAlignmentCenter];
@@ -50,7 +47,7 @@
     
     CGRect rect = CGRectMake(ZERO, ZERO, WINDOW_WIDTH, WINDOW_HEIGHT);
     vLoading    = [[UIView alloc] initWithFrame:rect];
-    [vLoading setBackgroundColor:[UIColor colorWithRed:184.0/255.0 green:215.0/255.0 blue:236.0/255.0 alpha:1]];
+    [vLoading setBackgroundColor:COLOR_BACKGROUND];
     [vLoading setAlpha:0.7];
     UILabel *lab= [[UILabel alloc] initWithFrame:rect];
     [lab setTextAlignment:NSTextAlignmentCenter];
@@ -61,6 +58,23 @@
     [vLoading addSubview:lab];
     
     return self;
+}
+
+#pragma mark -
+#pragma mark Controller Methods
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void)setConfigurations
+{
+    [super setConfigurations];
 }
 
 #pragma mark -
@@ -281,8 +295,9 @@
         {
             part = [[[dict objectForKey:KEY_FORM_PARTICIPANT] objectAtIndex:0] objectForKey:KEY_VALUES];
             // proceed..
-            stringToRequest = [NSString stringWithFormat:@"%@?os=ios&event_name=%@color=green&day=%@&payment=%@&name=%@&email=%@&cpf=%@&company=%@&role=%@",
+            stringToRequest = [NSString stringWithFormat:@"%@?os=ios&to_email=%@&event_name=%@color=green&day=%@&payment=%@&name=%@&email=%@&cpf=%@&company=%@&role=%@",
                                URL_PASS_ADD,
+                               [[[self dictionary] objectForKey:@"email"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[[self dictionary] objectForKey:@"event_name"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[dict objectForKey:KEY_FORM_DATE] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[dict objectForKey:KEY_FORM_PAYMENT] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
@@ -297,8 +312,9 @@
         {
             part = [[[dict objectForKey:KEY_FORM_PARTICIPANT] objectAtIndex:0] objectForKey:KEY_VALUES];
             // proceed..
-            stringToRequest = [NSString stringWithFormat:@"%@?os=ios&event_name=%@&color=gold&payment=%@&name=%@&email=%@&cpf=%@&company=%@&role=%@",
+            stringToRequest = [NSString stringWithFormat:@"%@?os=ios&to_email=%@&event_name=%@&color=gold&payment=%@&name=%@&email=%@&cpf=%@&company=%@&role=%@",
                                URL_PASS_ADD,
+                               [[[self dictionary] objectForKey:@"email"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[[self dictionary] objectForKey:@"event_name"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[dict objectForKey:KEY_FORM_PAYMENT] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[part objectForKey:KEY_NAME] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
@@ -310,8 +326,9 @@
             break;
         case kPassColorRed:
         {
-            stringToRequest = [NSString stringWithFormat:@"%@?os=ios&event_name=%@&color=red&payment=%@",
+            stringToRequest = [NSString stringWithFormat:@"%@?os=ios&to_email=%@&event_name=%@&color=red&payment=%@",
                                URL_PASS_ADD,
+                               [[[self dictionary] objectForKey:@"email"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[[self dictionary] objectForKey:@"event_name"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                                [[dict objectForKey:KEY_FORM_PAYMENT] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
             NSArray *parts = [dict objectForKey:KEY_FORM_PARTICIPANT];

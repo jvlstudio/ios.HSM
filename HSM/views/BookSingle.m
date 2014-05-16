@@ -8,18 +8,44 @@
 
 #import "BookSingle.h"
 
-@interface BookSingle ()
-- (void) allButtonsUp;
-- (void) setInfo;
-@end
-
 @implementation BookSingle
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
-    [self setTitle:[NSString stringWithFormat:@"Livro: %@", [[self dictionary] objectForKey:KEY_NAME]]];
-    [self setInfo];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
+    [self setTitle:@"Livro"];
+    
+    [labTitle setText:[[self dictionary] objectForKey:KEY_NAME]];
+    [labSubtitle setText:[[self dictionary] objectForKey:KEY_SUBTITLE]];
+    [labTitle setFont:[UIFont fontWithName:FONT_REGULAR size:labTitle.font.pointSize]];
+    [labSubtitle setFont:[UIFont fontWithName:FONT_REGULAR size:labSubtitle.font.pointSize]];
+    
+    [labTitle alignBottom];
+    [labSubtitle alignTop];
+    
+    [labPrice setText:@"consulte"];
+    [labAuthor setText:[[self dictionary] objectForKey:KEY_AUTHOR_NAME]];
+    [especDimensions setText:[[self dictionary] objectForKey:KEY_DIMENSIONS]];
+    [especPages setText:[[self dictionary] objectForKey:KEY_PAGES]];
+    [especCodebarBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_BOOK]];
+    [especCodebarEBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_EBOOK]];
+    [tvSinopse setText:[[self dictionary] objectForKey:KEY_DESCRIPTION]];
+    [tvAuthor setText:[[self dictionary] objectForKey:KEY_AUTHOR_DESCRIPTION]];
+    
+    NSString *strImg    = [NSString stringWithFormat:@"%@.png", [[self dictionary] objectForKey:KEY_SLUG]];
+    [imgPicture setImage:[UIImage imageNamed:strImg]];
     
     // scr..
     [scr setContentSize:CGSizeMake(v.frame.size.width, v.frame.size.height)];
@@ -35,7 +61,7 @@
     [vAuthor setFrame:rect2];
     
     [scrSub setContentSize:CGSizeMake(WINDOW_WIDTH*3, scrSub.frame.size.height)];
-    [scrSub addSubview:tvSinopse];
+    [scrSub addSubview:vDescription];
     [scrSub addSubview:vEspec];
     [scrSub addSubview:vAuthor];
 }
@@ -49,62 +75,32 @@
     NSURL *url = [ [ NSURL alloc ] initWithString: strURL ];
     [[UIApplication sharedApplication] openURL:url];
 }
-- (IBAction) pressSinopse:(id)sender
+- (IBAction) segmentChange:(UISegmentedControl*)sender
 {
-    [self allButtonsUp];
-    [butSinopse setSelected:YES];
-    // ..
-    [UIView animateWithDuration:0.5f animations:^{
-        [scrSub setContentOffset:CGPointMake(ZERO, ZERO)];
-    }];
-}
-- (IBAction) pressEspec:(id)sender
-{
-    [self allButtonsUp];
-    [butEspec setSelected:YES];
-    // ..
-    [UIView animateWithDuration:0.5f animations:^{
-        [scrSub setContentOffset:CGPointMake(WINDOW_WIDTH, ZERO)];
-    }];
-}
-- (IBAction) pressAuthor:(id)sender
-{
-    [self allButtonsUp];
-    [butAuthor setSelected:YES];
-    // ..
-    [UIView animateWithDuration:0.5f animations:^{
-        [scrSub setContentOffset:CGPointMake((WINDOW_WIDTH*2), ZERO)];
-    }];
-}
-
-#pragma mark -
-#pragma mark Methods
-
-- (void) allButtonsUp
-{
-    [butSinopse setSelected:NO];
-    [butEspec setSelected:NO];
-    [butAuthor setSelected:NO];
-}
-- (void) setInfo
-{
-    [labTitle setText:[[self dictionary] objectForKey:KEY_NAME]];
-    [labSubtitle setText:[[self dictionary] objectForKey:KEY_SUBTITLE]];
-    
-    [labTitle alignBottom];
-    [labSubtitle alignTop];
-    
-    [labPrice setText:[[self dictionary] objectForKey:KEY_PRICE]];
-    [labAuthor setText:[[self dictionary] objectForKey:KEY_AUTHOR_NAME]];
-    [especDimensions setText:[[self dictionary] objectForKey:KEY_DIMENSIONS]];
-    [especPages setText:[[self dictionary] objectForKey:KEY_PAGES]];
-    [especCodebarBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_BOOK]];
-    [especCodebarEBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_EBOOK]];
-    [tvSinopse setText:[[self dictionary] objectForKey:KEY_DESCRIPTION]];
-    [tvAuthor setText:[[self dictionary] objectForKey:KEY_AUTHOR_DESCRIPTION]];
-    
-    NSString *strImg    = [NSString stringWithFormat:@"%@.png", [[self dictionary] objectForKey:KEY_SLUG]];
-    [imgPicture setImage:[UIImage imageNamed:strImg]];
+    switch (sender.selectedSegmentIndex)
+    {
+        case 0:
+        {
+            [UIView animateWithDuration:0.5f animations:^{
+                [scrSub setContentOffset:CGPointMake(ZERO, ZERO)];
+            }];
+        }
+            break;
+        case 1:
+        {
+            [UIView animateWithDuration:0.5f animations:^{
+                [scrSub setContentOffset:CGPointMake(WINDOW_WIDTH, ZERO)];
+            }];
+        }
+            break;
+        case 2:
+        {
+            [UIView animateWithDuration:0.5f animations:^{
+                [scrSub setContentOffset:CGPointMake((WINDOW_WIDTH*2), ZERO)];
+            }];
+        }
+            break;
+    }
 }
 
 #pragma mark -
@@ -117,21 +113,15 @@
         CGPoint offset = scrollView.contentOffset;
         if (offset.x == ZERO)
         {
-            [self allButtonsUp];
-            //[[self butSinopse] setSelected:YES];
-            [butSinopse setSelected:YES];
+            [segment setSelectedSegmentIndex:0];
         }
         if (offset.x == WINDOW_WIDTH)
         {
-            [self allButtonsUp];
-            //[[self butEspec] setSelected:YES];
-            [butEspec setSelected:YES];
+            [segment setSelectedSegmentIndex:1];
         }
         if (offset.x == (WINDOW_WIDTH*2))
         {
-            [self allButtonsUp];
-            //[[self butAuthor] setSelected:YES];
-            [butAuthor setSelected:YES];
+            [segment setSelectedSegmentIndex:2];
         }
     }
 }

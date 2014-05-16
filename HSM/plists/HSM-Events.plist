@@ -6,11 +6,11 @@
 		<key>name</key>
 		<string>Seminário HSM - Damodaran on Valuation</string>
 		<key>slug</key>
-		<string>damodaran</string>
+		<string>damodaran14</string>
 		<key>dates</key>
 		<string>27 e 28 de março, 2014</string>
 		<key>date</key>
-		<string>27 e 28 de março</string>
+		<string>27 e 28 mar</string>
 		<key>hours</key>
 		<string>14h às 18h, 9h às 17h30</string>
 		<key>local</key>
@@ -19,27 +19,19 @@
 		<string>Como as empresas criam ou destroem valor</string>
 		<key>description</key>
 		<string>(Participação especial: Ricardo José de Almeida) 
-Neste seminário de dois dias, Aswath Damodaran, considerado a maior autoridade mundial em Valuation e o mais consagrado professor de Finanças em todo o mundo, proporcionará aos participantes uma verdadeira imersão no tema “Como as empresas criam ou destroem valor”. O evento será dividido em duas sessões:
+Neste seminário de dois dias, Aswath Damodaran, considerado a maior autoridade mundial em Valuation e o mais consagrado professor de Finanças em todo o mundo, proporcionará aos participantes uma verdadeira imersão no tema &quot;Como as empresas criam ou destroem valor&quot;. O evento será dividido em duas sessões:
 
 •	Sessão I – Valor: criação, crescimento e destruição
 
 •	Sessão II – Valuation
 
 Os participantes também contarão com a presença do professor Ricardo José de Almeida,  um grande especialista em valuation de empresas no Brasil, que será o responsável por trazer o conteúdo nacional para este evento. 
+
 Uma rara oportunidade de reflexão e inspiração para um grupo restrito e privilegiado que poderá interagir com dois brilhantes pensadores do management da atualidade. </string>
 		<key>show_passes</key>
 		<string>kYes</string>
 		<key>did_happen</key>
 		<string>kNo</string>
-		<key>color</key>
-		<dict>
-			<key>red</key>
-			<string>5.0</string>
-			<key>green</key>
-			<string>68.0</string>
-			<key>blue</key>
-			<string>110.0</string>
-		</dict>
 		<key>panelists</key>
 		<array>
 			<dict>
@@ -49,15 +41,23 @@ Uma rara oportunidade de reflexão e inspiração para um grupo restrito e privi
 				<string>ricardo_jose_de_almeida</string>
 				<key>speech</key>
 				<string>Entendendo o que faz o valor da empresa</string>
+				<key>theme_title</key>
+				<string>Entendendo o que faz o valor da empresa</string>
 				<key>theme</key>
-				<string>Entendendo o que faz o valor da empresa
-• O que a empresa deve entregar para criar valor para os acionistas
+				<string>• O que a empresa deve entregar para criar valor para os acionistas
+				
 • A relação entre o que acontece na economia, no setor e na própria empresa para criar (ou destruir) valor para os acionistas
+
 • Entendendo o modelo de avaliar uma empresa
+
 • Como decidir a distribuição de lucros entre os acionistas para criar valor
+
 • Se vender uma empresa, vai investir em quê? Como dimensionar o custo de oportunidade dos investidores
+
 • Como analisar se o modelo que direcionou o valor está realista
+
 • Como extrair os value drivers usados pelo avaliador da empresa
+
 • Como alinhar a estratégia da empresa no valuation.</string>
 				<key>info_date</key>
 				<string>27 de março</string>
@@ -74,8 +74,9 @@ Uma rara oportunidade de reflexão e inspiração para um grupo restrito e privi
 				</array>
 				<key>description</key>
 				<string>É doutor e mestre em Administração de Empresas com especialização em Finanças pela USP. É sócio-diretor da RJA Assessoria e Treinamento, tendo já trabalhado com muitas das principais empresas do País, como Banco Itaú, Bradesco, Cyrela, Aché Laboratórios Farmacêuticos, Amil, Volvo e BR Foods, entre outras.
-Especialista em valuation de empresas no Brasil, o foco de seu trabalho tem sido o uso de valuation para diagnosticar a estratégia da empresa e também equilibrar, econômica e financeiramente, concessões públicas.
+				
 Almeida é professor de cursos de pós-graduação na área de Finanças nas melhores escolas do País, como FIA, Insper e HSM Educação.
+
 É coautor dos livros Fusões e aquisições: aspectos econômicos e jurídicos e O valor da empresa e a influência dos stakeholders.</string>
 			</dict>
 			<dict>
@@ -85,21 +86,37 @@ Almeida é professor de cursos de pós-graduação na área de Finanças nas mel
 				<string>aswath_damodaran</string>
 				<key>speech</key>
 				<string>2 sessões</string>
+				<key>theme_title</key>
+				<string>Sessão I - Valor: criação, crescimento e destruição / Sessão II - Valutation</string>
 				<key>theme</key>
 				<string>Sessão I — Valor: criação, crescimento e destruição
+				
 • Por que a maximização de valor deve ser, se não o único, pelo menos o objetivo principal das empresas
+
 • Como se aumenta o valor de um negócio? Caminhos disponíveis para a empresa criar valor
+
 • Por que a criação de valor é uma responsabilidade compartilhada por todos na organização, e o que fazer a respeito
+
 • Quais são os caminhos que geram e, às vezes, destroem valor, e como percorrê-los
+
 • Quais as ferramentas de avaliação que podem ser usadas para determinar se uma decisão é criadora ou destruidora de valor e como escolher a melhor em cada situação
+
 • Como utilizar evidências empíricas de criação ou destruição de valor
+
 • O papel da estratégia corporativa e da interação entre finanças corporativas e as demais áreas funcionais da empresa na criação de valor
+
 Sessão II — Valuation
+
 • Quais são os fundamentos, limitações e riscos de cada abordagem de avaliação — e quais os melhores exemplos de aplicação de cada uma delas
-• Por que a avaliação não é uma busca objetiva de valor “real” — e por que achamos que é
+
+• Por que a avaliação não é uma busca objetiva de valor &quot;real&quot; — e por que achamos que é
+
 • Como escolher o modelo certo de avaliação para cada empresa específica
+
 • Por que modelos quantitativos nem sempre implicam avaliações melhores — e por que utilizá-los mesmo assim
+
 • Como ampliar seu repertório de habilidades de avaliação em fusões e aquisições
+
 • Por que os mercados tendem a ser ineficientes e equivocados na avaliação de valor e como os modelos de avaliação devem ser usados em decisões de investimento.</string>
 				<key>info_date</key>
 				<string>28 de março</string>
@@ -116,8 +133,11 @@ Sessão II — Valuation
 				</array>
 				<key>description</key>
 				<string>Considerado a maior autoridade em valuation e o mais consagrado professor de Finanças em todo o mundo, Aswath Damodaran é autor de dez livros, usados nos principais programas de finanças em todo o mundo. Entre eles estão: Investment valuation (Avaliação de investimentos), Damodaran on valuation, Corporate finance (Finanças corporativas) e Strategic risk taking (Gestão estratégica do risco).
-É professor na Stern School of Business, da New York University, onde recebeu por sete vezes o prêmio por Excelência em Ensino. Foi professor visitante na University of California, Berkeley, sendo agraciado com o Prêmio Earl F. Cheit, também por Excelência em Ensino. Foi destacado pela revista Businessweek como um dos 12 melhores professores do mundo segundo a rede social Poets and Quants. Seu blog, Musing on Markets, foi escolhido pelo Times de Londres como um dos melhores do mundo sobre o mercado de ações. Suas avaliações influenciam investidores nos quatro continentes e previram a sobrevalorização das ações do Facebook.
+				
+É professor na Stern School of Business, da New York University, onde recebeu por sete vezes o prêmio por Excelência em Ensino. Suas avaliações influenciam investidores nos quatro continentes e previram a sobrevalorização das ações do Facebook.
+
 Damodaran tem diversos artigos publicados no The Journal of Finance, Journal of Financial Economics e no Journal of Financial and Quantitative Analysis (JFQA), entre outras publicações.
+
 Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela University of California, em Los Angeles.</string>
 			</dict>
 		</array>
@@ -126,6 +146,8 @@ Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela Un
 			<dict>
 				<key>day</key>
 				<date>2014-03-27T17:00:00Z</date>
+				<key>label</key>
+				<string>27-Março</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -136,13 +158,15 @@ Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela Un
 						<key>label</key>
 						<string>Entendendo o que faz o valor da empresa</string>
 						<key>hour</key>
-						<string>14h às 18h</string>
+						<string>14h00 às 18h00</string>
 					</dict>
 				</array>
 			</dict>
 			<dict>
 				<key>day</key>
 				<date>2014-03-28T12:00:00Z</date>
+				<key>label</key>
+				<string>28-Março</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -153,7 +177,7 @@ Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela Un
 						<key>label</key>
 						<string>2 sessões</string>
 						<key>hour</key>
-						<string>9h às 17h30</string>
+						<string>09h00 às 17h30</string>
 					</dict>
 				</array>
 			</dict>
@@ -165,40 +189,21 @@ Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela Un
 				<key>event_name</key>
 				<string>Seminário HSM - Damodaran on Valuation</string>
 				<key>label</key>
-				<string>Passe Premium</string>
+				<string>Passe Individual</string>
 				<key>description</key>
 				<string>Válido para os 2 dias do evento</string>
 				<key>value</key>
 				<string>2.750,00</string>
 				<key>value_site</key>
-				<string>2.200,00</string>
+				<string>2.750,00</string>
 				<key>value_app</key>
-				<string>2.090,00</string>
+				<string>2.750,00</string>
 				<key>show_dates</key>
 				<string>kNo</string>
 				<key>multiple</key>
 				<string>kNo</string>
-				<key>dates</key>
-				<array/>
-			</dict>
-			<key>red</key>
-			<dict>
-				<key>event_name</key>
-				<string>Seminário HSM - Damodaran on Valuation</string>
-				<key>label</key>
-				<string>Passe Corporate</string>
-				<key>description</key>
-				<string>Válido por 5 Passes Premium</string>
-				<key>value</key>
-				<string>11.500,00</string>
-				<key>value_site</key>
-				<string>9.200,00</string>
-				<key>value_app</key>
-				<string>8.740,00</string>
-				<key>show_dates</key>
-				<string>kNo</string>
-				<key>multiple</key>
-				<string>kYes</string>
+				<key>validate</key>
+				<string></string>
 				<key>dates</key>
 				<array/>
 			</dict>
@@ -208,35 +213,29 @@ Formou-se pelo Indian Institute of Management e obteve seu MBA e o Ph.D. pela Un
 		<key>name</key>
 		<string>Fórum HSM - Gestão e Liderança 2014</string>
 		<key>slug</key>
-		<string>gestao_lideranca_2014</string>
+		<string>gestao14</string>
 		<key>date</key>
-		<string>1 e 2 de abril</string>
+		<string>1 e 2 abr</string>
 		<key>dates</key>
 		<string>1 e 2 de abril, 2014</string>
 		<key>hours</key>
-		<string>9h às 17h, 9h às 17h30</string>
+		<string>9h às 17h</string>
 		<key>local</key>
-		<string>Teatro Alfa – Hotel Transamérica</string>
+		<string>Golden Hall WTC – São Paulo</string>
 		<key>tiny_description</key>
 		<string>Liderança e Gestão em um mundo de Rupturas</string>
 		<key>description</key>
 		<string>O Brasil em 2014 estará no foco do mundo e, especialmente, dos negócios com os eventos esportivos e acontecimentos políticos e econômicos. E por isso, os líderes têm um papel estratégico neste panorama de visibilidade e rupturas para as empresas.
+		
 Seus líderes estão preparados para esse cenário? 
+
 No Fórum HSM Gestão e Liderança, os gestores poderão se preparar para esse momento do mercado nacional, ouvindo conteúdos inéditos dos principais mentores, conceitos e práticas de sucesso, além vivenciar um ambiente propício para o networking e para geração de novos negócios. 
+
 Um encontro de dois dias que provoca reflexões e inspira descobertas para aqueles que já têm ou terão a missão de conduzir os negócios nesse mundo de mudanças e transformações. </string>
 		<key>show_passes</key>
 		<string>kYes</string>
 		<key>did_happen</key>
 		<string>kNo</string>
-		<key>color</key>
-		<dict>
-			<key>red</key>
-			<string>5.0</string>
-			<key>green</key>
-			<string>68.0</string>
-			<key>blue</key>
-			<string>110.0</string>
-		</dict>
 		<key>panelists</key>
 		<array>
 			<dict>
@@ -246,14 +245,21 @@ Um encontro de dois dias que provoca reflexões e inspira descobertas para aquel
 				<string>rosabeth_moss_kanter</string>
 				<key>speech</key>
 				<string>Liderança resiliente</string>
+				<key>theme_title</key>
+				<string>LIDERANÇA RESILIENTE: COMO VENCER EM UM AMBIENTE DE RUPTURAS</string>
 				<key>theme</key>
-				<string>A mais importante habilidade de liderança agora que as surpresas são a nova realidade.• Por que a rapidez das mudanças provocadas pela tecnologia no nosso mundo interconectado e a complexidade de fazer negócios em escala global tornam a liderança ainda mais desafiadora
-• Por que, nesta época de rupturas, a capacidade de se recuperar rapidamente de reveses distingue as empresas vencedoras das perdedoras
+				<string>• Por que, nesta época de rupturas, a capacidade de se recuperar rapidamente de reveses distingue as empresas vencedoras das perdedoras
+
 • Quais são os problemas potenciais resultantes de choques inesperados no ambiente — e como lidar com eles
+
 • Quais são as novas habilidades pessoais que os líderes precisam cultivar para adquirir resiliência em face das mudanças
+
 • Resiliência: muito mais do que flexibilidade e agilidade
+
 • Resiliência e força de caráter: causas e reciprocidade
+
 • Os valores básicos que motivam o líder resiliente a superar dificuldades e a prosseguir caminhando até o sucesso
+
 • Por que a presunção, a arrogância e a ganância acabam com a resiliência — e como a humildade e um propósito nobre alimentam-na.</string>
 				<key>info_date</key>
 				<string>01 de abril</string>
@@ -269,187 +275,13 @@ Um encontro de dois dias que provoca reflexões e inspira descobertas para aquel
 					</dict>
 				</array>
 				<key>description</key>
-				<string>Consagrada professora da Harvard Business School, é uma das maiores autoridades mundiais em estratégia, inovação e gestão da mudança. Kanter tem sido repetidamente incluída nas listas “50 mulheres mais poderosas do mundo” (Times de Londres) e “50 pensadores de management mais influentes do mundo” (Thinkers 50). Há mais de 30 anos seus insights estratégicos têm orientado dezenas de líderes das principais empresas do mundo inteiro.
+				<string>Consagrada professora da Harvard Business School, é uma das maiores autoridades mundiais em estratégia, inovação e gestão da mudança. Kanter tem sido repetidamente incluída nas listas &quot;50 mulheres mais poderosas do mundo&quot; (Times de Londres) e &quot;50 pensadores de management mais influentes do mundo&quot; (Thinkers 50). Há mais de 30 anos seus insights estratégicos têm orientado dezenas de líderes das principais empresas do mundo inteiro.
+				
 É autora de 18 livros, entre eles SuperCorp, Confidence, Word class, When giants learn to dance, Rosabeth Moss Kanter on the frontiers of management e o best-seller mundial The change masters.
+
 Kanter recebeu 23 títulos de doutor honoris causa, além de inúmeros prêmios de liderança e homenagens por sua contribuição ao management. Entre eles estão: Distinguished Career da Academy of Management, Visionária do Ano da Comunidade de Inteligência e Liderança Internacional da Association of Leadership Professionals.
+
 Obteve o Ph.D. pela University of Michigan.</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Clay Shirky</string>
-				<key>slug</key>
-				<string>clay_shirky</string>
-				<key>speech</key>
-				<string>A Nova Empresa Aberta</string>
-				<key>theme</key>
-				<string>A Arte de liderar e administrar em um mundo conectado por redes.
-• Por que as novas ferramentas de auto-organização são vitais no atual ambiente de negócios e por que são elas que determinam como a empresa opera
-• A erosão do rígido controle que as instituições tinham sobre a informação
-• A capacidade de os clientes encontrarem, disseminarem e até mesmo gerarem informações, o que costumava ser prerrogativa exclusiva da empresa
-• A aplicabilidade desses mesmos princípios aos funcionários da própria empresa
-• Por que a principal ameaça a você não é a perda de controle sobre as informações e as mensagens — isso já aconteceu — e sim conduzir a sua empresa como se ainda detivesse esse controle
-• A capacidade de explorar novas ideias e modelos de negócio de modo mais rápido e barato
-• A oportunidade de abrir novos mercados, aprendendo o que os clientes querem e observando o que eles já fazem por conta própria
-• Por que as concepções tradicionais de liderança — “visão grandiosa” e “microgerenciamento” — existem nas extremidades erradas do espectro da liderança contemporânea
-• Por que os líderes que atuam hoje — de Linus Torvalds a Jeff Bezos — muitas vezes têm de escolher as partes do trabalho sobre as quais exercerão rígido controle e as que eles sabem que terão de ser compartilhadas com os usuários
-• Implicações para o Brasil e as empresas brasileiras.</string>
-				<key>info_date</key>
-				<string>02 de abril</string>
-				<key>info_hour</key>
-				<string>9h às 10h30</string>
-				<key>gmtc</key>
-				<array>
-					<dict>
-						<key>date</key>
-						<date>2014-04-02T12:00:00Z</date>
-						<key>minutes</key>
-						<string>90</string>
-					</dict>
-				</array>
-				<key>description</key>
-				<string>Considerado uma das maiores autoridades sobre a revolução digital, Shirky apresenta uma visão perspicaz e diferenciada das redes, softwares sociais e efeitos da tecnologia na sociedade e nas empresas.
-É autor dos best-sellers Lá vem todo mundo: o poder de organizar sem organizações e A cultura da participação: criatividade e generosidade no mundo conectado. Em Lá vem todo mundo, eleito pelo The Guardian um dos 100 melhores livros de não ficção de todos os tempos, Shirky examina como as organizações e setores inteiros da economia estão sendo abalados por redes abertas, colaboração e apropriação pelo usuário da produção e disseminação de conteúdos. Em A cultura da participação, ele revela como as novas tecnologias estão nos transformando de consumidores em colaboradores, libertando uma corrente de produção criativa que transforma o mundo. Foi destacado pela revista Fortune como uma das pessoas mais inteligentes na área de tecnologia.
-Shirky é professor do Programa de Telecomunicações Interativas da New York University (NYU) e escritor emérito residente do Departamento de Jornalismo da mesma universidade. É também membro do Berkman Center for Internet &amp; Society, da Harvard University.
-Palestrante frequente do TED, consultor com foco especial na ascensão das tecnologias descentralizadas, é autor de artigos publicados pelo The New York Times, Harvard Business Review, The Wall Street Journal e Wired Magazine. Graduou-se pela Yale University.</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Charles Duhigg</string>
-				<key>slug</key>
-				<string>charles_duhigg</string>
-				<key>speech</key>
-				<string>Os Hábitos das Empresas Vencedoras</string>
-				<key>theme</key>
-				<string>Por que fazemos o que fazemos na vida e nos negócios
-• O que é exatamente um hábito
-• Como as empresas podem utilizar a ciência por trás da formação de hábitos para estudar — e influenciar o que compramos
-• Como as empresas podem atingir o sucesso identificando e aprendendo a mudar os hábitos que moldam seus negócios
-• Mais de 40% de nossas ações no dia a dia não são decisões reais, mas hábitos — as implicações de conduzirmos nossa vida e nossas empresas em “piloto automático”
-• Por que os hábitos podem ser tão difíceis de mudar depois de enraizados
-• Como controlar o loop do hábito e desenvolver novos hábitos que superem ou substituam os antigos
-• Por que os hábitos impedem as empresas de se reinventar
-• Como a mudança de hábitos tem transformado completamente as empresas. Exemplos reais da Starbucks, Procter &amp; Gamble e Target
-• Como as empresas vencedoras cultivam hábitos em sua organização, funcionários e clientes.</string>
-				<key>info_date</key>
-				<string>01 de abril</string>
-				<key>info_hour</key>
-				<string>14h às 15h30</string>
-				<key>gmtc</key>
-				<array>
-					<dict>
-						<key>date</key>
-						<date>2014-04-01T17:00:00Z</date>
-						<key>minutes</key>
-						<string>90</string>
-					</dict>
-				</array>
-				<key>description</key>
-				<string>É autor do mega best-seller mundial O poder do hábito (incluindo a lista do best-seller da revista Veja), em que explica a ciência de formação de hábitos em nossas vidas, empresas e sociedades e traz à tona um entendimento totalmente novo da natureza humana e seu potencial para a transformação. Duhigg é o premiado jornalista da seção de negócios do The New York Times. Entre seus diversos prêmios, recebeu em 2013 o aclamado Pulitzer pela série intitulada “The iEconomy” sobre a Apple e a influência da empresa nos Estados Unidos e no mundo. Jim Collins destacou os insights de Duhigg como “incisivos, provocadores e práticos”. As realizações de Duhigg o transformaram em palestrante extremamente requisitado por ampla gama de organizações no mundo inteiro.
-É também colaborador regular de programas de televisão e rádio nos Estados Unidos, incluindo NewsHour with Jim Lehrer, Frontline, Dr. Oz e vários outros na CNBC e NPR.
-Formou-se pela Yale University e obteve o MBA pela Harvard Business School.</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Christer Windeløv-Lidzélius</string>
-				<key>slug</key>
-				<string>christer_windelov_lidzelius</string>
-				<key>speech</key>
-				<string>Liderança Criativa</string>
-				<key>theme</key>
-				<string>A Arte de fazer pessoas e ideias prosperar
-• O que é liderança criativa
-• O propósito, fundamentos e princípios da liderança criativa
-• Liderar a si mesmo, liderar a equipe, liderar os resultados
-• Espaço de liderança — visão, capacitação e orientação
-• Como desenvolver a criatividade para resolver problemas
-• Da instrução à inspiração
-• O poder das perspectivas e das atitudes
-• Julgamentos e decisões: como liderar com seus filtros e suposições.</string>
-				<key>info_date</key>
-				<string>02 de abril</string>
-				<key>info_hour</key>
-				<string>11h às 12h30</string>
-				<key>gmtc</key>
-				<array>
-					<dict>
-						<key>date</key>
-						<date>2014-04-02T14:00:00Z</date>
-						<key>minutes</key>
-						<string>90</string>
-					</dict>
-				</array>
-				<key>description</key>
-				<string>É CEO e reitor da KaosPilot, eleita pelas revistas Fast Company e Businessweek como uma das melhores escolas de design de negócios do mundo. A KaosPilot foi criada em 1991, em Aarhus, Dinamarca, e hoje é reconhecida internacionalmente por ajudar seus alunos a se tornar pensadores e líderes criativos e a transformar seus projetos em organizações de sucesso com larga escala.
-Em sua carreira como executivo, Windeløv-Lidzélius foi CEO de diversas empresas nos mais diferentes setores, entre elas Netfact AS (desenvolvimento de software), Scandpharma (saúde) e Knowledge Creation Lab (desenvolvimento organizacional).
-É formado em Economias e Políticas Sociais pela Uppsala University. Possui MBA pela Heriot-Watt University, em Edimburgo.</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Yves Morieux</string>
-				<key>slug</key>
-				<string>yves_morieux</string>
-				<key>speech</key>
-				<string>Simplicidade Inteligente</string>
-				<key>theme</key>
-				<string>Como obter vantagem competitiva simplificando a organização para gerir melhor a complexidade dos negócios
-• Por que a maneira como as empresas tendem a reagir à nova complexidade dos negócios é contraproducente
-
-• Como a complexidade está matando a empresa moderna e tornando mais difícil para as pessoas realizarem seu trabalho
-
--   Quais são as regras simples e inteligentes para tornar qualquer organização menos complicada
-
- -   Por que a única resposta eficaz à complexidade crescente é parar de controlá-la
-
-  - Como deixar que as pessoas trabalhem juntas e usem sua própria inteligência para enfrentar desafios  
-
-•  Como mobilizar as pessoas sem impor-lhes mais processos, estruturas ou hierarquias
-
-• O novo papel dos gestores na organização do futuro.</string>
-				<key>info_date</key>
-				<string>02 de abril</string>
-				<key>info_hour</key>
-				<string>14h às 15h30</string>
-				<key>gmtc</key>
-				<array>
-					<dict>
-						<key>date</key>
-						<date>2014-04-02T17:00:00Z</date>
-						<key>minutes</key>
-						<string>90</string>
-					</dict>
-				</array>
-				<key>description</key>
-				<string>É sócio e diretor do Boston Consulting Group (BCG), uma das maiores empresas de consultoria do mundo. É renomado especialista em transformações corporativas e no desenvolvimento de formas pioneiras de pensamento organizacional baseadas na “simplicidade inteligente”. Morieux é também pesquisador do BCG e diretor do Instituto de Organizações da divisão global de pessoas e organizações do grupo. O seu livro Six simple rules: how to manage complexity without getting complicated será lançado em breve pela Harvard Business Review Press.
-Morieux é professor no Institut d’Études Politiques (IEP), de Paris. É destaque frequente em artigos sobre a evolução organizacional das empresas em publicações como The Economist, The Wall Street Journal, Fast Company e Le Monde.
-Obteve o mestrado em Sociologia Organizacional pelo IEP e o doutorado em Administração de Empresas pela University of Strathclyde, no Reino Unido.</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Fábio Barbosa</string>
-				<key>slug</key>
-				<string>fabio_barbosa</string>
-				<key>speech</key>
-				<string>Liderança pelo exemplo</string>
-				<key>theme</key>
-				<string>Liderança pelo exemplo: valores e gestão no dia a dia</string>
-				<key>info_date</key>
-				<string>01 de abril</string>
-				<key>info_hour</key>
-				<string>16h às 17h</string>
-				<key>gmtc</key>
-				<array>
-					<dict>
-						<key>date</key>
-						<date>2014-04-01T19:00:00Z</date>
-						<key>minutes</key>
-						<string>60</string>
-					</dict>
-				</array>
-				<key>description</key>
-				<string>É um dos maiores ícones empresariais do Brasil. É atualmente presidente da Abril S.A. Foi presidente do ABN Amro Real e, em 2008, com a aquisição do Banco Real, do Santander Brasil, e da Febraban por quatro anos.
-É também presidente do conselho da Fundação Osesp e membro dos conselhos da UM Foundation, Insper, Instituto Empreender Endeavor e do Instituto Ayrton Senna.
-Foi premiado, em 2013, como Líder pela Mudança Social e, em 2011, foi reconhecido como Personalidade do Ano pelas Câmaras Brasil-Estados Unidos de Comércio, em Nova York. Em 2012 recebeu o prêmio Campeões da Terra por sua visão empresarial.
-Graduou-se em Administração de Empresas pela Fundação Getulio Vargas e obteve o MBA pelo IMD, na Suíça.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -458,12 +290,19 @@ Graduou-se em Administração de Empresas pela Fundação Getulio Vargas e obtev
 				<string>luiz_carlos_cabrera</string>
 				<key>speech</key>
 				<string>Como construir uma Cultura Vitoriosa nas Empresas do Brasil</string>
+				<key>theme_title</key>
+				<string>COMO CONSTRUIR UMA CULTURA VITORIOSA NAS EMPRESAS NO BRASIL</string>
 				<key>theme</key>
-				<string>A influência do contexto e da cultura na sustentabilidade do processo de liderança
+				<string>• A influência do contexto e da cultura na sustentabilidade do processo de liderança
+				
 • Um panorama atual do contexto empresarial brasileiro
+
 • Existe uma cultura empresarial brasileira?
+
 • A evolução dos stakeholders no caso das empresas emergentes
+
 • O que torna uma liderança sustentável?
+
 • Como obter colaboração e focar a execução. Uma receita infalível de sucesso na gestão.</string>
 				<key>info_date</key>
 				<string>01 de abril</string>
@@ -480,10 +319,217 @@ Graduou-se em Administração de Empresas pela Fundação Getulio Vargas e obtev
 				</array>
 				<key>description</key>
 				<string>É um ícone no Brasil nas áreas de gestão de carreiras e administração de recursos humanos.
+				
 Como fundador da Amrop Panelli Motta Cabrera, empresa pioneira na introdução do conceito de executive search no mercado brasileiro, teve a oportunidade de trabalhar nos últimos 38 anos com as principais empresas brasileiras e multinacionais no País e no exterior, em projetos de contratação de presidentes, diretores e membros do conselho. É membro do Advisory Board do Grupo Amrop, presente em 57 países, e chairman do Brazil National Committee, da Association of Executive Search Consultants (AESC). Em 2011 foi agraciado por essa associação com o prêmio Gardner W. Heidrick, oferecido anualmente a um profissional que tenha dado uma contribuição notável para a atividade de consultoria em executive search.
+
 É professor há mais de 30 anos no CEAG da Fundação Getulio Vargas e é também professor no Instituto Brasileiro de Governança Corporativa (IBCG).
+
 É coautor dos livros Transição 2000 e Se eu fosse você, o que faria como gestor de pessoas.
+
 Formou-se em Engenharia Metalúrgica pela Escola de Engenharia Mauá e fez pós-graduação em Administração na FGV e extensão na University of Southern California.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Charles Duhigg</string>
+				<key>slug</key>
+				<string>charles_duhigg</string>
+				<key>speech</key>
+				<string>Os Hábitos das Empresas Vencedoras</string>
+				<key>theme_title</key>
+				<string>OS HÁBITOS DAS EMPRESAS VENCEDORAS</string>
+				<key>theme</key>
+				<string>• Mais de 40% de nossas ações no dia a dia não são decisões reais, mas hábitos — as implicações de conduzirmos nossa vida e nossas empresas em &quot;piloto automático&quot;.
+				
+• Como as empresas podem atingir o sucesso identificando e aprendendo a mudar os hábitos que moldam seus negócios.
+
+• Como controlar o loop do hábito e desenvolver novos hábitos que superem ou substituam os antigos.
+
+• Por que os hábitos impedem as empresas de se reinventar?
+
+• Como as empresas podem utilizar a ciência por trás da formação de hábitos para estudar — e influenciar o que compramos.
+
+• Como as empresas vencedoras cultivam hábitos em sua organização, funcionários e clientes.
+
+• Como a mudança de hábitos tem transformado completamente as empresas. Exemplos reais da Starbucks, Procter &amp; Gamble e Target.</string>
+				<key>info_date</key>
+				<string>01 de abril</string>
+				<key>info_hour</key>
+				<string>14h às 15h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-01T17:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É autor do mega best-seller mundial O poder do hábito (inserido na lista do best-seller da revista Veja), em que explica a ciência de formação de hábitos em nossas vidas, empresas e sociedades e traz à tona um entendimento totalmente novo da natureza humana e seu potencial para a transformação. Duhigg é o premiado jornalista da seção de negócios do The New York Times. Entre seus diversos prêmios, recebeu em 2013 o aclamado Pulitzer pela série intitulada &quot;The iEconomy&quot; sobre a Apple e a influência da empresa nos Estados Unidos e no mundo. Jim Collins destacou os insights de Duhigg como &quot;incisivos, provocadores e práticos&quot;. As realizações de Duhigg o transformaram em palestrante extremamente requisitado por ampla gama de organizações no mundo inteiro.
+				
+Formou-se pela Yale University e obteve o MBA pela Harvard Business School.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Fábio Barbosa</string>
+				<key>slug</key>
+				<string>fabio_barbosa</string>
+				<key>speech</key>
+				<string>Liderança pelo exemplo: valores e gestão no dia a dia</string>
+				<key>theme_title</key>
+				<string>Liderança pelo exemplo: valores e gestão no dia a dia</string>
+				<key>theme</key>
+				<string>Liderança pelo exemplo: valores e gestão no dia a dia</string>
+				<key>info_date</key>
+				<string>01 de abril</string>
+				<key>info_hour</key>
+				<string>16h às 17h</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-01T19:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É um dos maiores ícones empresariais do Brasil. É atualmente presidente da Abril S.A. Foi presidente do ABN Amro Real e, em 2008, após aquisição do Banco Real, assumiu a presidência do Santander Brasil e da Febraban.
+				
+É também presidente do conselho da Fundação Osesp e membro dos conselhos da UN Foundation, Insper, Instituto Empreender Endeavor e do Instituto Ayrton Senna.
+
+Foi premiado, em 2013, como Líder pela Mudança Social e, em 2011, foi reconhecido como Personalidade do Ano pelas Câmaras Brasil-Estados Unidos de Comércio, em Nova York. Em 2012 recebeu o prêmio Campeões da Terra por sua visão empresarial.
+
+Graduou-se em Administração de Empresas pela Fundação Getulio Vargas e obteve o MBA pelo IMD, na Suíça.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Clay Shirky</string>
+				<key>slug</key>
+				<string>clay_shirky</string>
+				<key>speech</key>
+				<string>A Nova Empresa Aberta</string>
+				<key>theme_title</key>
+				<string>LIDERANDO A NOVA EMPRESA ABERTA EM UM MUNDO CONECTADO POR REDES</string>
+				<key>theme</key>
+				<string>• Por que as concepções tradicionais de liderança — &quot;visão grandiosa&quot; e &quot;microgerenciamento&quot; — existem nas extremidades erradas do espectro da liderança contemporânea?
+				
+• Por que os líderes que atuam hoje — de Linus Torvalds a Jeff Bezos — muitas vezes têm de escolher as partes do trabalho sobre as quais exercerão rígido controle e as que eles sabem que terão de ser compartilhadas com os usuários?
+
+• Por que as novas ferramentas de auto-organização são vitais no atual ambiente de negócios e por que são elas que determinam como a empresa opera?
+
+• A erosão do rígido controle que as instituições tinham sobre a informação e o impacto na gestão.
+
+• Por que a principal ameaça a você não é a perda de controle sobre as informações e as mensagens — isso já aconteceu — e sim conduzir a sua empresa como se ainda detivesse esse controle</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>9h às 10h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T12:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Considerado uma das maiores autoridades sobre a revolução digital, Shirky apresenta uma visão perspicaz e diferenciada das redes, softwares sociais e efeitos da tecnologia na sociedade e nas empresas.
+				
+É autor dos best-sellers Lá vem todo mundo: o poder de organizar sem organizações e A cultura da participação: criatividade e generosidade no mundo conectado. Em Lá vem todo mundo, eleito pelo The Guardian um dos 100 melhores livros de não ficção de todos os tempos, Shirky examina como as organizações e setores inteiros da economia estão sendo abalados por redes abertas, colaboração e apropriação pelo usuário da produção e disseminação de conteúdos. Em A cultura da participação, ele revela como as novas tecnologias estão nos transformando de consumidores em colaboradores, libertando uma corrente de produção criativa que transforma o mundo. Foi destacado pela revista Fortune como uma das pessoas mais inteligentes na área de tecnologia.
+
+Shirky é professor do Programa de Telecomunicações Interativas da New York University (NYU) e escritor emérito residente do Departamento de Jornalismo da mesma universidade. É também membro do Berkman Center for Internet &amp; Society, da Harvard University.
+
+Palestrante frequente do TED, consultor com foco especial na ascensão das tecnologias descentralizadas, é autor de artigos publicados pelo The New York Times, Harvard Business Review, The Wall Street Journal e Wired Magazine. Graduou-se pela Yale University.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Christer Windeløv-Lidzélius</string>
+				<key>slug</key>
+				<string>christer_windelov_lidzelius</string>
+				<key>speech</key>
+				<string>Liderança Criativa</string>
+				<key>theme_title</key>
+				<string>LIDERANÇA CRIATIVA: A ARTE DE FAZER PESSOAS E IDEIAS PROSPERAR</string>
+				<key>theme</key>
+				<string>• O que é liderança criativa?
+				
+• O propósito, fundamentos e princípios da liderança criativa
+
+• Liderar a si mesmo, liderar a equipe, liderar os resultados
+
+• Espaço de liderança — visão, capacitação e orientação
+
+• Como desenvolver a criatividade para resolver problemas
+
+• Da instrução à inspiração
+
+• O poder das perspectivas e das atitudes
+
+• Julgamentos e decisões: como liderar com seus filtros e suposições.</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>11h às 12h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T14:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É CEO e reitor da KaosPilot, eleita pelas revistas Fast Company e Businessweek como uma das melhores escolas de design de negócios do mundo. A KaosPilot foi criada em 1991, em Aarhus, Dinamarca, e hoje é reconhecida internacionalmente por ajudar seus alunos a se tornar pensadores e líderes criativos e a transformar seus projetos em organizações de sucesso com larga escala.
+				
+Em sua carreira como executivo, Windeløv-Lidzélius foi CEO de diversas empresas nos mais diferentes setores, entre elas Netfact AS (desenvolvimento de software), Scandpharma (saúde) e Knowledge Creation Lab (desenvolvimento organizacional).
+
+É formado em Economias e Políticas Sociais pela Uppsala University. Possui MBA pela Heriot-Watt University, em Edimburgo.</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Yves Morieux</string>
+				<key>slug</key>
+				<string>yves_morieux</string>
+				<key>speech</key>
+				<string>Simplicidade Inteligente</string>
+				<key>theme_title</key>
+				<string>SIMPLICIDADE INTELIGENTE: COMO GERIR MELHOR A COMPLEXIDADE DOS NEGÓCIOS</string>
+				<key>theme</key>
+				<string>• Por que a maneira como as empresas tendem a reagir à nova complexidade dos negócios é contraproducente?
+				
+• Como a complexidade está matando a empresa moderna e tornando mais difícil para as pessoas realizarem seu trabalho?
+
+• Quais são as regras simples e inteligentes para tornar qualquer organização menos complicada?
+
+• Por que a única resposta eficaz à complexidade crescente é parar de controlá-la?
+
+• Como deixar que as pessoas trabalhem juntas e usem sua própria inteligência para enfrentar desafios.
+
+• Como mobilizar as pessoas sem impor-lhes mais processos, estruturas ou hierarquias.
+
+• O novo papel dos gestores na organização do futuro.</string>
+				<key>info_date</key>
+				<string>02 de abril</string>
+				<key>info_hour</key>
+				<string>14h às 15h30</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-04-02T17:00:00Z</date>
+						<key>minutes</key>
+						<string>90</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>É sócio e diretor do Boston Consulting Group (BCG), uma das maiores empresas de consultoria do mundo. É renomado especialista em transformações corporativas e no desenvolvimento de formas pioneiras de pensamento organizacional baseadas na &quot;simplicidade inteligente&quot;. Morieux é também pesquisador do BCG e diretor do Instituto de Organizações da divisão global de pessoas e organizações do grupo. O seu livro Six simple rules: how to manage complexity without getting complicated será lançado em breve pela Harvard Business Review Press.
+				
+Morieux é professor no Institut d’Études Politiques (IEP), de Paris. É destaque frequente em artigos sobre a evolução organizacional das empresas em publicações como The Economist, The Wall Street Journal, Fast Company e Le Monde.
+
+Obteve o mestrado em Sociologia Organizacional pelo IEP e o doutorado em Administração de Empresas pela University of Strathclyde, no Reino Unido.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -491,31 +537,39 @@ Formou-se em Engenharia Metalúrgica pela Escola de Engenharia Mauá e fez pós-
 				<key>slug</key>
 				<string>marco_tulio_zanini</string>
 				<key>speech</key>
-				<string>Confiança pela excelência</string>
+				<string>Confiança para a excelência</string>
+				<key>theme_title</key>
+				<string>CONFIANÇA PARA A EXCELÊNCIA: A FORÇA DO VÍNCULO PARA A ENTREGA DE RESULTADOS EXCEPCIONAIS</string>
 				<key>theme</key>
-				<string>A força do vínculo para a entrega de resultados excepcionais em ambiente de incerteza
-• Missionários ou mercenários? Qual é a qualidade do vínculo que une sua equipe?
-• Princípios para a ação? Qual o propósito que guia a colaboração em sua empresa?
+				<string>• Missionários ou mercenários? Qual é a qualidade do vínculo que une sua equipe?
+				
+• Princípios para a ação. Qual o propósito que guia a colaboração em sua empresa?
+
 • Como líderes constroem confiança e somam inteligências para conquistar resultados excepcionais
+
 • Unidade na diversidade: sua equipe atinge o nível de competência máxima?
+
 • Dilemas da colaboração no Brasil — como enfrentar nossos desafios e trabalhar com o que temos de melhor
-• A liderança que constrói (e a que destrói) ativos intangíveis.</string>
+
+• A liderança que constrói (e a que destrói) ativos intangíveis</string>
 				<key>info_date</key>
 				<string>02 de abril</string>
 				<key>info_hour</key>
-				<string>16h às 17h30</string>
+				<string>16h às 17h</string>
 				<key>gmtc</key>
 				<array>
 					<dict>
 						<key>date</key>
 						<date>2014-04-02T19:00:00Z</date>
 						<key>minutes</key>
-						<string>90</string>
+						<string>60</string>
 					</dict>
 				</array>
 				<key>description</key>
 				<string>É o pioneiro e a maior autoridade no Brasil em gestão de ativos intangíveis e confiança nas empresas. É sócio-fundador da Symbállein, empresa especializada no diagnóstico estratégico da cultura, ativos intangíveis organizacionais e gestão estratégica de pessoas, tendo trabalhado nos últimos anos com as empresas VALE, Embraer, Petrobras, TAM, Vivo, PepsiCo, Brasken, Neoenergia, entre outras.
+				
 Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior, entre os quais se destacam Confiança — o principal ativo intangível de uma empresa, Gestão integrada de ativos intangíveis, Liderança baseada em valores e Trust within organizations of the new economy, este publicado na Alemanha. Em 2013, foi eleito pela ABTD Personalidade RH do Ano.
+
 É doutor em Management pela Universidade Otto-von-Guericke, em Magdeburg, Alemanha.</string>
 			</dict>
 		</array>
@@ -524,6 +578,8 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 			<dict>
 				<key>day</key>
 				<date>2014-04-01T12:00:00Z</date>
+				<key>label</key>
+				<string>01-Abril</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -534,7 +590,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Liderança resiliente</string>
 						<key>hour</key>
-						<string>9h às 10h30</string>
+						<string>09h00 às 10h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -544,7 +600,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>10h30 às 11h</string>
+						<string>10h30 às 11h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -554,7 +610,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Como construir uma Cultura Vitoriosa nas Empresas do Brasil</string>
 						<key>hour</key>
-						<string>11h às 11h45</string>
+						<string>11h00 às 11h45</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -574,7 +630,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Almoço</string>
 						<key>hour</key>
-						<string>12h30 às 14h</string>
+						<string>12h30 às 14h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -584,7 +640,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Os Hábitos das Empresas Vencedoras</string>
 						<key>hour</key>
-						<string>14h às 15h30</string>
+						<string>14h00 às 15h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -594,7 +650,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>15h30 às 16h</string>
+						<string>15h30 às 16h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -604,13 +660,15 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Liderança pelo exemplo</string>
 						<key>hour</key>
-						<string>16h às 17h</string>
+						<string>16h00 às 17h00</string>
 					</dict>
 				</array>
 			</dict>
 			<dict>
 				<key>day</key>
 				<date>2014-04-02T12:00:00Z</date>
+				<key>label</key>
+				<string>02-Abril</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -619,9 +677,9 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>key</key>
 						<string>clay_shirky</string>
 						<key>label</key>
-						<string>A Nova Empresa Aberta</string>
+						<string>Liderando a Nova Empresa Aberta em um mundo conectado por redes</string>
 						<key>hour</key>
-						<string>9h às 10h30</string>
+						<string>09h00 às 10h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -631,7 +689,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>10h30 às 11h</string>
+						<string>10h30 às 11h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -641,7 +699,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Liderança Criativa</string>
 						<key>hour</key>
-						<string>11h às 12h30</string>
+						<string>11h00 às 12h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -651,7 +709,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Almoço</string>
 						<key>hour</key>
-						<string>12h30 às 14h</string>
+						<string>12h30 às 14h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -661,7 +719,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Simplicidade Inteligente</string>
 						<key>hour</key>
-						<string>14h às 15h30</string>
+						<string>14h00 às 15h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -671,7 +729,7 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>15h30 às 16h</string>
+						<string>15h30 às 16h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -679,9 +737,9 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 						<key>key</key>
 						<string>marco_tulio_zanini</string>
 						<key>label</key>
-						<string>Confiança pela excelência</string>
+						<string>Confiança para a Excelência: a força do vínculo para a entrega de resultados excepcionais</string>
 						<key>hour</key>
-						<string>16h às 17h30</string>
+						<string>16h00 às 17h00</string>
 					</dict>
 				</array>
 			</dict>
@@ -699,13 +757,15 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 				<key>value</key>
 				<string>3.200,00</string>
 				<key>value_site</key>
-				<string>2.560,00</string>
+				<string>3.200,00</string>
 				<key>value_app</key>
-				<string>2.432,00</string>
+				<string>3.040,00</string>
 				<key>show_dates</key>
 				<string>kYes</string>
 				<key>multiple</key>
 				<string>kNo</string>
+				<key>validate</key>
+				<string>14/03/2014</string>
 				<key>dates</key>
 				<array>
 					<string>1 de abril</string>
@@ -723,13 +783,15 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 				<key>value</key>
 				<string>5.270,00</string>
 				<key>value_site</key>
-				<string>4.216,00</string>
+				<string>5.270,00</string>
 				<key>value_app</key>
-				<string>4.005,20</string>
+				<string>4.990,00</string>
 				<key>show_dates</key>
 				<string>kNo</string>
 				<key>multiple</key>
 				<string>kNo</string>
+				<key>validate</key>
+				<string>14/03/2014</string>
 				<key>dates</key>
 				<array/>
 			</dict>
@@ -744,13 +806,15 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 				<key>value</key>
 				<string>22.950,00</string>
 				<key>value_site</key>
-				<string>18.360,00</string>
+				<string>22.950,00</string>
 				<key>value_app</key>
-				<string>17.442,00</string>
+				<string>21.790,00</string>
 				<key>show_dates</key>
 				<string>kNo</string>
 				<key>multiple</key>
 				<string>kYes</string>
+				<key>validate</key>
+				<string>14/03/2014</string>
 				<key>dates</key>
 				<array/>
 			</dict>
@@ -760,17 +824,17 @@ Zanini é autor de vários trabalhos e livros publicados no Brasil e no exterior
 		<key>name</key>
 		<string>Fórum HSM - Family Business 2014</string>
 		<key>slug</key>
-		<string>family_business_2014</string>
+		<string>familybiz14</string>
 		<key>dates</key>
 		<string>06 e 07 de maio, 2014</string>
 		<key>date</key>
-		<string>6 e 7 de maio</string>
+		<string>6 e 7 mai</string>
 		<key>hours</key>
 		<string>9h às 17h30</string>
 		<key>local</key>
 		<string>Golden Hall - WTC - World Trade Center </string>
 		<key>tiny_description</key>
-		<string>A melhor maneira de maximizar o bem-estar geral do seu negócio familiar é ouvir o que os principais experts internacionais e nacionais têm a dizer.</string>
+		<string>Novas estratégias para perpetuação dos negócios familiares.</string>
 		<key>description</key>
 		<string>Participe do Fórum HSM Family Business e vivencie um ambiente de reflexão, troca de experiências e desenvolvimento, projetado exclusivamente para atender empresas de controle familiar.
  
@@ -781,15 +845,6 @@ Além disso, será apresentado, de forma inédita,  o case de sucesso de Ermeneg
 		<string>kYes</string>
 		<key>did_happen</key>
 		<string>kNo</string>
-		<key>color</key>
-		<dict>
-			<key>red</key>
-			<string>5.0</string>
-			<key>green</key>
-			<string>68.0</string>
-			<key>blue</key>
-			<string>110.0</string>
-		</dict>
 		<key>panelists</key>
 		<array>
 			<dict>
@@ -799,24 +854,32 @@ Além disso, será apresentado, de forma inédita,  o case de sucesso de Ermeneg
 				<string>john_davis</string>
 				<key>speech</key>
 				<string>Construindo pontes / Criadores de riqueza</string>
+				<key>theme_title</key>
+				<string>Sessão I - Construindo pontes / Sessão II - Criadores de riqueza</string>
 				<key>theme</key>
-				<string>Sessão I
-Construindo pontes entre as gerações: como os babies boomers (1946-1964), a geração X
-(1965-1980) e a geração Y (1981-2000) podem coexistir pacificamente na família e nos negócios
+				<string>SESSÃO I
+				
+Construindo pontes entre as gerações: como os babies boomers (1946-1964), a geração X(1965-1980) e a geração Y (1981-2000) podem coexistir pacificamente na família e nos negócios
 
-As diferentes atitudes, comportamentos e valores (sobre o trabalho e a vida) aparentes
-nessas gerações
-O impacto das diferentes atitudes e crenças dessas gerações sobre a sucessão e o desenvolvimento da geração seguinte
-Métodos para desenvolver a geração X e a geração Y
-Técnicas eficazes de comunicação e negociação entre as gerações
+• As diferentes atitudes, comportamentos e valores (sobre o trabalho e a vida) aparentes nessas gerações
 
-Sessão II
+• O impacto das diferentes atitudes e crenças dessas gerações sobre a sucessão e o desenvolvimento da geração seguinte
+
+• Métodos para desenvolver a geração X e a geração Y
+
+• Técnicas eficazes de comunicação e negociação entre as gerações
+
+SESSÃO II
+
 Como formar criadores de riqueza em uma empresa familiar
 
-A necessidade das empresas familiares planejarem com antecedência a expansão do patrimônio financeiro ao longo das gerações
-O papel crítico do “criador de riqueza” em uma empresa familiar: as responsabilidades, atividades e habilidades necessárias para essa função
-Como formar criadores de riqueza em cada geração
-Os últimos resultados da pesquisa pioneira de John Davis sobre riqueza familiar.</string>
+• A necessidade das empresas familiares planejarem com antecedência a expansão do patrimônio financeiro ao longo das gerações
+
+• O papel crítico do “criador de riqueza” em uma empresa familiar: as responsabilidades, atividades e habilidades necessárias para essa função
+
+• Como formar criadores de riqueza em cada geração
+
+• Os últimos resultados da pesquisa pioneira de John Davis sobre riqueza familiar</string>
 				<key>info_date</key>
 				<string>06 e 07 de maio</string>
 				<key>info_hour</key>
@@ -846,20 +909,20 @@ Os últimos resultados da pesquisa pioneira de John Davis sobre riqueza familiar
 				<string>douglas_stone</string>
 				<key>speech</key>
 				<string>Conversas difíceis em empresas familiares</string>
+				<key>theme_title</key>
+				<string>CONVERSAS DIFÍCEIS EM EMPRESAS FAMILIARES: COMO DISCUTIR O QUE MAIS IMPORTA</string>
 				<key>theme</key>
-				<string>Conversas difíceis em empresas familiares: como discutir o que mais importa
+				<string>• Por que os conflitos e as conversas difíceis que todos enfrentam se tornam ainda mais intensos em uma empresa familiar
+				
+• Quais são e como atuam os padrões inconscientes de comunicação que tornam as conversas em família mais desafiadoras do que precisariam ser
 
-Por que os conflitos e as conversas difíceis que todos enfrentam se tornam ainda mais intensos em uma empresa familiar
+• Novas ferramentas e ideias que permitem eliminar esses padrões inconscientes e melhorar o equilíbrio entre averiguação e assertividade
 
-Quais são e como atuam os padrões inconscientes de comunicação que tornam as conversas em família mais desafiadoras do que precisariam ser
+• A disjunção entre intenções e impactos e os papéis da emoção e da identidade na gestão da empresa familiar
 
-Novas ferramentas e ideias que permitem eliminar esses padrões inconscientes e melhorar o equilíbrio entre averiguação e assertividade
+• Por que há tantos interesses divergentes e pontos de vista diferentes sobre o que realmente importa na empresa familiar — e o que fazer a respeito
 
-A disjunção entre intenções e impactos e os papéis da emoção e da identidade na gestão da empresa familiar
-
-Por que há tantos interesses divergentes e pontos de vista diferentes sobre o que realmente importa na empresa familiar — e o que fazer a respeito
-
-Como estilos pessoais conflitantes, hierarquia confusa, mistura de vida pessoal e profissional, além de diferentes noções de justiça e competência entre gerações e os ramos da família podem gerar tensão na empresa familiar.</string>
+• Como estilos pessoais conflitantes, hierarquia confusa, mistura de vida pessoal e profissional,  além de diferentes noções de justiça e competência entre gerações e os ramos da família podem gerar tensão na empresa familiar</string>
 				<key>info_date</key>
 				<string>06 de maio</string>
 				<key>info_hour</key>
@@ -884,32 +947,72 @@ Artigos de Stone sobre negociação e resolução de conflitos foram publicados 
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Cecília Russo e Jaime Troiano</string>
+				<key>slug</key>
+				<string>cecilia_russo</string>
+				<key>speech</key>
+				<string>Propósito de marca: conectando as gerações para o sucesso de empresas familiares</string>
+				<key>theme_title</key>
+				<string>PROPÓSITO DA MARCA: CONECTANDO AS GERAÇÕES PARA O SUCESSO DE EMPRESAS FAMILIARES</string>
+				<key>theme</key>
+				<string>• Propósito: uma resposta ao porquê de as empresas e suas marcas existirem. Um passo além da Missão e Visão
+				
+• Propósito não é algo que se cria, não é uma sacada publicitária e não se encontra no mercado. Ele é autêntico e único, porque é escavado na história da organização
+
+• Metodologia para identificar o Propósito: como o passado, o presente e o futuro se integram para criar um significado que envolva todos os stakeholders
+
+• Por que a descoberta e a internalização do Propósito de uma organização familiar podem alinhar suas gerações de dirigentes
+
+• Marcas sem um propósito são marcas sem alma
+
+• O impacto de uma clareza de Propósito no resultado das organizações
+
+• Mais do que quaisquer outras, empresas familiares respiram o Propósito de suas marcas. Basta trazê-lo à vida</string>
+				<key>info_date</key>
+				<string>06 de maio</string>
+				<key>info_hour</key>
+				<string>14h00 às 15h00</string>
+				<key>gmtc</key>
+				<array>
+					<dict>
+						<key>date</key>
+						<date>2014-05-06T16:00:00Z</date>
+						<key>minutes</key>
+						<string>60</string>
+					</dict>
+				</array>
+				<key>description</key>
+				<string>Cecília Russo é diretora-geral do Grupo Troiano de Branding. Autora dos livros Vida de equilibrista: dores e delícias da mãe que trabalha (ed. Cultrix) e Aprendiz de equilibrista: como ensinar os filhos a conciliar família e carreira (ed. Generale), ambos dedicados à dinâmica das mulheres, família e carreiras. É também autora de vários artigos e papers sobre branding, comportamento do consumidor e de mulheres no ambiente corporativo, no Brasil e exterior. É psicóloga formada pela PUC-SP com especialização em comportamento do consumidor e mestranda na Georgia State University, Atlanta, em Women’s and Gender Studies.
+
+Jaime Troiano é um dos mais respeitados profissionais de Branding no Brasil e pioneiro nessa atividade no País. É presidente do Grupo Troiano de Branding, empresa que atua há 21 anos no mercado brasileiro e latino-americano. Já assessorou centenas de organizações em projetos de gestão de marcas e comportamento do consumidor, em diversos setores. Foi vice-presidente de planejamento na Young &amp; Rubicam, Lintas e BBDO, para o Brasil e América Latina.  É autor do livro As marcas no divã: uma análise de consumidores e criação de valor (ed. Globo).  Formado em Engenharia Química pela Faculdade de Engenharia Industrial (FEI) e em Sociologia pela Universidade de São Paulo (USP).</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>Eduardo Gentil</string>
 				<key>slug</key>
 				<string>eduardo_gentil</string>
 				<key>speech</key>
 				<string>O papel do capital</string>
+				<key>theme_title</key>
+				<string>O papel do capital na vida das empresas de controle familiar: como as famílias empresárias vencedoras empregam o capital ao longo das gerações</string>
 				<key>theme</key>
-				<string>O papel do capital na vida das empresas de controle familiar: como as famílias empresárias vencedoras empregam o capital ao longo das gerações
+				<string>• Como a necessidade de capital aumenta com a passagem das gerações
+				
+• Tensões entre capital para crescimento, liquidez para acionistas e manutenção do controle
 
-Como a necessidade de capital aumenta com a passagem das gerações
+• Trajetória normal de acesso a capital: dívida, capital privado (private equity) e IPO
 
-Tensões entre capital para crescimento, liquidez para acionistas e manutenção do controle
+• Como abordar o uso de capital externo — vantagens e desvantagens de cada opção: (i)private equity, (ii) parceria estratégica e (iii) IPO
 
-Trajetória normal de acesso a capital: dívida, capital privado (private equity) e IPO
+• Casos de sucesso de parceria entre empresas familiares e private equity (nacional e internacional)
 
-Como abordar o uso de capital externo — vantagens e desvantagens de cada opção: 
-(i) private equity, (ii) parceria estratégica e (iii) IPO
+• Como a empresa e a família podem se preparar para acessar capital externo
 
-Casos de sucesso de parceria entre empresas familiares e private equity (nacional e internacional)
-
-Como a empresa e a família podem se preparar para acessar capital externo
-
-Finalmente, a decisão de abrir o capital: vale a pena? Quais os riscos?</string>
+• Finalmente, a decisão de abrir o capital: vale a pena? Quais os riscos?</string>
 				<key>info_date</key>
 				<string>06 de maio</string>
 				<key>info_hour</key>
-				<string>14h às 15h30</string>
+				<string>15h30 às 16h30</string>
 				<key>gmtc</key>
 				<array>
 					<dict>
@@ -921,7 +1024,7 @@ Finalmente, a decisão de abrir o capital: vale a pena? Quais os riscos?</string
 				</array>
 				<key>description</key>
 				<string>Eduardo Gentil é sócio da Cambridge Advisors to Family Enterprise.
-
+				
 Nos últimos cinco anos, liderou dezenas de projetos da Cambridge com famílias empresárias no Brasil e no exterior, apoiando-as no desenho de suas estruturas de governança, acordos entre acionistas, políticas financeiras, implantação de conselhos de administração e planos de sucessão.
 
 Gentil começou sua carreira no setor financeiro no JP Morgan em Nova York e depois atuou, por dez anos, como diretor-geral do Goldman Sachs no Brasil. Em 2002, foi diretor do Banco Nacional de Desenvolvimento Econômico e Social (BNDES). Em 2004, foi nomeado diretor-geral da Visa do Brasil – o que incluía o cargo de presidente do conselho da Visanet.
@@ -935,10 +1038,10 @@ Gentil começou sua carreira no setor financeiro no JP Morgan em Nova York e dep
 				<string>vikram_bhalla</string>
 				<key>speech</key>
 				<string>Empresas familiares em mercados emergentes</string>
+				<key>theme_title</key>
+				<string>EMPRESAS FAMILIARES EM MERCADOS EMERGENTES: COMO DIFEREM DAS DO MUNDO DESENVOLVIDO E O QUE UMAS PODEM APRENDER COM AS OUTRAS</string>
 				<key>theme</key>
-				<string>Empresas familiares em mercados emergentes: como diferem das do mundo desenvolvido e o que umas podem aprender com as outras
-
-Por que mercados emergentes como o Brasil e a Índia têm parcela maior de empresas dirigidas por famílias
+				<string>Por que mercados emergentes como o Brasil e a Índia têm parcela maior de empresas dirigidas por famílias
 
 Como a mentalidade, prioridades e desafios das empresas familiares em mercados emergentes diferem dos de empresas familiares do mundo desenvolvido e como isso afeta sua inclusão no mercado mundial
 
@@ -951,14 +1054,14 @@ mercados desenvolvidos.</string>
 				<key>info_date</key>
 				<string>06 de maio</string>
 				<key>info_hour</key>
-				<string>16h às 17h30</string>
+				<string>16h30 às 17h30</string>
 				<key>gmtc</key>
 				<array>
 					<dict>
 						<key>date</key>
-						<date>2014-05-06T19:00:00Z</date>
+						<date>2014-05-06T18:30:00Z</date>
 						<key>minutes</key>
-						<string>90</string>
+						<string>60</string>
 					</dict>
 				</array>
 				<key>description</key>
@@ -972,29 +1075,32 @@ Bhalla é formado pela Universidade de Delhi e obteve seu MBA pelo Indian Instit
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>Joachim Schwass</string>
+				<string>Michael Roberts</string>
 				<key>slug</key>
-				<string>joachim_schwass</string>
+				<string>michael_roberts</string>
 				<key>speech</key>
-				<string>Trazendo a estratégia para a sucessão</string>
+				<string>Empreendedorismo em famílias empresárias</string>
+				<key>theme_title</key>
+				<string>EMPREENDEDORISMO EM FAMÍLIAS EMPRESÁRIAS: COMO PODE DAR CERTO</string>
 				<key>theme</key>
-				<string>Trazendo a estratégia para a sucessão: lições das mais importantes empresas familiares do mundo
+				<string>Por que o empreendedorismo é (tão) importante para o sucesso de uma família empresária
+Quais são as vantagens inerentes às famílias empresárias empreendedoras (e quais obstáculos elas têm de superar para fazer o empreendedorismo funcionar)
 
-Por que empresas familiares enfrentam um grau maior de complexidade
+O que define o empreendedorismo e quais são os modelos que tornam possíveis os negócios empreendedores
 
-Por que as dimensões Família, Propriedade e Negócio se sobrepõem e costumam entrar em conflito entre si
+Por que alguns empresários são bem-sucedidos e outros não. Como eles avaliam as oportunidades
 
-Como o planejamento estratégico abrangente permite avançar de “desafios” para “oportunidades”
+Como um empreendedor põe ideias à prova e verifica rapidamente quais funcionam
 
-Por que vincular as estratégias de crescimento da empresa ao planejamento sucessório é uma combinação poderosa
+Como os empreendedores avaliam e administram o risco
 
-Insights das principais empresas familiares do mundo
+Como empresas bem estabelecidas estruturam seu esforço empreendedor
 
-Como criar, expandir e transmitir para as gerações seguintes os negócios e o patrimônio da família de maneira sábia e sustentável.</string>
+Como administrar as relações com investidores.</string>
 				<key>info_date</key>
 				<string>07 de maio</string>
 				<key>info_hour</key>
-				<string>9h às 10h30</string>
+				<string>09h às 10h30</string>
 				<key>gmtc</key>
 				<array>
 					<dict>
@@ -1005,13 +1111,14 @@ Como criar, expandir e transmitir para as gerações seguintes os negócios e o 
 					</dict>
 				</array>
 				<key>description</key>
-				<string>É professor e diretor do programa Leading the Family Business no IMD, na Suíça, uma das mais renomadas escolas de negócios do mundo. Seu principal foco de ensino são as questões envolvendo os proprietários e a propriedade de empresas familiares, particularmente da perspectiva da próxima geração. Ele já proferiu palestras e organizou programas sobre empresas familiares no mundo inteiro. É autor das obras Wise growth strategies in leading family business e Wise wealth.
+				<string>Foi por 16 anos diretor do Arthur Rock Center for Entrepreneurship, da Harvard Business School. É autor de mais de 150 cases sobre criação e gestão de empresas empreendedoras, dos livros The entrepreneurial venture e New business ventures, este último é adotado por cursos de 
+pós-graduação em mais de cem escolas de negócios no mundo.
 
-Antes de ingressar no IMD, Schwass foi diretor de diversas empresas que pertenciam ao negócio de sua família. Já geriu fábricas na Austrália e nos Estados Unidos e companhias de comércio internacional na Suíça. Além disso, fundou diversas organizações internacionais.
+Em Harvard, foi professor do curso Avaliação de Oportunidades Empreendedoras para alunos interessados em transformar ideias em negócios reais. É consultor de diversas empresas empreendedoras.
 
-Durante dez anos, Schwass dirigiu o Distinguished Family Business Award e foi diretor executivo da Family Business Network (FBN), onde também foi membro do Conselho de Administração até 2010.
+Roberts ocupou grande variedade de cargos no setor privado. Antes e durante a Harvard Business School, trabalhou na McKinsey e Morgan Stanley, respectivamente. Atuou também como diretor de desenvolvimento de negócios internacionais para a Cellular Communications.
 
-Estudou na Technische Universität de Berlim e na Université de Fribourg, onde obteve mestrado e doutorado em Ciências Políticas.</string>
+Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, com distinção, e doutorado em Administração pela Harvard Business School.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1020,6 +1127,8 @@ Estudou na Technische Universität de Berlim e na Université de Fribourg, onde 
 				<string>ermenegildo_zegna</string>
 				<key>speech</key>
 				<string>Aprendizados de três gerações</string>
+				<key>theme_title</key>
+				<string>Aprendizados de três gerações na família Zegna</string>
 				<key>theme</key>
 				<string>Aprendizados de três gerações na família Zegna</string>
 				<key>info_date</key>
@@ -1037,35 +1146,31 @@ Estudou na Technische Universität de Berlim e na Université de Fribourg, onde 
 				</array>
 				<key>description</key>
 				<string>É CEO do Ermenegildo Zegna Group, empresa fundada por seu avô, Ermenegildo Zegna, em 1910. A Zegna tem faturamento anual superior a 1,261 bilhão de Euros, 543 lojas ao redor do mundo, em mais de cem países, e é líder mundial em roupas masculinas de luxo. A empresa é uma organização com integração vertical completa e seu crescimento é baseado em um portfólio cada vez mais amplo e variado de produtos e estilos.
+				
 Zegna é membro do Conselho Consultivo Internacional do IESE Business School da Espanha, vice-presidente da Camera Nazionale della Moda Italiana e membro da diretoria do Consiusa, The Council for the United States and Italy. Em 2011, foi nomeado Cavaliere del Lavoro pelo presidente da Itália.
 
 Formou-se em Economia pela University of London e estudou na Harvard Business School.</string>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>Michael Roberts</string>
+				<string>Joachim Schwass</string>
 				<key>slug</key>
-				<string>michael_roberts</string>
+				<string>joachim_schwass</string>
 				<key>speech</key>
-				<string>Empreendedorismo em famílias empresárias</string>
+				<string>Trazendo a estratégia para a sucessão</string>
+				<key>theme_title</key>
+				<string>TRAZENDO A ESTRATÉGIA PARA A SUCESSÃO: LIÇÕES DAS MAIS IMPORTANTES EMPRESAS FAMILIARES DO MUNDO</string>
 				<key>theme</key>
-				<string>Empreendedorismo em famílias empresárias: como pode dar certo
+				<string>Por que empresas familiares enfrentam um grau maior de complexidade
+Por que as dimensões Família, Propriedade e Negócio se sobrepõem e costumam entrar em conflito entre si
 
-Por que o empreendedorismo é (tão) importante para o sucesso de uma família empresária
+Como o planejamento estratégico abrangente permite avançar de desafios para oportunidades
 
-Quais são as vantagens inerentes às famílias empresárias empreendedoras (e quais obstáculos elas têm de superar para fazer o empreendedorismo funcionar)
+Por que vincular as estratégias de crescimento da empresa ao planejamento sucessório é uma combinação poderosa
 
-O que define o empreendedorismo e quais são os modelos que tornam possíveis os negócios empreendedores
+Insights das principais empresas familiares do mundo
 
-Por que alguns empresários são bem-sucedidos e outros não. Como eles avaliam as oportunidades
-
-Como um empreendedor põe ideias à prova e verifica rapidamente quais funcionam
-
-Como os empreendedores avaliam e administram o risco
-
-Como empresas bem estabelecidas estruturam seu esforço empreendedor
-
-Como administrar as relações com investidores.</string>
+Como criar, expandir e transmitir para as gerações seguintes os negócios e o patrimônio da família de maneira sábia e sustentável.</string>
 				<key>info_date</key>
 				<string>07 de maio</string>
 				<key>info_hour</key>
@@ -1080,14 +1185,13 @@ Como administrar as relações com investidores.</string>
 					</dict>
 				</array>
 				<key>description</key>
-				<string>Foi por 16 anos diretor do Arthur Rock Center for Entrepreneurship, da Harvard Business School. É autor de mais de 150 cases sobre criação e gestão de empresas empreendedoras, dos livros The entrepreneurial venture e New business ventures, este último é adotado por cursos de 
-pós-graduação em mais de cem escolas de negócios no mundo.
+				<string>É professor e diretor do programa Leading the Family Business no IMD, na Suíça, uma das mais renomadas escolas de negócios do mundo. Seu principal foco de ensino são as questões envolvendo os proprietários e a propriedade de empresas familiares, particularmente da perspectiva da próxima geração. Ele já proferiu palestras e organizou programas sobre empresas familiares no mundo inteiro. É autor das obras Wise growth strategies in leading family business e Wise wealth.
 
-Em Harvard, foi professor do curso Avaliação de Oportunidades Empreendedoras para alunos interessados em transformar ideias em negócios reais. É consultor de diversas empresas empreendedoras.
+Antes de ingressar no IMD, Schwass foi diretor de diversas empresas que pertenciam ao negócio de sua família. Já geriu fábricas na Austrália e nos Estados Unidos e companhias de comércio internacional na Suíça. Além disso, fundou diversas organizações internacionais.
 
-Roberts ocupou grande variedade de cargos no setor privado. Antes e durante a Harvard Business School, trabalhou na McKinsey e Morgan Stanley, respectivamente. Atuou também como diretor de desenvolvimento de negócios internacionais para a Cellular Communications.
+Durante dez anos, Schwass dirigiu o Distinguished Family Business Award e foi diretor executivo da Family Business Network (FBN), onde também foi membro do Conselho de Administração até 2010.
 
-Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, com distinção, e doutorado em Administração pela Harvard Business School.</string>
+Estudou na Technische Universität de Berlim e na Université de Fribourg, onde obteve mestrado e doutorado em Ciências Políticas.</string>
 			</dict>
 		</array>
 		<key>agenda</key>
@@ -1095,6 +1199,8 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 			<dict>
 				<key>day</key>
 				<date>2014-05-06T12:00:00Z</date>
+				<key>label</key>
+				<string>06-Maio</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -1105,7 +1211,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Construindo pontes entre gerações</string>
 						<key>hour</key>
-						<string>9h às 10h30</string>
+						<string>09h00 às 10h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1115,7 +1221,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>10h30 às 11h</string>
+						<string>10h30 às 11h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1125,7 +1231,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Conversas difíceis em empresas familiares</string>
 						<key>hour</key>
-						<string>11h às 12h30</string>
+						<string>11h00 às 12h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1135,17 +1241,17 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Almoço</string>
 						<key>hour</key>
-						<string>12h30 às 14h</string>
+						<string>12h30 às 14h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
 						<string>speech</string>
 						<key>key</key>
-						<string>eduardo_gentil</string>
+						<string>cecilia_russo</string>
 						<key>label</key>
-						<string>O Papel do Capital</string>
+						<string>Propósito de Marca: Conectando as gerações para o sucesso de empresas familiares</string>
 						<key>hour</key>
-						<string>14h às 15h30</string>
+						<string>14h00 às 15h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1155,7 +1261,17 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>15h30 às 16h</string>
+						<string>15h00 às 15h30</string>
+					</dict>
+					<dict>
+						<key>type</key>
+						<string>speech</string>
+						<key>key</key>
+						<string>eduardo_gentil</string>
+						<key>label</key>
+						<string>O Papel do Capital na vida das empresas de controle familiar</string>
+						<key>hour</key>
+						<string>15h30 às 16h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1165,24 +1281,26 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Empresas familiares em Mercados Emergentes</string>
 						<key>hour</key>
-						<string>16h às 17h30</string>
+						<string>16h30 às 17h30</string>
 					</dict>
 				</array>
 			</dict>
 			<dict>
 				<key>day</key>
 				<date>2014-05-07T12:00:00Z</date>
+				<key>label</key>
+				<string>07-Maio</string>
 				<key>schedule</key>
 				<array>
 					<dict>
 						<key>type</key>
 						<string>speech</string>
 						<key>key</key>
-						<string>joachim_schwass</string>
+						<string>michael_roberts</string>
 						<key>label</key>
-						<string>Trazendo a estratégia para a sucessão</string>
+						<string>Empreendedores em famílias empresárias</string>
 						<key>hour</key>
-						<string>9h às 10h30</string>
+						<string>09h00 às 10h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1192,7 +1310,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>10h30 às 11h</string>
+						<string>10h30 às 11h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1202,7 +1320,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Aprendizados de três gerações</string>
 						<key>hour</key>
-						<string>11h às 12h30</string>
+						<string>11h00 às 12h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1212,17 +1330,17 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Almoço</string>
 						<key>hour</key>
-						<string>12h30 às 14h</string>
+						<string>12h30 às 14h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
 						<string>speech</string>
 						<key>key</key>
-						<string>michael_roberts</string>
+						<string>joachim_schwass</string>
 						<key>label</key>
-						<string>Empreendedores em famílias empresárias</string>
+						<string>Trazendo a estratégia para a sucessão</string>
 						<key>hour</key>
-						<string>14h às 15h30</string>
+						<string>14h00 às 15h30</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1232,7 +1350,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Coffee Break</string>
 						<key>hour</key>
-						<string>15h30 às 16h</string>
+						<string>15h30 às 16h00</string>
 					</dict>
 					<dict>
 						<key>type</key>
@@ -1242,7 +1360,7 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 						<key>label</key>
 						<string>Criadores de riqueza na empresa familiar</string>
 						<key>hour</key>
-						<string>16h às 17h30</string>
+						<string>16h00 às 17h30</string>
 					</dict>
 				</array>
 			</dict>
@@ -1260,9 +1378,11 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 				<key>value</key>
 				<string>3.200,00</string>
 				<key>value_site</key>
-				<string>2.560,00</string>
+				<string>3.200,00</string>
 				<key>value_app</key>
-				<string>2.432,00</string>
+				<string>2.880,00</string>
+				<key>validate</key>
+				<string>18/04/2014</string>
 				<key>show_dates</key>
 				<string>kYes</string>
 				<key>multiple</key>
@@ -1284,9 +1404,11 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 				<key>value</key>
 				<string>5.270,00</string>
 				<key>value_site</key>
-				<string>4.216,00</string>
+				<string>5.270,00</string>
 				<key>value_app</key>
-				<string>4.005,20</string>
+				<string>4.743,00</string>
+				<key>validate</key>
+				<string>18/04/2014</string>
 				<key>show_dates</key>
 				<string>kNo</string>
 				<key>multiple</key>
@@ -1305,9 +1427,11 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 				<key>value</key>
 				<string>22.950,00</string>
 				<key>value_site</key>
-				<string>18.360,00</string>
+				<string>22.950,00</string>
 				<key>value_app</key>
-				<string>17.442,00</string>
+				<string>20.655,00</string>
+				<key>validate</key>
+				<string>18/04/2014</string>
 				<key>show_dates</key>
 				<string>kNo</string>
 				<key>multiple</key>
@@ -1324,6 +1448,8 @@ Michael formou-se em Economia, com honras, pelo Harvard College e obteve o MBA, 
 		<string>expo13</string>
 		<key>dates</key>
 		<string>04, 05 e 06 de novembro, 2013</string>
+		<key>date</key>
+		<string>4 a 6 nov 2013</string>
 		<key>hours</key>
 		<string>09:00 às 20:00</string>
 		<key>local</key>
@@ -1340,15 +1466,6 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 		<string>kYes</string>
 		<key>did_happen</key>
 		<string>kYes</string>
-		<key>color</key>
-		<dict>
-			<key>red</key>
-			<string>5.0</string>
-			<key>green</key>
-			<string>68.0</string>
-			<key>blue</key>
-			<string>110.0</string>
-		</dict>
 		<key>panelists</key>
 		<array>
 			<dict>
@@ -1430,7 +1547,7 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 					</dict>
 				</array>
 				<key>description</key>
-				<string>No mais recente ranking global de pensadores de management, Govindarajan obteve o terceiro lugar. Foi o primeiro professor residente e consultor-chefe de inovação da General Electric e, com o CEO da empresa, Jeff Immelt, escreveu “How GE is disrupting itself”, publicado na Harvard Business Review. Ele é autor dos best-sellers Os 10 mandamentos da inovação estratégica e O outro lado da inovação. Sua obra mais recente é Inovação reversa, que entrou para a listados livros mais vendidos do The New York Times e do The Wall Street Journal. Govindarajan já assessorou mais de um quarto das empresas da Fortune 500. Obteve o MBA e o doutorado pela Harvard Business School.</string>
+				<string>No mais recente ranking global de pensadores de management, Govindarajan obteve o terceiro lugar. Foi o primeiro professor residente e consultor-chefe de inovação da General Electric e, com o CEO da empresa, Jeff Immelt, escreveu &quot;How GE is disrupting itself&quot;, publicado na Harvard Business Review. Ele é autor dos best-sellers Os 10 mandamentos da inovação estratégica e O outro lado da inovação. Sua obra mais recente é Inovação reversa, que entrou para a listados livros mais vendidos do The New York Times e do The Wall Street Journal. Govindarajan já assessorou mais de um quarto das empresas da Fortune 500. Obteve o MBA e o doutorado pela Harvard Business School.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1455,7 +1572,7 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 					</dict>
 				</array>
 				<key>description</key>
-				<string>Robert Lloyd é presidente mundial de desenvolvimento e vendas da Cisco, hoje uma das maiores empresas de tecnologia do mundo e a líder global em soluções de redes e comunicações integradas para a internet, com um faturamento anual de US$ 45 bilhões. A organização que ele comanda é responsável por alinhar e acelerar as inovações tecnológicas da empresa, permitindo que ela reaja mais rapidamente às transições de mercado, torne os clientes mais relevantes e cresça com maior velocidade. Hoje, os esforços de inovação da Cisco estão cada vez mais em sintonia com as exigências e necessidades dos clientes, acelerando o processo de lançamento de produtos. Lloyd também é membro do Comitê Executivo, o órgão que define o direcionamento estratégico de cada segmento de mercado da empresa. Anteriormente, ocupou os cargos de vice-presidente executivo de operações mundiais e vice-presidente sênior para os EUA, Canadá e Japão, quando dirigiu dois dos cinco principais “teatros (de operações)” da empresa. Também foi presidente regional para a Europa, Oriente Médio e África por mais de quatro anos.</string>
+				<string>Robert Lloyd é presidente mundial de desenvolvimento e vendas da Cisco, hoje uma das maiores empresas de tecnologia do mundo e a líder global em soluções de redes e comunicações integradas para a internet, com um faturamento anual de US$ 45 bilhões. A organização que ele comanda é responsável por alinhar e acelerar as inovações tecnológicas da empresa, permitindo que ela reaja mais rapidamente às transições de mercado, torne os clientes mais relevantes e cresça com maior velocidade. Hoje, os esforços de inovação da Cisco estão cada vez mais em sintonia com as exigências e necessidades dos clientes, acelerando o processo de lançamento de produtos. Lloyd também é membro do Comitê Executivo, o órgão que define o direcionamento estratégico de cada segmento de mercado da empresa. Anteriormente, ocupou os cargos de vice-presidente executivo de operações mundiais e vice-presidente sênior para os EUA, Canadá e Japão, quando dirigiu dois dos cinco principais &quot;teatros (de operações)&quot; da empresa. Também foi presidente regional para a Europa, Oriente Médio e África por mais de quatro anos.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1494,7 +1611,7 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 				<key>info_date</key>
 				<string>05 de novembro</string>
 				<key>info_hour</key>
-				<string>12h00 às 13h00</string>
+				<string>09h00 às 13h00</string>
 				<key>gmtc</key>
 				<array>
 					<dict>
@@ -1580,7 +1697,7 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 					</dict>
 				</array>
 				<key>description</key>
-				<string>Autor de inúmeros artigos publicados na Harvard Business Review, Sloan Management Review e The Washington Post. McAfee foi convidado por Gary Hamel para formar uma “brigada independente” de pensadores para elaborar uma lista de desafios que os gestores hoje enfrentam – à qual deram o nome de “Moon shots formanagement”, publicada na Harvard Business Review. Seu mais recente artigo, “Big Data: The Management Revolution”, matéria de capa da Harvard Business Review na edição de outubro de 2012, explora como empresas de classe mundial estão inovando seus modelos de gestão, para vencer em uma era de abundância de dados. Andrew McAfee é um dos mais importantes pesquisadores do MIT Center for Digital Business, da Sloan School of Management. Foi por 10 anos professor da Harvard Business School. Obteve o doutorado pela Harvard Business School.</string>
+				<string>Autor de inúmeros artigos publicados na Harvard Business Review, Sloan Management Review e The Washington Post. McAfee foi convidado por Gary Hamel para formar uma &quot;brigada independente&quot; de pensadores para elaborar uma lista de desafios que os gestores hoje enfrentam – à qual deram o nome de &quot;Moon shots formanagement&quot;, publicada na Harvard Business Review. Seu mais recente artigo, &quot;Big Data: The Management Revolution&quot;, matéria de capa da Harvard Business Review na edição de outubro de 2012, explora como empresas de classe mundial estão inovando seus modelos de gestão, para vencer em uma era de abundância de dados. Andrew McAfee é um dos mais importantes pesquisadores do MIT Center for Digital Business, da Sloan School of Management. Foi por 10 anos professor da Harvard Business School. Obteve o doutorado pela Harvard Business School.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1742,7 +1859,7 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 					</dict>
 				</array>
 				<key>description</key>
-				<string>Obteve o Ph.D. em Engenharia Metalúrgica pela Colorado School of Mines.“O professor Falconi é um dos pilares fortes na nossa cultura e tem ajudado muito no desenvolvimento das empresas em que temos participação”, afirmam Jorge Paulo Lemann, Marcel Telles e Carlos Alberto Sicupira. Falconi é, aliás, membro do Conselho de Administração da Ambev e consultor para várias instâncias de governo do País. Autor de seis livros que venderam mais de 1 milhão de exemplares, entre eles O verdadeiro poder. A renda integral da venda desse livro é revertida para o Instituto Social para Motivar, Apoiar e Reconhecer Talentos (ISMART), voltado para apoiar, com educação de primeira qualidade, os jovens de alto potencial que têm menor poder aquisitivo. Falconi foi o único latino-americano indicado como uma das “21 vozes do século 21” pela American Society for Quality. Ainda foi condecorado com a prestigiosa Ordem de Rio Branco pelo governo brasileiro.</string>
+				<string>Obteve o Ph.D. em Engenharia Metalúrgica pela Colorado School of Mines.&quot;O professor Falconi é um dos pilares fortes na nossa cultura e tem ajudado muito no desenvolvimento das empresas em que temos participação&quot;, afirmam Jorge Paulo Lemann, Marcel Telles e Carlos Alberto Sicupira. Falconi é, aliás, membro do Conselho de Administração da Ambev e consultor para várias instâncias de governo do País. Autor de seis livros que venderam mais de 1 milhão de exemplares, entre eles O verdadeiro poder. A renda integral da venda desse livro é revertida para o Instituto Social para Motivar, Apoiar e Reconhecer Talentos (ISMART), voltado para apoiar, com educação de primeira qualidade, os jovens de alto potencial que têm menor poder aquisitivo. Falconi foi o único latino-americano indicado como uma das &quot;21 vozes do século 21&quot; pela American Society for Quality. Ainda foi condecorado com a prestigiosa Ordem de Rio Branco pelo governo brasileiro.</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -1856,6 +1973,8 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 			<dict>
 				<key>day</key>
 				<date>2013-11-04T09:00:00Z</date>
+				<key>label</key>
+				<string>04-Novembro</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -2003,6 +2122,8 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 			<dict>
 				<key>day</key>
 				<date>2013-11-05T09:00:00Z</date>
+				<key>label</key>
+				<string>05-Novembro</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -2150,6 +2271,8 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 			<dict>
 				<key>day</key>
 				<date>2013-11-06T09:00:00Z</date>
+				<key>label</key>
+				<string>06-Novembro</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -2307,6 +2430,8 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 		<string>bdw13</string>
 		<key>dates</key>
 		<string>04, 05 e 06 de novembro, 2013</string>
+		<key>date</key>
+		<string>4 a 6 nov 2013</string>
 		<key>hours</key>
 		<string>11:30 às 20:00</string>
 		<key>local</key>
@@ -2314,9 +2439,10 @@ HSM ExpoManagement: o encontro de conhecimento em gestão que traz as melhores o
 		<key>tiny_description</key>
 		<string>A sexta edição da Brasil Design Week é realizada em um espaço de 400m2  dentro da HSM ExpoManagement...</string>
 		<key>description</key>
-		<string>O design brasileiro vive seu momento de maior expressão e relevância. Muita coisa aconteceu ao longo dos últimos anos. O número de escolas e cursos aumentou significativamente, centenas de escritórios se desenvolveram, profissionais talentosos foram exportados para organizações de todo o mundo e uma infinidade de prêmios internacionais foram conquistados. Todo esse processo é resultado do amadurecimento de uma atividade que há mais de quatro décadas vem construindo um espaço relevante na economia brasileira e agora busca ir além: hoje, o design brasileiro propõe-se a ser um agente de transformação da nossa indústria, se apresentando como a grande ferramenta para gerar inovação e inserir o Brasil na economia “criativa”, em âmbito mundial.
+		<string>O design brasileiro vive seu momento de maior expressão e relevância. Muita coisa aconteceu ao longo dos últimos anos. O número de escolas e cursos aumentou significativamente, centenas de escritórios se desenvolveram, profissionais talentosos foram exportados para organizações de todo o mundo e uma infinidade de prêmios internacionais foram conquistados. Todo esse processo é resultado do amadurecimento de uma atividade que há mais de quatro décadas vem construindo um espaço relevante na economia brasileira e agora busca ir além: hoje, o design brasileiro propõe-se a ser um agente de transformação da nossa indústria, se apresentando como a grande ferramenta para gerar inovação e inserir o Brasil na economia &quot;criativa&quot;, em âmbito mundial.
 		
 Neste contexto, a ABEDESIGN – Associação Brasileira de Empresas de Design, entidade que representa o setor, em parceria com a ABDI, Apex-Brasil e Sebrae, entendeu este como o momento oportuno para promover a Brasil Design Week, um grande evento destinado a consolidar e estabelecer um novo marco para o design brasileiro, e inspirar empresários e gestores a utilizá-lo como ferramenta estratégica de negócios. 
+
 Em sua 6ª edição, a Brasil Design Week reafirma a parceria exclusiva com a HSM, realizadora da Expo Management, garantindo assim a inserção do maior evento de design do Brasil na maior agenda de negócios da América Latina.
 
 Mais que uma promoção, este evento é um movimento intenso, com o objetivo de integrar empresas, órgãos governamentais e instituições de apoio ao design, para que juntos possamos construir um Brasil melhor, mais competitivo e cada vez mais inovador.
@@ -2407,15 +2533,6 @@ Telefone: (11) 3277-8891</string>
 		<string>kNo</string>
 		<key>did_happen</key>
 		<string>kYes</string>
-		<key>color</key>
-		<dict>
-			<key>red</key>
-			<string>17.0</string>
-			<key>green</key>
-			<string>118.0</string>
-			<key>blue</key>
-			<string>187.0</string>
-		</dict>
 		<key>panelists</key>
 		<array>
 			<dict>
@@ -2843,6 +2960,8 @@ Atualmente está de volta ao Brasil liderando a área local de Design da he Coca
 			<dict>
 				<key>day</key>
 				<date>2013-11-04T13:30:00Z</date>
+				<key>label</key>
+				<string>04-Novembro</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -2926,6 +3045,8 @@ Atualmente está de volta ao Brasil liderando a área local de Design da he Coca
 			<dict>
 				<key>day</key>
 				<date>2013-11-05T13:30:00Z</date>
+				<key>label</key>
+				<string>05-Novembro</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -3043,6 +3164,8 @@ Atualmente está de volta ao Brasil liderando a área local de Design da he Coca
 			<dict>
 				<key>day</key>
 				<date>2013-11-06T13:30:00Z</date>
+				<key>label</key>
+				<string>06-Novembro</string>
 				<key>schedule</key>
 				<array>
 					<dict>
@@ -3134,6 +3257,8 @@ Atualmente está de volta ao Brasil liderando a área local de Design da he Coca
 		<string>mostra13</string>
 		<key>dates</key>
 		<string>04, 05 e 06 de novembro, 2013</string>
+		<key>date</key>
+		<string>4 a 6 nov 2013</string>
 		<key>hours</key>
 		<string>09:00 às 20:00</string>
 		<key>local</key>
@@ -3148,15 +3273,6 @@ Além de poder participar da Mostra com 50 empresas participantes, a sua credenc
 		<string>kNo</string>
 		<key>did_happen</key>
 		<string>kYes</string>
-		<key>color</key>
-		<dict>
-			<key>red</key>
-			<string>60.0</string>
-			<key>green</key>
-			<string>25.0</string>
-			<key>blue</key>
-			<string>23.0</string>
-		</dict>
 		<key>panelists</key>
 		<array/>
 		<key>agenda</key>

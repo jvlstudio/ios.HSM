@@ -12,7 +12,6 @@
 #define PADDING     30.0
 
 @interface PanelistSingle ()
-- (void) setInfo;
 - (void) setFrames;
 - (UITextView*) createTextView;
 - (UILabel*) createLabelTitle;
@@ -23,20 +22,16 @@
 
 @implementation PanelistSingle
 {
-    FRTools *tools;
     EventManager *manager;
 }
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
-    [self setTitle:[[self dictionary] objectForKey:KEY_NAME]];
-    
-    // info..
-    tools       = [[FRTools alloc] initWithTools];
-    manager     = [[EventManager alloc] initWithEvent:[self dictionary]];
-    
-    [self setInfo];
+    [self setConfigurations];
 }
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -45,27 +40,22 @@
 }
 
 #pragma mark -
-#pragma mark IBActions
+#pragma mark Default Methods
 
-- (IBAction) pressSchedule:(id)sender
+- (void) setConfigurations
 {
-    [manager saveEKEventOnCalendar:[self dictionary]];
-    // ...
-    [tools dialogWithMessage:@"Esta palestra foi adicionada ao seu Calendário com sucesso."];
-    [self disabledButton];
-}
-
-#pragma mark -
-#pragma mark Private Methods
-
-- (void) setInfo
-{
+    [super setConfigurations];
+    [self setTitle:[[self dictionary] objectForKey:KEY_NAME]];
+    
+    // info..
+    manager     = [[EventManager alloc] initWithEvent:[self dictionary]];
+    
     // ...
     tvDescription   = [self createTextView];
     tvTheme         = [self createTextView];
     labThemeTitle   = [self createLabelTitle];
     
-    [labThemeTitle setText:@"Tema da palestra"];
+    [labThemeTitle setText:[[self dictionary] objectForKey:@"theme_title"]];
     [labThemeTitle sizeToFit];
     
     // ...
@@ -85,9 +75,9 @@
     [butSchedule setAlpha:0];
     
     // rect view
-    CGRect rectV = v.frame;
-    rectV.origin.y  = 64;
-    [v setFrame:rectV];
+    //CGRect rectV = v.frame;
+    //rectV.origin.y  = 64;
+    //[v setFrame:rectV];
     
     NSString *strImg = [NSString stringWithFormat:@"p_%@_large.png", [[self dictionary] objectForKey:KEY_SLUG]];
     [imgPicture setImage:[UIImage imageNamed:strImg]];
@@ -100,18 +90,34 @@
         [self disabledButton];
     }
 }
+
+#pragma mark -
+#pragma mark IBActions
+
+- (IBAction) pressSchedule:(id)sender
+{
+    [manager saveEKEventOnCalendar:[self dictionary]];
+    // ...
+    [tools dialogWithMessage:@"Esta palestra foi adicionada ao seu Calendário com sucesso."];
+    [self disabledButton];
+}
+
+#pragma mark -
+#pragma mark Private Methods
+
 - (void)setFrames
 {
     // rect description
     CGRect rect1        = tvDescription.frame;
-    rect1.origin.y      = v.frame.size.height + (PADDING*2);
+    rect1.origin.y      = v.frame.size.height + (PADDING*0);
     rect1.size.height   = tvDescription.contentSize.height;
     [tvDescription setFrame:rect1];
+    [tvDescription setEditable:NO];
     
     // rect title
     CGRect rect2        = labThemeTitle.frame;
     rect2.origin.y      = tvDescription.frame.size.height + tvDescription.frame.origin.y;
-    rect2.size.height   = 50;
+    rect2.size.height   = 100;
     [labThemeTitle setFrame:rect2];
     
     // rect theme
@@ -119,6 +125,7 @@
     rect3.origin.y      = labThemeTitle.frame.size.height + labThemeTitle.frame.origin.y;
     rect3.size.height   = tvTheme.contentSize.height;
     [tvTheme setFrame:rect3];
+    [tvTheme setEditable:NO];
     
     // rect button
     CGRect rect4 = butSchedule.frame;
@@ -137,7 +144,7 @@
 {
     UITextView *tv = [[UITextView alloc] initWithFrame:CGRectMake(10, 0, WINDOW_WIDTH-20, 350)];
     [tv setBackgroundColor:[UIColor clearColor]];
-    [tv setTextColor:[UIColor colorWithRed:50.0/255.0 green:79.0/255.0 blue:133.0/255.0 alpha:1]];
+    [tv setTextColor:COLOR_DESCRIPTION];
     [tv setFont:[UIFont fontWithName:@"Helvetica" size:12.0]];
     [tv setAlpha:0];
     
@@ -145,10 +152,11 @@
 }
 - (UILabel *)createLabelTitle
 {
-    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, WINDOW_WIDTH-20, 44)];
-    [lab setFont:[UIFont fontWithName:@"Helvetica-Bold" size:16]];
-    [lab setTextColor:[UIColor colorWithRed:50.0/255.0 green:79.0/255.0 blue:133.0/255.0 alpha:1]];
+    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, WINDOW_WIDTH-20, 170)];
+    [lab setFont:[UIFont fontWithName:FONT_REGULAR size:14]];
+    [lab setTextColor:COLOR_TITLE];
     [lab setAlpha:0];
+    [lab setNumberOfLines:6];
     
     return lab;
 }

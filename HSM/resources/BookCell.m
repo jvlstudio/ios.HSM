@@ -11,5 +11,6 @@
 @implementation BookCell
 
 @synthesize butBook1, butBook2, butBook3;
+@synthesize labBook1, labBook2, labBook3;
 
 @end

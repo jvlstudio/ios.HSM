@@ -13,6 +13,7 @@
     IBOutlet UIView *v;
     IBOutlet UIView *vEspec;
     IBOutlet UIView *vAuthor;
+    IBOutlet UIView *vDescription;
     IBOutlet UIScrollView *scr;
     IBOutlet UIScrollView *scrSub;
     
@@ -26,10 +27,7 @@
     IBOutlet UILabel *especCodebarEBook;
     
     IBOutlet UIButton *butBuy;
-    IBOutlet UIButton *butSinopse;
-    IBOutlet UIButton *butEspec;
-    IBOutlet UIButton *butAuthor;
-    
+    IBOutlet UISegmentedControl *segment;
     IBOutlet UIImageView *imgPicture;
     
     IBOutlet UITextView *tvSinopse;
@@ -40,8 +38,6 @@
 #pragma mark IBActions
 
 - (IBAction) pressBuy:(id)sender;
-- (IBAction) pressSinopse:(id)sender;
-- (IBAction) pressEspec:(id)sender;
-- (IBAction) pressAuthor:(id)sender;
+- (IBAction) segmentChange:(UISegmentedControl*)sender;
 
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Home">
@@ -11,7 +11,9 @@
                 <outlet property="butExpo" destination="6Ha-gm-di7" id="gE2-5a-nCn"/>
                 <outlet property="butIssues" destination="CQI-G4-ZoT" id="ve8-Em-wZO"/>
                 <outlet property="butTV" destination="MIf-nD-zKf" id="3cz-wZ-EpU"/>
+                <outlet property="pageControl" destination="hsf-GF-gvG" id="MpJ-o8-FoE"/>
                 <outlet property="scr" destination="bzg-yT-7rr" id="asx-00-3hZ"/>
+                <outlet property="scrDisplay" destination="89s-vp-hBa" id="ggT-5s-CMi"/>
                 <outlet property="v" destination="kSa-0b-tSf" id="Ime-wH-BoG"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -34,23 +36,13 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
         <view contentMode="scaleToFill" id="kSa-0b-tSf">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="507"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Ha-gm-di7">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="268"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_home_events_expo13_2.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="pressExpo:" destination="-1" eventType="touchUpInside" id="FRW-yM-Oei"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ia-y0-6Xx">
-                    <rect key="frame" x="0.0" y="268" width="160" height="150"/>
+                    <rect key="frame" x="0.0" y="202" width="160" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_home_bt_education.png">
+                    <state key="normal" backgroundImage="hsm_v5_home_education.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -58,9 +50,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MIf-nD-zKf">
-                    <rect key="frame" x="160" y="268" width="160" height="150"/>
+                    <rect key="frame" x="160" y="202" width="160" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_home_bt_tv.png">
+                    <state key="normal" backgroundImage="hsm_v5_home_videos.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -68,9 +60,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CQI-G4-ZoT">
-                    <rect key="frame" x="0.0" y="418" width="160" height="150"/>
+                    <rect key="frame" x="0.0" y="351" width="160" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_home_bt_issues.png">
+                    <state key="normal" backgroundImage="hsm_v5_home_magazines.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -78,45 +70,45 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SmE-Am-xqL">
-                    <rect key="frame" x="160" y="418" width="160" height="150"/>
+                    <rect key="frame" x="160" y="351" width="160" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_home_bt_books.png">
+                    <state key="normal" backgroundImage="hsm_v5_home_books.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="pressBooks:" destination="-1" eventType="touchUpInside" id="4aV-8F-wRq"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_id_plus.png" id="4fm-WC-ipH">
-                    <rect key="frame" x="269" y="217" width="51" height="51"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_id_plus.png" id="Mzb-On-pId">
-                    <rect key="frame" x="109" y="367" width="51" height="51"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_id_plus.png" id="CsA-Bv-Xhj">
-                    <rect key="frame" x="269" y="367" width="51" height="51"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_id_plus.png" id="02I-aC-aum">
-                    <rect key="frame" x="109" y="517" width="51" height="51"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_id_plus.png" id="K0d-4B-vGf">
-                    <rect key="frame" x="269" y="517" width="51" height="51"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="89s-vp-hBa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="i9U-r6-7EV"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="hsf-GF-gvG">
+                    <rect key="frame" x="141" y="-9" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </pageControl>
             </subviews>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Ha-gm-di7">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" backgroundImage="hsm_v5_home_feat.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="pressExpo:" destination="-1" eventType="touchUpInside" id="FRW-yM-Oei"/>
+            </connections>
+        </button>
     </objects>
     <resources>
-        <image name="hsm_home_bt_books.png" width="160" height="150"/>
-        <image name="hsm_home_bt_education.png" width="160" height="150"/>
-        <image name="hsm_home_bt_issues.png" width="160" height="150"/>
-        <image name="hsm_home_bt_tv.png" width="160" height="150"/>
-        <image name="hsm_home_events_expo13_2.png" width="320" height="268"/>
-        <image name="hsm_id_plus.png" width="51" height="51"/>
+        <image name="hsm_v5_home_books.png" width="160" height="150"/>
+        <image name="hsm_v5_home_education.png" width="160" height="150"/>
+        <image name="hsm_v5_home_feat.png" width="320" height="200"/>
+        <image name="hsm_v5_home_magazines.png" width="160" height="150"/>
+        <image name="hsm_v5_home_videos.png" width="160" height="150"/>
     </resources>
 </document>

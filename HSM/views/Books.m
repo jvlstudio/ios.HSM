@@ -12,27 +12,47 @@
 
 #import "PassButton.h"
 
-#define CELL_HEIGHT     129.0
+#define CELL_HEIGHT     186.0
 #define CELL_IDENTIFIER @"bookCell"
 #define CELL_BG         @"hsm_books_cell.png"
+
+#pragma mark - Interface
 
 @interface Books ()
 - (void) pushWithNumber:(NSInteger) number;
 @end
 
+#pragma mark - Implementation
+
 @implementation Books
 {
-    FRTools *tools;
     NSArray *rows;
 }
 
 @synthesize table;
 @synthesize tableData;
 
+#pragma mark -
+#pragma mark Controller Methods
+
 - (void)viewDidLoad
 {
     [super viewDidLoadWithMenuButton];
-    [self setTitle:@"Livros"];
+    [self setConfigurations];
+}
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
+    [self setTitle:@"HSM Editora"];
     
     // table data..
     tools       = [[FRTools alloc] initWithTools];
@@ -41,14 +61,12 @@
                    [NSArray arrayWithObjects:@"0", @"1", @"2", nil],
                    [NSArray arrayWithObjects:@"3", @"4", @"5", nil],
                    [NSArray arrayWithObjects:@"6", @"7", @"8", nil],
-                   [NSArray arrayWithObjects:@"9", @"10", @"11", nil], nil];
+                   [NSArray arrayWithObjects:@"9", @"10", @"11", nil],
+                   [NSArray arrayWithObjects:@"12", @"13", @"14", nil],
+                   [NSArray arrayWithObjects:@"15", @"16", @"17", nil],nil];
     
-    [table setTableHeaderView:[self edge]];
-}
-- (void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    if ([adManager hasAdWithCategory:kAdBannerFooter])
+        [adManager addAdTo:table type:kAdBannerFooter];
 }
 
 #pragma mark -
@@ -88,7 +106,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 6;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -101,13 +119,7 @@
     NSInteger calc3     = [[[rows objectAtIndex:indexPath.row] objectAtIndex:2] intValue];
     
     NSArray *xib        = [[NSBundle mainBundle] loadNibNamed:XIB_RESOURCES owner:nil options:nil];
-    BookCell *cell      = (BookCell *)[tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER];
-    if(!cell)
-        cell = (BookCell*)[xib objectAtIndex:kCellBooks];
-    
-    // ...
-    UIImageView *imgBg  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:CELL_BG]];
-    [cell setBackgroundView:imgBg];
+    BookCell *cell      = (BookCell*)[xib objectAtIndex:kCellBooks];
     
     PassButton *but1, *but2, *but3;
     but1 = (PassButton*)[cell butBook1];
@@ -122,6 +134,9 @@
         [but1 setCellIndexPath:indexPath];
         [but1 addTarget:self action:@selector(pressBook1:) forControlEvents:UIControlEventTouchUpInside];
         [but1 setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [dict objectForKey:KEY_SLUG]]] forState:UIControlStateNormal];
+        
+        [[cell labBook1] setText:[dict objectForKey:KEY_NAME]];
+        [[cell labBook1] setFont:[UIFont fontWithName:FONT_REGULAR size:10.0]];
     }
     else [but1 setHidden:YES];
     
@@ -133,6 +148,9 @@
         [but2 setCellIndexPath:indexPath];
         [but2 addTarget:self action:@selector(pressBook2:) forControlEvents:UIControlEventTouchUpInside];
         [but2 setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [dict objectForKey:KEY_SLUG]]] forState:UIControlStateNormal];
+        
+        [[cell labBook2] setText:[dict objectForKey:KEY_NAME]];
+        [[cell labBook2] setFont:[UIFont fontWithName:FONT_REGULAR size:10.0]];
     }
     else [but2 setHidden:YES];
     
@@ -144,6 +162,9 @@
         [but3 setCellIndexPath:indexPath];
         [but3 addTarget:self action:@selector(pressBook3:) forControlEvents:UIControlEventTouchUpInside];
         [but3 setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [dict objectForKey:KEY_SLUG]]] forState:UIControlStateNormal];
+        
+        [[cell labBook3] setText:[dict objectForKey:KEY_NAME]];
+        [[cell labBook3] setFont:[UIFont fontWithName:FONT_REGULAR size:10.0]];
     }
     else [but3 setHidden:YES];
     

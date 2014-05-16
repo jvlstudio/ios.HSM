@@ -24,6 +24,7 @@
     
     IBOutlet UIImageView *imgColor;
     IBOutlet UIImageView *imgQRCode;
+    IBOutlet UIImageView *imgZoom;
     
     IBOutlet UIButton *butAddContact;
     IBOutlet UIButton *butSendEmail;

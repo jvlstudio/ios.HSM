@@ -10,21 +10,24 @@
 #import "EventSingle.h"
 #import "EventMultiple.h"
 
-@interface EventMiddle ()
-
-@end
-
 @implementation EventMiddle
-{
-    FRTools *tools;
-}
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Auditórios"];
-    
-    tools   = [[FRTools alloc] initWithTools];
 }
 
 #pragma mark -
@@ -33,14 +36,14 @@
 - (IBAction) pressBDW:(id)sender
 {
     NSArray *events     = [tools propertyListRead:PLIST_EVENTS];
-    NSDictionary *dict  = [events objectAtIndex:1];
+    NSDictionary *dict  = [events objectAtIndex:[events count]-2];
     EventSingle *vc     = [[EventSingle alloc] initWithNibName:NIB_EVENT_SINGLE andDictionary:dict];
     [[self navigationController] pushViewController:vc animated:YES];
 }
 - (IBAction) pressMostra:(id)sender
 {
     NSArray *events     = [tools propertyListRead:PLIST_EVENTS];
-    NSDictionary *dict  = [events objectAtIndex:2];
+    NSDictionary *dict  = [events objectAtIndex:[events count]-1];
     NSArray *content    = [dict objectForKey:@"agenda2"];
     EventMultiple *vc   = [[EventMultiple alloc] initWithNibName:NIB_EVENT_MULTIPLE andArray:content];
     [vc setTitle:@"Estações do Conhecimento"];

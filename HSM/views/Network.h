@@ -12,23 +12,23 @@
 
 @interface Network : NetworkViewController
 <UITableViewDelegate, UITableViewDataSource, NetworkDelegate, ZBarReaderDelegate>
+{
+    NSString *zBarSymbolData;
+    NSArray *tableData;
+    
+    ZBarReaderViewController *zBarReader;
+    
+    IBOutlet UITableView *table;
+    IBOutlet UIView *selfView;
+    IBOutlet UIImageView *selfColor;
+    IBOutlet UILabel *selfTitle;
+    IBOutlet UILabel *selfSubtitle;
+    IBOutlet UIView *createView;
+    IBOutlet UIButton *butCreate;
+    IBOutlet UIButton *butSelf;
+}
 
-@property (nonatomic, strong) NSString *zBarSymbolData;
-@property (nonatomic, strong) ZBarReaderViewController *zBarReader;
-
-@property (nonatomic, strong) NSArray *tableData;
 @property (nonatomic, strong) IBOutlet UITableView *table;
-
-/* self */
-
-@property (nonatomic, strong) IBOutlet UIView *selfView;
-@property (nonatomic, strong) IBOutlet UIImageView *selfColor;
-@property (nonatomic, strong) IBOutlet UILabel *selfTitle;
-@property (nonatomic, strong) IBOutlet UILabel *selfSubtitle;
-
-@property (nonatomic, strong) IBOutlet UIView *createView;
-@property (nonatomic, strong) IBOutlet UIButton *butCreate;
-@property (nonatomic, strong) IBOutlet UIButton *butSelf;
 
 #pragma mark -
 #pragma mark IBActions

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>EDIÇÃO 102</string>
+		<key>slug</key>
+		<string>Janeiro/Fevereiro - 2014</string>
+		<key>image</key>
+		<string>hsm_mag_jan-fev_14.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>EDIÇÃO 101</string>
+		<key>slug</key>
+		<string>Novembro/Dezembro - 2013</string>
+		<key>image</key>
+		<string>hsm_mag_nov-dez_13.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>EDIÇÃO 100</string>
+		<key>slug</key>
+		<string>Setembro/Outubro - 2013</string>
+		<key>image</key>
+		<string>hsm_mag_set-out_13.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>EDIÇÃO 099</string>
+		<key>slug</key>
+		<string>Julho/Agosto - 2013</string>
+		<key>image</key>
+		<string>hsm_mag_jul-ago_13.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>EDIÇÃO 098</string>
+		<key>slug</key>
+		<string>Maio/Junho - 2013</string>
+		<key>image</key>
+		<string>hsm_mag_mai-jun_13.png</string>
+	</dict>
+</array>
+</plist>

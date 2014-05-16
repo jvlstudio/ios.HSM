@@ -12,7 +12,11 @@
 #import "Home.h"
 #import "Events.h"
 #import "Books.h"
+#import "Magazines.h"
 #import "Network.h"
+
+#import "HSMAd.h"
+#import "HSMAdBannerMenu.h"
 
 #define CELL_HEIGHT     50.0
 #define CELL_IDENTIFIER @"menuCell"
@@ -24,6 +28,8 @@
 @implementation Menu
 {
     FRTools *tools;
+    AppDelegate *delegate;
+    HSMAd *adManager;
 }
 
 @synthesize table;
@@ -35,12 +41,24 @@
     
     // table data..
     tools       = [[FRTools alloc] initWithTools];
-    tableData   = [tools propertyListRead:PLIST_MENU];
+    delegate    = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    adManager   = [[HSMAd alloc] initWithManager];
     
-    UIImageView *tableHeader = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_menu_header.png"]];
-    UIImageView *tableFooter = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_menu_footer.png"]];
+    NSMutableArray *arrayMenu = [tools propertyListRead:PLIST_MENU];
+    NSDictionary *ad = [adManager adForType:kAdBannerMenu];
+    
+    // ad..
+    if ([ad count] > 0)
+        [arrayMenu addObject:ad];
+    
+    tableData   = [arrayMenu copy];
+    
+    UIImageView *tableHeader = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_header.png"]];
+    UIImageView *tableFooter = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_footer.png"]];
     [table setTableHeaderView:tableHeader];
     [table setTableFooterView:tableFooter];
+    
+    [[self view] setBackgroundColor:COLOR_MENU_BACKGROUND];
 }
 - (void) viewWillAppear:(BOOL)animated
 {
@@ -61,7 +79,11 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CELL_HEIGHT;
+    NSDictionary *dict = [tableData objectAtIndex:indexPath.row];
+    if([[dict objectForKey:KEY_TYPE] isEqualToString:@"ads"])
+        return 50;
+    else
+        return CELL_HEIGHT;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -69,28 +91,45 @@
     UIImage *imgIcon;
     NSDictionary *dict  = [tableData objectAtIndex:[indexPath row]];
     NSArray *xib        = [[NSBundle mainBundle] loadNibNamed:XIB_RESOURCES owner:nil options:nil];
-    MenuCell *cell      = (MenuCell *)[tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER];
+    MenuCell *cell      = (MenuCell*)[xib objectAtIndex:kCellMenu];
     
-    if(!cell)
-        cell = (MenuCell*)[xib objectAtIndex:kCellMenu];
-    
-    if ([[dict objectForKey:KEY_IS_ACTIVE] isEqualToString:KEY_YES])
-    {
-        imgBg       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_menu_cell.png"]];
-        imgBgSel    = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_menu_cell_sel.png"]];
+    // ads..
+    if ([[dict objectForKey:KEY_TYPE] isEqualToString:@"ads"]) {
+        NSArray *xib            = [[NSBundle mainBundle] loadNibNamed:AD_RESOURCES owner:nil options:nil];
+        HSMAdBannerMenu *adView = (HSMAdBannerMenu*)[xib objectAtIndex:kAdBannerMenu];
+        
+        [adView setHsmAdId:[dict objectForKey:KEY_ID]];
+        [[adView button] addTarget:adView action:@selector(performAd:) forControlEvents:UIControlEventTouchUpInside];
+        [adView setImageURL:[NSString stringWithFormat:@"%@/ads/%@", URL_ADS_UPLOADS, [dict objectForKey:KEY_IMAGE]]];
+        [adView commit];
+        
+        imgBg       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_cell.png"]];
+        [cell setBackgroundView:imgBg];
+        
+        [cell addSubview:adView];
     }
-    else
-    {
-        imgBg       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_menu_cell_soon.png"]];
-        imgBgSel    = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_menu_cell_soon_sel.png"]];
+    // menu option..
+    else {
+        
+        if ([[dict objectForKey:KEY_IS_ACTIVE] isEqualToString:KEY_YES])
+        {
+            imgBg       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_cell.png"]];
+            imgBgSel    = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_cell_sel.png"]];
+        }
+        else
+        {
+            imgBg       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_cell_soon.png"]];
+            imgBgSel    = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_v5_menu_cell_soon_sel.png"]];
+        }
+        
+        imgIcon = [UIImage imageNamed:[NSString stringWithFormat:@"hsm_v5_menu_id_%@.png", [dict objectForKey:KEY_SLUG]]];
+        [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
+        [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:17.0]];
+        [[cell imgIcon] setImage:imgIcon];
+        
+        [cell setBackgroundView:imgBg];
+        [cell setSelectedBackgroundView:imgBgSel];
     }
-    
-    imgIcon = [UIImage imageNamed:[NSString stringWithFormat:@"hsm_menu_id_%@.png", [dict objectForKey:KEY_SLUG]]];
-    [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
-    [[cell imgIcon] setImage:imgIcon];
-    
-    [cell setBackgroundView:imgBg];
-    [cell setSelectedBackgroundView:imgBgSel];
     
     return cell;
 }
@@ -100,8 +139,9 @@
     HSMMenuRows selectedRow = indexPath.row;
     MenuCell *cell  = (MenuCell*)[tableView cellForRowAtIndexPath:indexPath];
     
-    UIImage *imgIcon = [UIImage imageNamed:[NSString stringWithFormat:@"hsm_menu_id_%@_sel.png", [dict objectForKey:KEY_SLUG]]];
+    UIImage *imgIcon = [UIImage imageNamed:[NSString stringWithFormat:@"hsm_v5_menu_id_%@_sel.png", [dict objectForKey:KEY_SLUG]]];
     [[cell imgIcon] setImage:imgIcon];
+    [[cell labText] setTextColor:[UIColor whiteColor]];
     
     // ...
     switch (selectedRow) {
@@ -112,8 +152,6 @@
             UINavigationController *n;
             n = [[UINavigationController alloc] initWithRootViewController:c];
             [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
-            PP_RELEASE(c);
-            PP_RELEASE(n);
         }
             break;
         // ... eventos
@@ -123,8 +161,6 @@
             UINavigationController *n;
             n = [[UINavigationController alloc] initWithRootViewController:c];
             [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
-            PP_RELEASE(c);
-            PP_RELEASE(n);
         }
             break;
         // ... livros
@@ -134,8 +170,15 @@
             UINavigationController *n;
             n = [[UINavigationController alloc] initWithRootViewController:c];
             [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
-            PP_RELEASE(c);
-            PP_RELEASE(n);
+        }
+            break;
+        // ... revistas
+        case kMenuIssues:
+        {
+            Magazines *c = [[Magazines alloc] initWithNibName:NIB_MAGAZINES bundle:nil];
+            UINavigationController *n;
+            n = [[UINavigationController alloc] initWithRootViewController:c];
+            [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
         }
             break;
         // ... network
@@ -145,8 +188,6 @@
             UINavigationController *n;
             n = [[UINavigationController alloc] initWithRootViewController:c];
             [self.revealSideViewController popViewControllerWithNewCenterController:n animated:YES];
-            PP_RELEASE(c);
-            PP_RELEASE(n);
         }
             break;
         // tv..
@@ -158,8 +199,6 @@
         }
             break;
         // ... soon
-        //case kMenuBooks:
-        case kMenuIssues:
         //case kMenuNews:
         case kMenuEducation:
         {
@@ -179,7 +218,7 @@
     NSDictionary *dict = [tableData objectAtIndex:indexPath.row];
     MenuCell *cell  = (MenuCell*)[tableView cellForRowAtIndexPath:indexPath];
     
-    UIImage *imgIcon = [UIImage imageNamed:[NSString stringWithFormat:@"hsm_menu_id_%@.png", [dict objectForKey:KEY_SLUG]]];
+    UIImage *imgIcon = [UIImage imageNamed:[NSString stringWithFormat:@"hsm_v5_menu_id_%@.png", [dict objectForKey:KEY_SLUG]]];
     [[cell imgIcon] setImage:imgIcon];
 }
 

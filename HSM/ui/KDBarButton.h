@@ -14,5 +14,6 @@
 - (id) initWithBack:(SEL)selector toTarget:(id)target;
 - (id) initWithClose:(SEL)selector toTarget:(id)target;
 - (id) initWithScan:(SEL)selector toTarget:(id)target;
+- (id) initWithEmpty;
 
 @end

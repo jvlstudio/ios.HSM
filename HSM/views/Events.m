@@ -10,40 +10,86 @@
 #import "EventCell.h"
 #import "EventSingle.h"
 
-#define CELL_HEIGHT     174.0
+#define CELL_HEIGHT     160.0
 #define CELL_IDENTIFIER @"eventCell"
 
-@interface Events ()
+#pragma mark - Interface
 
+@interface Events ()
+- (NSArray*) nextEvents;
+- (NSArray*) prevEvents;
 @end
 
+#pragma mark - Implementation
+
 @implementation Events
-{
-    FRTools *tools;
-}
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithMenuButton];
-    [self setTitle:@"HSM ExpoManagement 13"];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Controller Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
+    [self setTitle:@"Eventos"];
     
-    // table data..
-    tools       = [[FRTools alloc] initWithTools];
+    tableData   = [self nextEvents];
+    [table setTableHeaderView:tableHeader];
     
-    // all, but bdw13..
-    NSMutableArray *marr    = [tools propertyListRead:PLIST_EVENTS];
-    //[marr removeObjectAtIndex:1];
-            
-    tableData   = [marr copy];
-    
-    CGRect edgeframe    = [[self edge] frame];
-    edgeframe.size.height = 80;
-    [[self edge] setFrame:edgeframe];
-    [table setTableHeaderView:[self edge]];
+    CGRect rect = table.frame;
+    rect.size.height -= IPHONE5_COEF;
+    [table setFrame:rect];
     
     // ad..
-    Advertising *ad = [[Advertising alloc] initOnView:[self view]];
-    [ad correctRectOfView:table];
+    //Advertising *ad = [[Advertising alloc] initOnView:[self view]];
+    //[ad correctRectOfView:table];
+    
+    if ([adManager hasAdWithCategory:kAdBannerFooter])
+        [adManager addAdTo:table type:kAdBannerFooter];
+}
+
+- (NSArray*) nextEvents
+{
+    NSArray *events = [tools propertyListRead:PLIST_EVENTS];
+    NSMutableArray *selected = [NSMutableArray array];
+    
+    for (NSDictionary *dict in events)
+        if ([[dict objectForKey:KEY_DID_HAPPEN] isEqualToString:KEY_NO])
+            [selected addObject:dict];
+    
+    return [selected copy];
+}
+- (NSArray*) prevEvents
+{
+    NSArray *events = [tools propertyListRead:PLIST_EVENTS];
+    NSMutableArray *selected = [NSMutableArray array];
+    
+    for (NSDictionary *dict in events)
+        if ([[dict objectForKey:KEY_DID_HAPPEN] isEqualToString:KEY_YES])
+            [selected addObject:dict];
+    
+    return [selected copy];
+}
+
+#pragma mark -
+#pragma mark IBActions
+
+- (IBAction) changedValue:(UISegmentedControl*)sender
+{
+    if (segment.selectedSegmentIndex == 0)
+        tableData = [self nextEvents];
+    else
+        tableData = [self prevEvents];
+    
+    [table reloadData];
 }
 
 #pragma mark -
@@ -73,6 +119,11 @@
     [[cell labDates] setText:[dict objectForKey:KEY_DATE]];
     [[cell labLocation] setText:[dict objectForKey:KEY_LOCAL]];
     [[cell labSubtext] setText:[dict objectForKey:KEY_TINY_DESCRIPTION]];
+    
+    [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labText.font.pointSize]];
+    //[[cell labSubtext] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labSubtext.font.pointSize]];
+    [[cell labLocation] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labLocation.font.pointSize]];
+    [[cell labDates] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labDates.font.pointSize]];
     
     NSString *strImg    = [NSString stringWithFormat:@"events_list_%@.png", [dict objectForKey:KEY_SLUG]];
     [[cell imgCover] setImage:[UIImage imageNamed:strImg]];

@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface AgendaShowCell : UITableViewCell
+{
+    IBOutlet UILabel *labText;
+    IBOutlet UILabel *labSubText;
+    IBOutlet UILabel *labHourInit;
+    IBOutlet UILabel *labHourFinal;
+}
 
 @property (nonatomic, strong) IBOutlet UILabel *labText;
 @property (nonatomic, strong) IBOutlet UILabel *labSubText;

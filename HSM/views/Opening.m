@@ -9,14 +9,7 @@
 #import "AppDelegate.h"
 #import "Opening.h"
 
-@interface Opening ()
-
-@end
-
 @implementation Opening
-{
-    AppDelegate *delegate;
-}
 
 #pragma mark -
 #pragma mark ViewControllers Methods
@@ -24,9 +17,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Controller Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     
-    delegate            = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    
+    /*
     imgSponsors         = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hsm_start_sponsors.png"]];
     
     CGRect rectImg      = CGRectMake(ZERO, ZERO, WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -36,7 +37,15 @@
     
     [[self view] addSubview:imgSponsors];
     
-    [self animateStart];
+    [self animateStart];*/
+    
+    [adManager addAdTo:self.view type:kAdSuperstitial];
+    
+    double delayInSeconds = 3.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [[delegate window] setRootViewController:[delegate openingWithoutAnimation]];
+    });
 }
 
 #pragma mark -

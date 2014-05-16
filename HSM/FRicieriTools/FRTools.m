@@ -47,7 +47,7 @@
 
 - (id) initWithTools
 {
-    upData          = @"";
+    HTTPData          = @"";
     updateLastKey   = @"";
     JSONData        = [NSDictionary dictionary];
     
@@ -55,7 +55,7 @@
 }
 - (id) initWithtoolsAndRootViewController:(UIViewController*) parent
 {
-    upData          = @"";
+    HTTPData          = @"";
     updateLastKey   = @"";
     JSONData        = [NSDictionary dictionary];
     parentViewController    = parent;
@@ -161,8 +161,10 @@
  * FR > update
  *********************/
 
-@synthesize upData;
+@synthesize canShowErrorAlerts;
+@synthesize HTTPData;
 @synthesize updateLastKey;
+@synthesize POSTData;
 @synthesize JSONData;
 @synthesize connection;
 @synthesize parentViewController;
@@ -279,9 +281,9 @@
     {
         NSLog(@"==> UpdateData: Data downloaded successly!");
         
-        upData = [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
+        HTTPData = [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
         // set json..
-        if(upData) [self dataToJSON];
+        if(HTTPData) [self dataToJSON];
         // call back..
         if(callback)  callback();
     }
@@ -298,13 +300,37 @@
 
 - (void) loadRequestWithURL:(NSString *)urlParam
 {
-    NSURL *url          = [NSURL URLWithString:urlParam];
-    NSURLRequest *req   = [[NSURLRequest alloc] initWithURL:url
-                                                cachePolicy:NSURLCacheStorageNotAllowed
-                                            timeoutInterval:6.0];
+    NSURL *url              = [NSURL URLWithString:urlParam];
+    NSMutableURLRequest *req= [[NSMutableURLRequest alloc] initWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:6.0];
+    if (POSTData)
+    {
+        [req setHTTPMethod:@"POST"];
+        [req setHTTPBody:[POSTData dataUsingEncoding:NSUTF8StringEncoding]];
+		NSLog(@"- [FRTOOLS]: postData: %@", POSTData);
+    }
+	[NSURLConnection sendAsynchronousRequest:req
+									   queue:[NSOperationQueue mainQueue]
+						   completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+							   //NSLog(@"- [FRTOOLS]: NSURLResponse: %@", response);
+							   // error..
+							   if (connectionError){
+								   [self errorWithError:connectionError];
+								   if (frCompNo)
+									   frCompNo();
+							   }
+							   // data..
+							   if (data) {
+								   HTTPData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+								   [self dataToJSON];
+							   }
+							   if (frCompYes)
+								   frCompYes();
+                           }];
     
-    connection          = [[NSURLConnection alloc] initWithRequest:req delegate:self];
-    [connection start];
+    //connection          = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+    //[connection start];
 }
 - (void) dataToJSON
 {
@@ -312,7 +338,7 @@
     NSDictionary *result;
     
     SBJSON *json    = [SBJSON new];
-    result          = [json objectWithString:upData error:&error];
+    result          = [json objectWithString:HTTPData error:&error];
     
     if(result)
     {
@@ -645,6 +671,7 @@
 }
 - (void) errorWithError:(NSError*) error
 {
+    /*
     //no connection
     if([error code] == -1009)
         NSLog(@"no connection");//[self dialogWithMessage:ERROR_1009_TITLE title:ERROR_1009_MESSAGE];
@@ -659,7 +686,7 @@
     {
         NSLog(@"error %d: %@", error.code, error.localizedDescription);
         [self dialogWithMessage:ERROR_0000_TITLE title:ERROR_0000_MESSAGE];
-    }
+    }*/
 }
 
 #pragma mark -
@@ -690,7 +717,7 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)dData
 {
-    upData = [[NSString alloc] initWithData:dData encoding:NSUTF8StringEncoding];
+    HTTPData = [[NSString alloc] initWithData:dData encoding:NSUTF8StringEncoding];
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {

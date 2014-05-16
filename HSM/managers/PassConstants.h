@@ -22,15 +22,14 @@
 #define CELL_EDIT                   @"passEditCell"
 
 #define TITLE_BG                    @"hsm_passes_title_%@.png"
-#define CELL_SUBTITLE_BG            @"hsm_passes_subtitle_%@.png"
-#define CELL_PICKER_BG              @"hsm_passes_field_picker.png"
-#define CELL_PICKER_PAYMENT_BG      @"hsm_passes_field_payment.png"
-#define CELL_FORM_BG                @"hsm_passes_field_form.png"
-#define CELL_ADD_BG                 @"hsm_passes_field_add.png"
+#define CELL_SUBTITLE_BG            @"hsm_v5_passes_subtitle_%@.png"
+#define CELL_PICKER_BG              @"hsm_v5_passes_field_picker.png"
+#define CELL_PICKER_PAYMENT_BG      @"hsm_v5_passes_field_payment.png"
+#define CELL_FORM_BG                @"hsm_v5_passes_field_form.png"
+#define CELL_ADD_BG                 @"hsm_v5_passes_field_add.png"
 #define CELL_EDIT_BG                CELL_ADD_BG
 
 #define VALUES_TYPES                @[@"subtitle", @"pickerDate", @"pickerPayment", @"form", @"add", @"edit"]
-#define VALUES_DATES                @[@"", @"04 de novembro", @"05 de novembro", @"06 de novembro"]
 #define VALUES_PAYMENT              @[@"", @"Cartão de Crédito"]
 
 #define PICKER_WIDTH                WINDOW_WIDTH

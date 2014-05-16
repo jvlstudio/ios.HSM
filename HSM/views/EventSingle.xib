@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventSingle">
@@ -20,12 +20,11 @@
                 <outlet property="datesView" destination="bfZ-R8-pxr" id="ysI-yl-kAJ"/>
                 <outlet property="elasticView" destination="wyb-i3-gaI" id="CPC-7i-B6o"/>
                 <outlet property="img1" destination="IwM-ok-eRM" id="9eh-08-stu"/>
-                <outlet property="imgCover" destination="xjb-A8-mcV" id="9fq-AG-R5O"/>
-                <outlet property="imgLine" destination="XH3-XB-cCR" id="uia-wg-oHl"/>
+                <outlet property="imgBottom" destination="cKz-HM-WXZ" id="ea1-gF-OfL"/>
+                <outlet property="imgCover" destination="LDd-U0-kx7" id="tvK-2p-OoP"/>
                 <outlet property="labDates" destination="Us6-IR-2gX" id="8v5-vX-I9q"/>
                 <outlet property="labHours" destination="C9s-4m-zdC" id="67t-uG-9oi"/>
                 <outlet property="labLocal" destination="wjX-jx-N2v" id="Rek-Ui-IAn"/>
-                <outlet property="labTinyDescription" destination="NPa-3N-TBL" id="9fy-uC-t1T"/>
                 <outlet property="scr" destination="T27-XN-Hr7" id="oDQ-71-RXT"/>
                 <outlet property="tvDescription" destination="375-fH-Q28" id="qZd-KW-a07"/>
                 <outlet property="v" destination="I6F-vy-rKj" id="JO7-pz-7Ls"/>
@@ -33,7 +32,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="1" userLabel="root">
+        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="1" userLabel="root">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -51,33 +50,26 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
         <view autoresizesSubviews="NO" contentMode="scaleToFill" id="I6F-vy-rKj" userLabel="content">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="339"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="wyb-i3-gaI">
-                    <rect key="frame" x="7" y="147" width="307" height="264"/>
+                    <rect key="frame" x="7" y="75" width="307" height="264"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.019607843140000001" green="0.2666666667" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_events_lines.png" id="XH3-XB-cCR">
-                    <rect key="frame" x="7" y="74" width="307" height="3"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_events_single_expo13.png" id="LDd-U0-kx7">
+                    <rect key="frame" x="5" y="5" width="310" height="311"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_events_expo13.png" id="xjb-A8-mcV">
-                    <rect key="frame" x="7" y="77" width="307" height="334"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_events_single_card_bottom.png" id="cKz-HM-WXZ">
+                    <rect key="frame" x="0.0" y="237" width="320" height="102"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" id="NPa-3N-TBL">
-                    <rect key="frame" x="18" y="352" width="199" height="56"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ys-g3-WJg">
-                    <rect key="frame" x="225" y="371" width="45" height="40"/>
+                    <rect key="frame" x="160" y="299" width="154" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_bt_events_calendar.png">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -85,9 +77,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JWo-Rj-Iiv">
-                    <rect key="frame" x="269" y="371" width="45" height="40"/>
+                    <rect key="frame" x="5" y="299" width="153" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="hsm_bt_events_info.png">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -101,7 +93,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_bg_bt_large.png" id="IwM-ok-eRM">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_body_button.png" id="IwM-ok-eRM">
                     <rect key="frame" x="0.0" y="81" width="320" height="75"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -109,8 +101,8 @@
                     <rect key="frame" x="7" y="20" width="150" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Agenda" backgroundImage="hsm_bt_tiny_clear.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Agenda" backgroundImage="hsm_v5_bt_tiny_clear.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="pressAgenda:" destination="-1" eventType="touchUpInside" id="9EL-Jh-79y"/>
@@ -120,8 +112,8 @@
                     <rect key="frame" x="164" y="20" width="150" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Palestrantes" backgroundImage="hsm_bt_tiny_clear.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Palestrantes" backgroundImage="hsm_v5_bt_tiny_clear.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="pressPanelist:" destination="-1" eventType="touchUpInside" id="EjM-Vj-2Ch"/>
@@ -131,7 +123,7 @@
                     <rect key="frame" x="15" y="96" width="291" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Passes" backgroundImage="hsm_bt_large_orange.png"/>
+                    <state key="normal" title="Passes" backgroundImage="hsm_v5_bt_large_purple.png"/>
                     <connections>
                         <action selector="pressPasses:" destination="-1" eventType="touchUpInside" id="lvD-IA-Wtq"/>
                     </connections>
@@ -155,7 +147,7 @@
                     <rect key="frame" x="20" y="43" width="257" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.45124193969999998" green="0.70384828349999995" blue="0.88151705989999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.83137261870000001" green="0.69411766529999996" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4CO-FX-3nr">
@@ -169,7 +161,7 @@
                     <rect key="frame" x="20" y="103" width="257" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.45124193969999998" green="0.70384828349999995" blue="0.88151705989999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.83137261870000001" green="0.69411766529999996" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1hB-6s-0Fb">
@@ -183,7 +175,7 @@
                     <rect key="frame" x="20" y="168" width="257" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.45124193969999998" green="0.70384828349999995" blue="0.88151705989999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.83137261870000001" green="0.69411766529999996" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -195,7 +187,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <color key="textColor" red="0.45124193969999998" green="0.70384828349999995" blue="0.88151705989999996" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
             <fontDescription key="fontDescription" type="system" pointSize="14"/>
             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
         </textView>
@@ -203,11 +195,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="307"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_bg_bt_large.png" id="F3B-Tu-T8q">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_body_button.png" id="F3B-Tu-T8q">
                     <rect key="frame" x="0.0" y="82" width="320" height="75"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_bg_bt_large.png" id="diQ-v9-rsq">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_body_button.png" id="diQ-v9-rsq">
                     <rect key="frame" x="0.0" y="157" width="320" height="75"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -215,7 +207,7 @@
                     <rect key="frame" x="15" y="97" width="291" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Estações do Conhecimento" backgroundImage="hsm_bt_large_blue.png"/>
+                    <state key="normal" title="Estações do Conhecimento" backgroundImage="hsm_v5_bt_large_purple.png"/>
                     <connections>
                         <action selector="pressRooms:" destination="-1" eventType="touchUpInside" id="85n-zm-Hj3"/>
                     </connections>
@@ -224,12 +216,12 @@
                     <rect key="frame" x="15" y="172" width="291" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Ciclo de Palestras" backgroundImage="hsm_bt_large_blue.png"/>
+                    <state key="normal" title="Ciclo de Palestras" backgroundImage="hsm_v5_bt_large_purple.png"/>
                     <connections>
                         <action selector="pressCicle:" destination="-1" eventType="touchUpInside" id="UPf-n1-cp6"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_bg_bt_large.png" id="GTy-qx-dcr">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_body_button.png" id="GTy-qx-dcr">
                     <rect key="frame" x="0.0" y="232" width="320" height="75"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -237,7 +229,7 @@
                     <rect key="frame" x="15" y="247" width="291" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Grade de Programação" backgroundImage="hsm_bt_large_blue.png"/>
+                    <state key="normal" title="Grade de Programação" backgroundImage="hsm_v5_bt_large_purple.png"/>
                     <connections>
                         <action selector="pressGrade:" destination="-1" eventType="touchUpInside" id="X8B-AJ-Tcv"/>
                     </connections>
@@ -257,14 +249,11 @@
         </view>
     </objects>
     <resources>
-        <image name="hsm_bg_bt_large.png" width="320" height="75"/>
-        <image name="hsm_bt_events_calendar.png" width="45" height="40"/>
-        <image name="hsm_bt_events_info.png" width="45" height="40"/>
-        <image name="hsm_bt_large_blue.png" width="298" height="42"/>
-        <image name="hsm_bt_large_orange.png" width="291" height="45"/>
         <image name="hsm_bt_large_red.png" width="291" height="45"/>
-        <image name="hsm_bt_tiny_clear.png" width="150" height="44"/>
-        <image name="hsm_events_expo13.png" width="307" height="334"/>
-        <image name="hsm_events_lines.png" width="307" height="3"/>
+        <image name="hsm_v5_body_button.png" width="320" height="75"/>
+        <image name="hsm_v5_bt_large_purple.png" width="291" height="45"/>
+        <image name="hsm_v5_bt_tiny_clear.png" width="153" height="44"/>
+        <image name="hsm_v5_events_single_card_bottom.png" width="320" height="102"/>
+        <image name="hsm_v5_events_single_expo13.png" width="310" height="311"/>
     </resources>
 </document>

@@ -12,26 +12,32 @@
 #import "EventSingle.h"
 #import "EventEmpty.h"
 
-@interface EventMultiple ()
-
-@end
-
 @implementation EventMultiple
-{
-    FRTools *tools;
-}
+
+#pragma mark -
+#pragma mark Controller Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void)setConfigurations
+{
+    [super setConfigurations];
     
-    tools       = [[FRTools alloc] initWithTools];
     tableData   = [self array];
-    [table setTableHeaderView:[self edge]];
+    //[table setTableHeaderView:[self edge]];
     
     // ad..
-    Advertising *ad = [[Advertising alloc] initOnView:[self view]];
-    [ad correctRectOfView:table];
+    //Advertising *ad = [[Advertising alloc] initOnView:[self view]];
+    //[ad correctRectOfView:table];
+    if ([adManager hasAdWithCategory:kAdBannerFooter])
+        [adManager addAdTo:table type:kAdBannerFooter];
 }
 
 #pragma mark -
@@ -64,6 +70,7 @@
         [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
     
     [[cell labSubtext] setText:[dict objectForKey:KEY_SUBLABEL]];
+    [[cell labSubtext] setFont:[UIFont fontWithName:FONT_REGULAR size:16.0]];
     
     return cell;
 }

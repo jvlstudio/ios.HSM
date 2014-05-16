@@ -8,17 +8,19 @@
 
 #import "NetworkSingle.h"
 
+#pragma mark - Interface
+
 @interface NetworkSingle ()
-- (void) setInfo;
 - (void) setDisabled;
 /**/
 - (void) openBlackView;
 - (void) closeBlackView;
 @end
 
+#pragma mark - Implementation
+
 @implementation NetworkSingle
 {
-    FRTools *tools;
     BOOL isBlackViewOpen;
 }
 
@@ -27,12 +29,54 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoadWithBackButton];
+    [self setConfigurations];
+}
+
+#pragma mark -
+#pragma mark Default Methods
+
+- (void) setConfigurations
+{
+    [super setConfigurations];
     [self setTitle:@"Contato"];
     contact = [self dictionary];
-    tools   = [[FRTools alloc] initWithTools];
+    
+    [labName setFont:[UIFont fontWithName:FONT_BOLD size:16]];
+    [labName2 setFont:[UIFont fontWithName:FONT_BOLD size:16]];
+    [labEmail setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
+    [labCompany setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
+    [labRole setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
+    [labPhone setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
+    [labMobile setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
+    
+    [labName setText:[contact objectForKey:KEY_NAME]];
+    [labName2 setText:[contact objectForKey:KEY_NAME]];
+    [labEmail setText:[contact objectForKey:KEY_EMAIL]];
+    [labCompany setText:[contact objectForKey:KEY_COMPANY]];
+    [labRole setText:[contact objectForKey:KEY_ROLE]];
+    [labPhone setText:[contact objectForKey:KEY_PHONE]];
+    [labMobile setText:[contact objectForKey:KEY_MOBILE]];
+    
+    NSString *strImg    = [NSString stringWithFormat:@"hsm_ball_%@.png", [contact objectForKey:KEY_BARCOLOR]];
+    [imgColor setImage:[UIImage imageNamed:strImg]];
+    
+    NSString *strQRCode = [NSString stringWithFormat:URL_QRCODE, [self QRCodeEncrypt:contact]];
+    [imgQRCode setImageWithURL:[NSURL URLWithString:strQRCode]];
+    
+    [[butSendEmail titleLabel] setFont:[UIFont fontWithName:FONT_REGULAR size:16.0]];
+    
+    //[labName alignBottom];
+    [labCompany alignTop];
+    [labName2 alignBottom];
+    
+    [blackView setHidden:YES];
+    [blackView setAlpha:0];
+    isBlackViewOpen = NO;
+    
     // ..
-    [self setInfo];
+    if ([self hasContactBeenAdd:[contact objectForKey:KEY_EMAIL]])
+        [self setDisabled];
 }
 
 #pragma mark -
@@ -81,42 +125,6 @@
 #pragma mark -
 #pragma mark Methods
 
-- (void) setInfo
-{
-    [labName setFont:[UIFont fontWithName:FONT_BOLD size:16]];
-    [labName2 setFont:[UIFont fontWithName:FONT_BOLD size:16]];
-    [labEmail setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
-    [labCompany setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
-    [labRole setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
-    [labPhone setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
-    [labMobile setFont:[UIFont fontWithName:FONT_REGULAR size:12]];
-    
-    [labName setText:[contact objectForKey:KEY_NAME]];
-    [labName2 setText:[contact objectForKey:KEY_NAME]];
-    [labEmail setText:[contact objectForKey:KEY_EMAIL]];
-    [labCompany setText:[contact objectForKey:KEY_COMPANY]];
-    [labRole setText:[contact objectForKey:KEY_ROLE]];
-    [labPhone setText:[contact objectForKey:KEY_PHONE]];
-    [labMobile setText:[contact objectForKey:KEY_MOBILE]];
-    
-    NSString *strImg    = [NSString stringWithFormat:@"hsm_ball_%@.png", [contact objectForKey:KEY_BARCOLOR]];
-    [imgColor setImage:[UIImage imageNamed:strImg]];
-    
-    NSString *strQRCode = [NSString stringWithFormat:URL_QRCODE, [self QRCodeEncrypt:contact]];
-    [imgQRCode setImageWithURL:[NSURL URLWithString:strQRCode]];
-    
-    [labName alignBottom];
-    [labCompany alignTop];
-    [labName2 alignBottom];
-    
-    [blackView setHidden:YES];
-    [blackView setAlpha:0];
-    isBlackViewOpen = NO;
-    
-    // ..
-    if ([self hasContactBeenAdd:[contact objectForKey:KEY_EMAIL]])
-        [self setDisabled];
-}
 - (void) setDisabled
 {
     [butAddContact setEnabled:NO];
@@ -128,6 +136,7 @@
 - (void) openBlackView
 {
     [blackView setHidden:NO];
+    [imgZoom setHidden:YES];
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     [UIView animateWithDuration:0.3f animations:^{
         CGRect frame = CGRectMake((WINDOW_WIDTH/2)-125, (WINDOW_HEIGHT/2)-125, 250, 250);
@@ -149,6 +158,7 @@
     } completion:^(BOOL finished) {
         isBlackViewOpen = NO;
         [blackView setHidden:YES];
+        [imgZoom setHidden:NO];
     }];
 }
 

@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface AgendaBreakCell : UITableViewCell
+{
+    IBOutlet UILabel *labText;
+    IBOutlet UILabel *labHourInit;
+    IBOutlet UILabel *labHourFinal;
+    IBOutlet UIImageView *imgIcon;
+}
 
 @property (nonatomic, strong) IBOutlet UILabel *labText;
 @property (nonatomic, strong) IBOutlet UILabel *labHourInit;

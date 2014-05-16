@@ -75,8 +75,10 @@ AlertViewOptions;
  * FR > update
  *********************/
 
-@property (nonatomic, strong) NSString *upData;
+@property (nonatomic) BOOL canShowErrorAlerts;
+@property (nonatomic, strong) NSString *HTTPData;
 @property (nonatomic, strong) NSString *updateLastKey;
+@property (nonatomic, strong) NSString *POSTData;
 @property (nonatomic, strong) NSDictionary *JSONData;
 @property (nonatomic, strong) NSURLConnection *connection;
 @property (nonatomic, strong) UIViewController *parentViewController;

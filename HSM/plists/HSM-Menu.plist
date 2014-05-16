@@ -40,7 +40,7 @@
 		<key>slug</key>
 		<string>issues</string>
 		<key>is_active</key>
-		<string>kNo</string>
+		<string>kYes</string>
 	</dict>
 	<dict>
 		<key>label</key>
@@ -48,7 +48,7 @@
 		<key>slug</key>
 		<string>tv</string>
 		<key>is_active</key>
-		<string>kNo</string>
+		<string>kYes</string>
 	</dict>
 	<dict>
 		<key>label</key>

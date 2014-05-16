@@ -6,10 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookSingle">
             <connections>
-                <outlet property="butAuthor" destination="nJf-no-X3r" id="f6n-DS-rv8"/>
                 <outlet property="butBuy" destination="Ekf-kj-4BG" id="DgL-67-20M"/>
-                <outlet property="butEspec" destination="jrc-cR-1qf" id="ARJ-Rj-RDm"/>
-                <outlet property="butSinopse" destination="5VI-2n-AaU" id="Rua-Sp-3vR"/>
                 <outlet property="especCodebarBook" destination="iz9-Oa-b7G" id="mfg-ov-biu"/>
                 <outlet property="especCodebarEBook" destination="5vE-j5-jwP" id="OQX-8d-mre"/>
                 <outlet property="especDimensions" destination="Vqg-St-HQp" id="J92-kN-GVd"/>
@@ -21,10 +18,12 @@
                 <outlet property="labTitle" destination="0Sc-r3-20l" id="6um-CU-eNL"/>
                 <outlet property="scr" destination="5tF-Wf-rKW" id="TZC-GK-jKC"/>
                 <outlet property="scrSub" destination="btS-Vn-7O0" id="FpU-f5-ZCf"/>
+                <outlet property="segment" destination="2VU-B8-knl" id="YiE-3w-TgD"/>
                 <outlet property="tvAuthor" destination="sUS-md-TqD" id="iQW-gM-SdS"/>
                 <outlet property="tvSinopse" destination="au9-f5-S7X" id="3Xa-8F-YIC"/>
                 <outlet property="v" destination="xvG-qT-RqW" id="Tam-ia-Bpe"/>
                 <outlet property="vAuthor" destination="hnV-Ks-gbX" id="5qA-cg-t68"/>
+                <outlet property="vDescription" destination="iPd-Jw-zut" id="Taf-72-Zer"/>
                 <outlet property="vEspec" destination="e2w-gG-P35" id="jjT-Qo-C1I"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -47,100 +46,76 @@
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <view contentMode="scaleToFill" id="xvG-qT-RqW">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="527"/>
+        <view contentMode="scaleToFill" id="xvG-qT-RqW" userLabel="content">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="501"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2Hd-ow-oHo">
-                    <rect key="frame" x="20" y="85" width="70" height="95"/>
+                    <rect key="frame" x="23" y="20" width="70" height="95"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_books_label.png" id="W3R-vD-b5R">
-                    <rect key="frame" x="20" y="202" width="71" height="20"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_v5_books_label.png" id="W3R-vD-b5R">
+                    <rect key="frame" x="22" y="130" width="72" height="25"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="NJa-Gn-JME">
-                    <rect key="frame" x="20" y="201" width="70" height="21"/>
+                    <rect key="frame" x="23" y="132" width="70" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" id="0Sc-r3-20l">
-                    <rect key="frame" x="110" y="85" width="190" height="57"/>
+                    <rect key="frame" x="110" y="20" width="190" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.83137261870000001" green="0.69411766529999996" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uDy-EU-4rK">
-                    <rect key="frame" x="110" y="135" width="190" height="43"/>
+                    <rect key="frame" x="110" y="70" width="190" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5VI-2n-AaU">
-                    <rect key="frame" x="0.0" y="235" width="106" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ekf-kj-4BG">
+                    <rect key="frame" x="110" y="128" width="100" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Sinopse" backgroundImage="hsm_agenda_bt_day1.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Comprar" backgroundImage="hsm_v5_bt_tiny.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <state key="selected" backgroundImage="hsm_agenda_bt_day1_on.png"/>
                     <connections>
-                        <action selector="pressSinopse:" destination="-1" eventType="touchUpInside" id="9U4-8r-A0Y"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jrc-cR-1qf">
-                    <rect key="frame" x="106" y="235" width="108" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Especific." backgroundImage="hsm_agenda_bt_day2.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="selected" backgroundImage="hsm_agenda_bt_day2_on.png"/>
-                    <connections>
-                        <action selector="pressEspec:" destination="-1" eventType="touchUpInside" id="gcJ-a8-GC4"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nJf-no-X3r">
-                    <rect key="frame" x="214" y="235" width="106" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Autor" backgroundImage="hsm_agenda_bt_day3.png">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="selected" backgroundImage="hsm_agenda_bt_day3_on.png"/>
-                    <state key="highlighted" backgroundImage="hsm_agenda_bt_day3_on.png"/>
-                    <connections>
-                        <action selector="pressAuthor:" destination="-1" eventType="touchUpInside" id="X8a-kd-yk7"/>
+                        <action selector="pressBuy:" destination="-1" eventType="touchUpInside" id="SBi-5b-xSc"/>
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="btS-Vn-7O0">
-                    <rect key="frame" x="0.0" y="279" width="320" height="248"/>
+                    <rect key="frame" x="0.0" y="225" width="320" height="276"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="5I1-gi-YPl"/>
                     </connections>
                 </scrollView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2VU-B8-knl">
+                    <rect key="frame" x="20" y="179" width="280" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Sinopse"/>
+                        <segment title="Espec."/>
+                        <segment title="Autor"/>
+                    </segments>
+                    <color key="tintColor" red="0.83137261870000001" green="0.69411766529999996" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <action selector="segmentChange:" destination="-1" eventType="valueChanged" id="O1H-ZH-i0O"/>
+                    </connections>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="au9-f5-S7X">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-        </textView>
-        <view contentMode="scaleToFill" id="e2w-gG-P35">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+        <view contentMode="scaleToFill" id="e2w-gG-P35" userLabel="info">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hsm_books_icons.png" id="Tgu-kM-GcH">
@@ -151,50 +126,50 @@
                     <rect key="frame" x="80" y="23" width="201" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SBK-bD-YCP">
                     <rect key="frame" x="80" y="69" width="201" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codebar_book" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iz9-Oa-b7G">
                     <rect key="frame" x="80" y="117" width="201" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codebar_ebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5vE-j5-jwP">
                     <rect key="frame" x="80" y="164" width="201" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <view contentMode="scaleToFill" id="hnV-Ks-gbX">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+        <view contentMode="scaleToFill" id="hnV-Ks-gbX" userLabel="author">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author names" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8aN-cu-hf0">
                     <rect key="frame" x="20" y="20" width="280" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.83137261870000001" green="0.69411766529999996" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="sUS-md-TqD">
-                    <rect key="frame" x="20" y="64" width="280" height="141"/>
+                    <rect key="frame" x="20" y="64" width="280" height="192"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="textColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -202,28 +177,26 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ekf-kj-4BG">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="44"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iPd-Jw-zut" userLabel="description">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-            <state key="normal" title="Comprar" backgroundImage="hsm_bt_tiny_clear.png">
-                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-            </state>
-            <connections>
-                <action selector="pressBuy:" destination="-1" eventType="touchUpInside" id="SBi-5b-xSc"/>
-            </connections>
-        </button>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="au9-f5-S7X">
+                    <rect key="frame" x="20" y="0.0" width="280" height="276"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.4941176471" blue="0.58039215690000001" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
     </objects>
     <resources>
-        <image name="hsm_agenda_bt_day1.png" width="106" height="44"/>
-        <image name="hsm_agenda_bt_day1_on.png" width="106" height="44"/>
-        <image name="hsm_agenda_bt_day2.png" width="108" height="44"/>
-        <image name="hsm_agenda_bt_day2_on.png" width="108" height="44"/>
-        <image name="hsm_agenda_bt_day3.png" width="106" height="44"/>
-        <image name="hsm_agenda_bt_day3_on.png" width="106" height="44"/>
         <image name="hsm_books_icons.png" width="22" height="165"/>
-        <image name="hsm_books_label.png" width="71" height="20"/>
-        <image name="hsm_bt_tiny_clear.png" width="150" height="44"/>
+        <image name="hsm_v5_books_label.png" width="72" height="25"/>
+        <image name="hsm_v5_bt_tiny.png" width="100" height="29"/>
     </resources>
 </document>
