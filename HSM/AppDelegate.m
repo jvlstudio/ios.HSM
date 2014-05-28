@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Crashlytics/Crashlytics.h>
 
 #import "HSMAd.h"
 #import "Opening.h"
@@ -34,7 +35,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = PP_AUTORELEASE([[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]);
+    // Crash Analytics
+    [Crashlytics startWithAPIKey:@"48118b9b5992c16c30f272709e02fe01c05ee2d5"];
     
     // Let the device know we want to receive push notifications
     [Parse setApplicationId:PARSE_APP_ID
@@ -52,6 +54,8 @@
     // reveal slide view controller didn't work with this below
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    // window..
+    self.window = PP_AUTORELEASE([[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]);
     adManager = [[HSMAd alloc] initWithManager];
     if ([adManager hasAdWithCategory:kAdSuperstitial]) {
         self.window.rootViewController = [self openingWithAnimation];
