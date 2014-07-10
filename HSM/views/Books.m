@@ -8,11 +8,12 @@
 
 #import "Books.h"
 #import "BookCell.h"
+#import "BookSingleCell.h"
 #import "BookSingle.h"
 
 #import "PassButton.h"
 
-#define CELL_HEIGHT     186.0
+#define CELL_HEIGHT     135.0
 #define CELL_IDENTIFIER @"bookCell"
 #define CELL_BG         @"hsm_books_cell.png"
 
@@ -45,6 +46,51 @@
     [super viewWillAppear:animated];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	// read list..
+	if ([tableData count] == 0) {
+		MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+		hud.labelText = @"Carregando Livros...";
+		[[HSMaster rest] books:^(BOOL succeed, NSDictionary *result) {
+			[hud hide:YES];
+			if (succeed) {
+				if (result != nil) {
+					NSArray *drows = [result objectForKey:@"data"];
+					[tools propertyListWrite:drows forFileName:PLIST_BOOKS];
+					tableData = drows;
+					[table reloadData];
+				}
+				else {
+					[tools dialogWithMessage:@"Não foi possível carregar o conteúdo" title:@"Atençao"];
+				}
+			}
+			else {
+				[tools dialogWithMessage:[result objectForKey:@"message"] title:@"Atenção"];
+			}
+		}];
+	}
+	else {
+		// update..
+		[[HSMaster rest] loadInBackground:YES];
+		[[HSMaster rest] books:^(BOOL succeed, NSDictionary *result) {
+			if (succeed) {
+				if (result != nil) {
+					NSArray *drows = [result objectForKey:@"data"];
+					[tools propertyListWrite:drows forFileName:PLIST_BOOKS];
+				}
+				else {
+					[tools dialogWithMessage:@"Não foi possível carregar o conteúdo" title:@"Atençao"];
+				}
+			}
+			else {
+				[tools dialogWithMessage:[result objectForKey:@"message"] title:@"Atenção"];
+			}
+		}];
+	}
+}
 
 #pragma mark -
 #pragma mark Default Methods
@@ -57,6 +103,7 @@
     // table data..
     tools       = [[FRTools alloc] initWithTools];
     tableData   = [tools propertyListRead:PLIST_BOOKS];
+	/*
     rows        = [NSArray arrayWithObjects:
                    [NSArray arrayWithObjects:@"0", @"1", @"2", nil],
                    [NSArray arrayWithObjects:@"3", @"4", @"5", nil],
@@ -64,7 +111,8 @@
                    [NSArray arrayWithObjects:@"9", @"10", @"11", nil],
                    [NSArray arrayWithObjects:@"12", @"13", @"14", nil],
                    [NSArray arrayWithObjects:@"15", @"16", @"17", nil],nil];
-    
+    */
+	 
     if ([adManager hasAdWithCategory:kAdBannerFooter])
         [adManager addAdTo:table type:kAdBannerFooter];
 }
@@ -106,7 +154,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return [tableData count];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -114,7 +162,22 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger calc1     = [[[rows objectAtIndex:indexPath.row] objectAtIndex:0] intValue];
+	NSDictionary *dict  = [tableData objectAtIndex:[indexPath row]];
+    NSArray *xib        = [[NSBundle mainBundle] loadNibNamed:XIB_RESOURCES owner:nil options:nil];
+    BookSingleCell *cell= (BookSingleCell*)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    if(!cell)
+        cell = (BookSingleCell*)[xib objectAtIndex:kCellBookSingle];
+    
+    [[cell labName] setText:[dict objectForKey:@"name"]];
+    [[cell imgPicture] setImageWithURL:[NSURL URLWithString:[dict objectForKey:@"picture"]]];
+    
+    [[cell labName] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labName.font.pointSize]];
+    
+    return cell;
+	
+    /*
+	NSInteger calc1     = [[[rows objectAtIndex:indexPath.row] objectAtIndex:0] intValue];
     NSInteger calc2     = [[[rows objectAtIndex:indexPath.row] objectAtIndex:1] intValue];
     NSInteger calc3     = [[[rows objectAtIndex:indexPath.row] objectAtIndex:2] intValue];
     
@@ -166,13 +229,16 @@
         [[cell labBook3] setText:[dict objectForKey:KEY_NAME]];
         [[cell labBook3] setFont:[UIFont fontWithName:FONT_REGULAR size:10.0]];
     }
-    else [but3 setHidden:YES];
+    else [but3 setHidden:YES];*/
     
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // ...
+	NSDictionary *dict      = [tableData objectAtIndex:indexPath.row];
+    BookSingle *vc          = [[BookSingle alloc] initWithNibName:NIB_BOOK_SINGLE andDictionary:dict];
+    [[self navigationController] pushViewController:vc animated:YES];
 }
 
 @end

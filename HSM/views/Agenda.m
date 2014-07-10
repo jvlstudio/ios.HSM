@@ -40,6 +40,8 @@
     EventManager *manager;
 }
 
+@synthesize dates;
+
 #pragma mark -
 #pragma mark Controller Methods
 
@@ -72,6 +74,7 @@
     rect.size.height -= IPHONE5_COEF;
     [table setFrame:rect];
     
+	/*
     // data ..
     // ...
     // agenda init with an array with all event's days (dictionaries)
@@ -85,9 +88,20 @@
     // finally, we set the current
     // array for table (the first) ..
     // ...
-    tableData   = [scheduleDays objectAtIndex:ZERO];
-    
-    [table setTableHeaderView:tableHeader];
+    tableData   = [scheduleDays objectAtIndex:ZERO];*/
+	
+	agendaDays   = [self array];
+    if ([agendaDays count] > 0) {
+        scheduleDays = [[HSMaster core] agenda:agendaDays splitedByDays:dates];
+        tableData   = [scheduleDays objectAtIndex:0];
+    }
+    else {
+        tableData = [NSArray array];
+    }
+	
+	if ([agendaDays count] > 1) {
+		[table setTableHeaderView:tableHeader];
+	}
     [self manageButtons];
     
     // ad..
@@ -111,14 +125,27 @@
 
 - (void) manageButtons
 {
-    if ([agendaDays count] < 3)
+    if ([dates count] < 3)
         [segment removeSegmentAtIndex:2 animated:NO];
     
+	int i = 0;
+	NSDateFormatter *df = [[NSDateFormatter alloc] init];
+	NSDateFormatter *df2 = [[NSDateFormatter alloc] init];
+	[df setDateFormat:@"dd/MM/yyyy"];
+	[df2 setDateFormat:@"dd/MMM"];
+	for (NSString *dateString in dates) {
+		NSDate *date = [df dateFromString:dateString];
+		[segment setTitle:[df2 stringFromDate:date] forSegmentAtIndex:i];
+		i++;
+	}
+	
+	/*
     for (uint i=0; i<[agendaDays count]; i++) {
         NSDictionary *event = [agendaDays objectAtIndex:i];
         NSArray *text = [tools explode:[event objectForKey:KEY_LABEL] bySeparator:@"-"];
         [segment setTitle:[NSString stringWithFormat:@"%@ %@", [text objectAtIndex:0], [text objectAtIndex:1]] forSegmentAtIndex:i];
     }
+	*/
     
     [segment setSelectedSegmentIndex:0];
 }
@@ -148,10 +175,16 @@
     // agenda object ..
     NSDictionary *dict  = [tableData objectAtIndex:indexPath.row];
     // panelist object ..
-    NSDictionary *pan   = [manager panelistForKey:[dict objectForKey:KEY_KEY]];
+    NSDictionary *pan   = [dict objectForKey:@"panelist"];
     // cell..
     NSArray *xib        = [[NSBundle mainBundle] loadNibNamed:XIB_RESOURCES owner:nil options:nil];
     id cell             = nil;
+	
+	NSDateFormatter *df, *df2;
+	df  = [[NSDateFormatter alloc] init];
+	df2 = [[NSDateFormatter alloc] init];
+	[df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+	[df2 setDateFormat:@"HH:mm"];
     
     // condition..
     // agenda cell..
@@ -171,20 +204,19 @@
         [cell setBackgroundView:imgBg];
         
         // hour
-        NSArray *hours      = [tools explode:[dict objectForKey:KEY_HOUR] bySeparator:@" às "];
+        NSDate *dateStart = [df dateFromString:[[dict objectForKey:@"date"] objectForKey:@"start"]];
+		NSDate *dateEnd	  = [df dateFromString:[[dict objectForKey:@"date"] objectForKey:@"end"]];
+		NSString *hourStart = [df2 stringFromDate:dateStart];
+		NSString *hourEnd = [df2 stringFromDate:dateEnd];
         
-        if ([[dict objectForKey:KEY_SUBTYPE] isEqualToString:KEY_SHOWONLY])
-            [[cell labText] setText:[dict objectForKey:KEY_KEY]];
-        else
-            [[cell labText] setText:[pan objectForKey:KEY_NAME]];
-        
-        NSString *strImg = [NSString stringWithFormat:@"p_%@_large.png", [pan objectForKey:KEY_SLUG]];
-        [[cell imgPicture] setImage:[UIImage imageNamed:strImg]];
-        [[cell labSubText] setText:[dict objectForKey:KEY_LABEL]];
-        [[cell labHourInit] setText:[hours objectAtIndex:0]];
-        [[cell labHourFinal] setText:[hours objectAtIndex:1]];
-        
-        NSLog(@"%@", strImg);
+        NSString *strImg = [pan objectForKey:@"picture"];
+        if(strImg)
+			[[cell imgPicture] setImageWithURL:[NSURL URLWithString:strImg]];
+		
+		[[cell labText] setText:[dict objectForKey:@"label"]];
+        [[cell labSubText] setText:[dict objectForKey:@"sublabel"]];
+        [[cell labHourInit] setText:hourStart];
+        [[cell labHourFinal] setText:hourEnd];
         
         [[cell labText] alignBottom];
         [[cell labSubText] alignTop];
@@ -207,9 +239,12 @@
         [cell setBackgroundView:imgBg];
         
         // hour
-        NSArray *hours      = [tools explode:[dict objectForKey:KEY_HOUR] bySeparator:@" às "];
+		NSDate *dateStart = [df dateFromString:[[dict objectForKey:@"date"] objectForKey:@"start"]];
+		NSDate *dateEnd	  = [df dateFromString:[[dict objectForKey:@"date"] objectForKey:@"end"]];
+		NSString *hourStart = [df2 stringFromDate:dateStart];
+		NSString *hourEnd = [df2 stringFromDate:dateEnd];
         
-        [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
+        [[cell labText] setText:[dict objectForKey:@"label"]];
         
         if (![[dict objectForKey:KEY_SUBLABEL] isEqualToString:KEY_EMPTY])
         {
@@ -217,9 +252,9 @@
             //[[cell labSubText] alignTop];
         }
         
-        [[cell labHourInit] setText:[hours objectAtIndex:0]];
-        if ([hours count] > 1)
-            [[cell labHourFinal] setText:[hours objectAtIndex:1]];
+        [[cell labHourInit] setText:hourStart];
+        if (hourEnd)
+            [[cell labHourFinal] setText:hourEnd];
         else
             [[cell labHourFinal] setText:KEY_EMPTY];
         
@@ -234,14 +269,18 @@
             cell = (AgendaBreakCell*)[xib objectAtIndex:kCellAgendaBreak];
         
         // hour
-        NSArray *hours      = [tools explode:[dict objectForKey:KEY_HOUR] bySeparator:@" às "];
-        NSString *strImg = [NSString stringWithFormat:@"hsm_agenda_id_%@.png", [dict objectForKey:KEY_KEY]];
+		NSDate *dateStart = [df dateFromString:[[dict objectForKey:@"date"] objectForKey:@"start"]];
+		NSDate *dateEnd	  = [df dateFromString:[[dict objectForKey:@"date"] objectForKey:@"end"]];
+		NSString *hourStart = [df2 stringFromDate:dateStart];
+		NSString *hourEnd = [df2 stringFromDate:dateEnd];
+		
+        NSString *strImg = [NSString stringWithFormat:@"hsm_agenda_id_%@.png", [dict objectForKey:@"sublabel"]];
         
         // ..
         [[cell imgIcon] setImage:[UIImage imageNamed:strImg]];
-        [[cell labText] setText:[dict objectForKey:KEY_LABEL]];
-        [[cell labHourInit] setText:[hours objectAtIndex:0]];
-        [[cell labHourFinal] setText:[hours objectAtIndex:1]];
+        [[cell labText] setText:[dict objectForKey:@"label"]];
+        [[cell labHourInit] setText:hourStart];
+        [[cell labHourFinal] setText:hourEnd];
         [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:15.0]];
     }
     
@@ -252,9 +291,8 @@
     // agenda object ..
     NSDictionary *dict  = [tableData objectAtIndex:indexPath.row];
     // panelist object ..
-    NSDictionary *pan   = [manager panelistForKey:[dict objectForKey:KEY_KEY]];
-    if ([[dict objectForKey:KEY_TYPE] isEqualToString:KEY_TYPE_SPEECH]
-    && ![[dict objectForKey:KEY_SUBTYPE] isEqualToString:KEY_SHOWONLY])
+    NSDictionary *pan   = [dict objectForKey:@"panelist"];//[manager panelistForKey:[dict objectForKey:KEY_KEY]];
+    if ([[dict objectForKey:KEY_TYPE] isEqualToString:KEY_TYPE_SPEECH])
     {
         PanelistSingle *vc = [[PanelistSingle alloc] initWithNibName:NIB_PANELIST_SINGLE andDictionary:pan];
         [[self navigationController] pushViewController:vc animated:YES];

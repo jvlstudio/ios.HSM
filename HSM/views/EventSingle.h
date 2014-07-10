@@ -10,6 +10,8 @@
 
 @interface EventSingle : KDViewController
 {
+	NSDictionary *eventDictionary;
+	
     IBOutlet UIScrollView *scr;
     IBOutlet UIView *v;
     IBOutlet UIView *elasticView;

@@ -16,13 +16,14 @@
 #pragma mark - Interface
 
 @interface Events ()
-- (NSArray*) nextEvents;
-- (NSArray*) prevEvents;
 @end
 
 #pragma mark - Implementation
 
 @implementation Events
+{
+	NSArray *events;
+}
 
 #pragma mark -
 #pragma mark Controller Methods
@@ -40,8 +41,50 @@
 {
     [super setConfigurations];
     [self setTitle:@"Eventos"];
+	
+	// read list..
+	events = [tools propertyListRead:PLIST_REST_EVENTS];
+	if ([events count] == 0) {
+		MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+		hud.labelText = @"Carregando Eventos...";
+		[[HSMaster rest] events:^(BOOL succeed, NSDictionary *result) {
+			[hud hide:YES];
+			if (succeed) {
+				if (result != nil) {
+					NSArray *rows = [result objectForKey:@"data"];
+					[tools propertyListWrite:rows forFileName:PLIST_REST_EVENTS];
+					tableData = [[HSMaster core] nextEvents:rows];
+					[table reloadData];
+				}
+				else {
+					[tools dialogWithMessage:@"Não foi possível carregar o conteúdo" title:@"Atençao"];
+				}
+			}
+			else {
+				[tools dialogWithMessage:[result objectForKey:@"message"] title:@"Atenção"];
+			}
+		}];
+	}
+	else {
+		tableData   = [[HSMaster core] nextEvents:events];
+		// update..
+		[[HSMaster rest] loadInBackground:YES];
+		[[HSMaster rest] events:^(BOOL succeed, NSDictionary *result) {
+			if (succeed) {
+				if (result != nil) {
+					NSArray *rows = [result objectForKey:@"data"];
+					[tools propertyListWrite:rows forFileName:PLIST_REST_EVENTS];
+				}
+				else {
+					[tools dialogWithMessage:@"Não foi possível carregar o conteúdo" title:@"Atençao"];
+				}
+			}
+			else {
+				[tools dialogWithMessage:[result objectForKey:@"message"] title:@"Atenção"];
+			}
+		}];
+	}
     
-    tableData   = [self nextEvents];
     [table setTableHeaderView:tableHeader];
     
     CGRect rect = table.frame;
@@ -56,6 +99,7 @@
         [adManager addAdTo:table type:kAdBannerFooter];
 }
 
+/*
 - (NSArray*) nextEvents
 {
     NSArray *events = [tools propertyListRead:PLIST_EVENTS];
@@ -78,6 +122,7 @@
     
     return [selected copy];
 }
+*/
 
 #pragma mark -
 #pragma mark IBActions
@@ -85,9 +130,9 @@
 - (IBAction) changedValue:(UISegmentedControl*)sender
 {
     if (segment.selectedSegmentIndex == 0)
-        tableData = [self nextEvents];
+        tableData = [[HSMaster core] nextEvents:events];
     else
-        tableData = [self prevEvents];
+        tableData = [[HSMaster core] previousEvents:events];
     
     [table reloadData];
 }
@@ -109,24 +154,24 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *dict  = [tableData objectAtIndex:indexPath.row];
+    NSDictionary *dict  = [[tableData objectAtIndex:indexPath.row] objectForKey:@"info"];
     NSArray *xib        = [[NSBundle mainBundle] loadNibNamed:XIB_RESOURCES owner:nil options:nil];
     EventCell *cell     = (EventCell *)[tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER];
     if(!cell)
         cell = (EventCell*)[xib objectAtIndex:kCellEvents];
     
-    [[cell labText] setText:[dict objectForKey:KEY_NAME]];
-    [[cell labDates] setText:[dict objectForKey:KEY_DATE]];
-    [[cell labLocation] setText:[dict objectForKey:KEY_LOCAL]];
-    [[cell labSubtext] setText:[dict objectForKey:KEY_TINY_DESCRIPTION]];
+    [[cell labText] setText:[dict objectForKey:@"name"]];
+    [[cell labDates] setText:[dict objectForKey:@"date_pretty"]];
+    [[cell labLocation] setText:[dict objectForKey:@"locale"]];
+    [[cell labSubtext] setText:[dict objectForKey:@"tiny_description"]];
     
     [[cell labText] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labText.font.pointSize]];
     //[[cell labSubtext] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labSubtext.font.pointSize]];
     [[cell labLocation] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labLocation.font.pointSize]];
     [[cell labDates] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labDates.font.pointSize]];
     
-    NSString *strImg    = [NSString stringWithFormat:@"events_list_%@.png", [dict objectForKey:KEY_SLUG]];
-    [[cell imgCover] setImage:[UIImage imageNamed:strImg]];
+    NSString *strImg    = [[dict objectForKey:@"images"] objectForKey:@"list"];
+    [[cell imgCover] setImageWithURL:[NSURL URLWithString:strImg]];
     
     return cell;
 }

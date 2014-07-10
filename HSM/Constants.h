@@ -47,14 +47,16 @@
 #define PLIST_ADS                   @"HSM-Ads"
 #define PLIST_MENU                  @"HSM-Menu"
 #define PLIST_EVENTS                @"HSM-Events"
-#define PLIST_BOOKS                 @"HSM-Books"
-#define PLIST_MAGAZINES             @"HSM-Magazines"
+#define PLIST_BOOKS                 @"HS-REST-Books"
+#define PLIST_MAGAZINES             @"HS-REST-Magazines"
 #define PLIST_PASSES                @"HSM-Passes"
 #define PLIST_PASSES_VALUES         @"HSM-Passes-Values"
 #define PLIST_PASS_COMPLETED        @"HSM-Pass-Completed"
 #define PLIST_LOGS                  @"HSM-Logs"
 #define PLIST_NETWORK               @"HSM-Network"
 #define PLIST_MYCONTACT             @"HSM-MyContact"
+
+#define PLIST_REST_EVENTS			@"HS-REST-Events"
 
 /* urls */
 

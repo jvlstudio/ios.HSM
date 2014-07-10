@@ -7,9 +7,7 @@
 //
 
 #import "Webservice.h"
-
 #import "FRTools.h"
-#import "SBJSON.h"
 
 #pragma mark - Interface
 
@@ -22,7 +20,6 @@
 @implementation Webservice
 {
     FRTools *tools;
-    SBJSON *json;
 }
 
 @synthesize httpData;
@@ -34,7 +31,6 @@
 - (id) initWithAPI
 {
 	tools	= [[FRTools alloc] initWithTools];
-	json    = [SBJSON new];
 	return self;
 }
 - (void) setCanShowErrors:(BOOL) canShow

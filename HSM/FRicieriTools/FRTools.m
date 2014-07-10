@@ -7,7 +7,6 @@
 //
 
 #import "FRTools.h"
-#import "SBJSON.h"
 
 #define ERROR_1009_TITLE    @"Sem conexão"
 #define ERROR_1009_MESSAGE  @"Não foi possível conectar com a internet."
@@ -335,14 +334,15 @@
 - (void) dataToJSON
 {
     NSError *error;
-    NSDictionary *result;
+	NSData *data = [HTTPData dataUsingEncoding:NSUTF8StringEncoding];
+	NSDictionary *JSON = [NSJSONSerialization
+						  JSONObjectWithData: data
+						  options: NSJSONReadingMutableContainers
+						  error: &error];
     
-    SBJSON *json    = [SBJSON new];
-    result          = [json objectWithString:HTTPData error:&error];
-    
-    if(result)
+    if(JSON)
     {
-        JSONData    = result;
+        JSONData    = JSON;
         NSLog(@"==> UpdateData: JSON fetched successly!");
     }
     else {
@@ -662,12 +662,13 @@
 - (id)   errorWithJSON:(NSString*) retData withSelector:(SEL) finishSelector
 {
     NSError *error;
-    NSDictionary *result;
+	NSData *data = [retData dataUsingEncoding:NSUTF8StringEncoding];
+	NSDictionary *JSON = [NSJSONSerialization
+						  JSONObjectWithData: data
+						  options: NSJSONReadingMutableContainers
+						  error: &error];
     
-	SBJSON *json    = [SBJSON new];
-	result          = [json objectWithString:retData error:&error];
-    
-    return result;
+    return JSON;
 }
 - (void) errorWithError:(NSError*) error
 {

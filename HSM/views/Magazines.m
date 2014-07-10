@@ -19,6 +19,51 @@
     [super viewDidLoadWithMenuButton];
     [self setConfigurations];
 }
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	// read list..
+	if ([tableData count] == 0) {
+		MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+		hud.labelText = @"Carregando Edições...";
+		[[HSMaster rest] magazines:^(BOOL succeed, NSDictionary *result) {
+			[hud hide:YES];
+			if (succeed) {
+				if (result != nil) {
+					NSArray *rows = [result objectForKey:@"data"];
+					[tools propertyListWrite:rows forFileName:PLIST_MAGAZINES];
+					tableData = rows;
+					[table reloadData];
+				}
+				else {
+					[tools dialogWithMessage:@"Não foi possível carregar o conteúdo" title:@"Atençao"];
+				}
+			}
+			else {
+				[tools dialogWithMessage:[result objectForKey:@"message"] title:@"Atenção"];
+			}
+		}];
+	}
+	else {
+		// update..
+		[[HSMaster rest] loadInBackground:YES];
+		[[HSMaster rest] magazines:^(BOOL succeed, NSDictionary *result) {
+			if (succeed) {
+				if (result != nil) {
+					NSArray *rows = [result objectForKey:@"data"];
+					[tools propertyListWrite:rows forFileName:PLIST_MAGAZINES];
+				}
+				else {
+					[tools dialogWithMessage:@"Não foi possível carregar o conteúdo" title:@"Atençao"];
+				}
+			}
+			else {
+				[tools dialogWithMessage:[result objectForKey:@"message"] title:@"Atenção"];
+			}
+		}];
+	}
+}
 
 #pragma mark -
 #pragma mark Default Methods
@@ -30,7 +75,7 @@
     
     tools       = [[FRTools alloc] initWithTools];
     tableData   = [tools propertyListRead:PLIST_MAGAZINES];
-    
+	
     [table setTableHeaderView:tableHeader];
 }
 
@@ -66,9 +111,9 @@
     if(!cell)
         cell = (MagazineCell*)[xib objectAtIndex:kCellMagazine];
     
-    [[cell labTitle] setText:[dict objectForKey:KEY_TITLE]];
-    [[cell labSlug] setText:[dict objectForKey:KEY_SLUG]];
-    [[cell image] setImage:[UIImage imageNamed:[dict objectForKey:KEY_IMAGE]]];
+    [[cell labTitle] setText:[dict objectForKey:@"name"]];
+    [[cell labSlug] setText:[dict objectForKey:@"description"]];
+    [[cell image] setImageWithURL:[NSURL URLWithString:[dict objectForKey:@"picture"]]];
     
     [[cell labTitle] setFont:[UIFont fontWithName:FONT_REGULAR size:cell.labTitle.font.pointSize]];
     [[cell labTitle] alignBottom];

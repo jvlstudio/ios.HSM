@@ -28,7 +28,7 @@
     [self setTitle:@"Livro"];
     
     [labTitle setText:[[self dictionary] objectForKey:KEY_NAME]];
-    [labSubtitle setText:[[self dictionary] objectForKey:KEY_SUBTITLE]];
+    [labSubtitle setText:@"HSM Editora"];
     [labTitle setFont:[UIFont fontWithName:FONT_REGULAR size:labTitle.font.pointSize]];
     [labSubtitle setFont:[UIFont fontWithName:FONT_REGULAR size:labSubtitle.font.pointSize]];
     
@@ -36,33 +36,33 @@
     [labSubtitle alignTop];
     
     [labPrice setText:@"consulte"];
-    [labAuthor setText:[[self dictionary] objectForKey:KEY_AUTHOR_NAME]];
-    [especDimensions setText:[[self dictionary] objectForKey:KEY_DIMENSIONS]];
-    [especPages setText:[[self dictionary] objectForKey:KEY_PAGES]];
-    [especCodebarBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_BOOK]];
-    [especCodebarEBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_EBOOK]];
-    [tvSinopse setText:[[self dictionary] objectForKey:KEY_DESCRIPTION]];
-    [tvAuthor setText:[[self dictionary] objectForKey:KEY_AUTHOR_DESCRIPTION]];
+    [labAuthor setText:[[self dictionary] objectForKey:@"author_name"]];
+    //[especDimensions setText:[[self dictionary] objectForKey:KEY_DIMENSIONS]];
+    //[especPages setText:[[self dictionary] objectForKey:KEY_PAGES]];
+    //[especCodebarBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_BOOK]];
+    //[especCodebarEBook setText:[[self dictionary] objectForKey:KEY_CODEBAR_EBOOK]];
+    [tvSinopse setText:[[self dictionary] objectForKey:@"description"]];
+    [tvAuthor setText:[[self dictionary] objectForKey:@"author_description"]];
     
-    NSString *strImg    = [NSString stringWithFormat:@"%@.png", [[self dictionary] objectForKey:KEY_SLUG]];
-    [imgPicture setImage:[UIImage imageNamed:strImg]];
+    [imgPicture setImageWithURL:[NSURL URLWithString:[[self dictionary] objectForKey:@"picture"]]];
     
     // scr..
     [scr setContentSize:CGSizeMake(v.frame.size.width, v.frame.size.height)];
     [scr addSubview:v];
     
     // scr sub..
+	/*
     CGRect rect1    = vEspec.frame;
     rect1.origin.x  = WINDOW_WIDTH;
-    [vEspec setFrame:rect1];
+    [vEspec setFrame:rect1];*/
     
     CGRect rect2    = vAuthor.frame;
-    rect2.origin.x  = WINDOW_WIDTH*2;
+    rect2.origin.x  = WINDOW_WIDTH;
     [vAuthor setFrame:rect2];
     
-    [scrSub setContentSize:CGSizeMake(WINDOW_WIDTH*3, scrSub.frame.size.height)];
+    [scrSub setContentSize:CGSizeMake(WINDOW_WIDTH*2, scrSub.frame.size.height)];
     [scrSub addSubview:vDescription];
-    [scrSub addSubview:vEspec];
+    //[scrSub addSubview:vEspec];
     [scrSub addSubview:vAuthor];
 }
 

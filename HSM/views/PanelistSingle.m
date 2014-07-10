@@ -54,23 +54,51 @@
     tvDescription   = [self createTextView];
     tvTheme         = [self createTextView];
     labThemeTitle   = [self createLabelTitle];
+	
+	NSDateFormatter *df = [[NSDateFormatter alloc] init];
+	NSDateFormatter *df2 = [[NSDateFormatter alloc] init];
+	NSDateFormatter *df3 = [[NSDateFormatter alloc] init];
+	NSDateFormatter *df4 = [[NSDateFormatter alloc] init];
+	[df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+	[df2 setDateFormat:@"HH:mm"];
+	[df3 setDateFormat:@"dd/MM/yyyy"];
+	[df4 setDateFormat:@"dd/MMM"];
+	
+	NSString *dateStr = [[[self dictionary] objectForKey:@"date"] objectForKey:@"date"];
+	NSDate *dateDay = [df3 dateFromString:dateStr];
+	
+	NSString *dateStart = [[[self dictionary] objectForKey:@"date"] objectForKey:@"start"];
+	NSString *dateEnd	= [[[self dictionary] objectForKey:@"date"] objectForKey:@"end"];
+	NSDate *dStart	= [df dateFromString:dateStart];
+	NSDate *dEnd	= [df dateFromString:dateEnd];
+	
+	NSString *themeTitle = [[self dictionary] objectForKey:@"theme_title"] ? [[self dictionary] objectForKey:@"theme_title"] : @"...";
+	NSString *themeDate	= dateStr ? [df4 stringFromDate:dateDay] : @"...";
+	
+	NSString *hours = @"...";
+	if (dateStart && dateEnd) {
+		hours = [NSString stringWithFormat:@"%@ %@", [df2 stringFromDate:dStart], [df2 stringFromDate:dEnd]];
+	}
     
     [labThemeTitle setText:[[self dictionary] objectForKey:@"theme_title"]];
     [labThemeTitle sizeToFit];
     
     // ...
     [labName setText:[[self dictionary] objectForKey:KEY_NAME]];
-    [labSpeech setText:[[self dictionary] objectForKey:KEY_SPEECH]];
-    [labDate setText:[self changeDateLabel:[[self dictionary] objectForKey:KEY_INFO_DATE]]];
-    [labHour setText:[self changeHourLabel:[[self dictionary] objectForKey:KEY_INFO_HOUR]]];
+    [labSpeech setText:themeTitle];
+    [labDate setText:themeDate];
+    [labHour setText:hours];
     [tvDescription setText:[[self dictionary] objectForKey:KEY_DESCRIPTION]];
-    [tvTheme setText:[[self dictionary] objectForKey:KEY_THEME]];
+    [tvTheme setText:[[self dictionary] objectForKey:@"theme_description"]];
     
     [scr addSubview:v];
     [scr addSubview:tvDescription];
-    [scr addSubview:labThemeTitle];
-    [scr addSubview:tvTheme];
-    [scr addSubview:butSchedule];
+	
+	if ([[self dictionary] objectForKey:@"date"]) {
+		[scr addSubview:labThemeTitle];
+		[scr addSubview:tvTheme];
+		[scr addSubview:butSchedule];
+	}
     
     [butSchedule setAlpha:0];
     
@@ -79,8 +107,9 @@
     //rectV.origin.y  = 64;
     //[v setFrame:rectV];
     
-    NSString *strImg = [NSString stringWithFormat:@"p_%@_large.png", [[self dictionary] objectForKey:KEY_SLUG]];
-    [imgPicture setImage:[UIImage imageNamed:strImg]];
+    NSString *strImg = [[self dictionary] objectForKey:@"picture"];
+	if(strImg)
+		[imgPicture setImageWithURL:[NSURL URLWithString:strImg]];
     
     // ...
     NSDictionary *logs  = [tools propertyListRead:PLIST_LOGS];
@@ -129,7 +158,10 @@
     
     // rect button
     CGRect rect4 = butSchedule.frame;
-    rect4.origin.y      = tvTheme.frame.origin.y + tvTheme.frame.size.height + PADDING;
+	if ([[self dictionary] objectForKey:@"date"])
+		rect4.origin.y      = tvTheme.frame.origin.y + tvTheme.frame.size.height + PADDING;
+	else
+		rect4.origin.y      = tvDescription.frame.origin.y + tvDescription.frame.size.height + PADDING;
     rect4.origin.x      = (WINDOW_WIDTH/2) - (rect4.size.width/2);
     [butSchedule setFrame:rect4];
     

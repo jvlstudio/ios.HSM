@@ -19,6 +19,7 @@ UIPickerViewDelegate, UIPickerViewDataSource>
     
     IBOutlet UITableView *table;
     IBOutlet UIView *tableHeader;
+	IBOutlet UILabel *tableHeaderTitle;
     IBOutlet UIImageView *imgHeader;
     IBOutlet UIView *tableFooter;
     IBOutlet UIPickerView *pvDates;

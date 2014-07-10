@@ -52,13 +52,15 @@
     [super setConfigurations];
     [self setTitle:@"Pré-Compra"];
     
-    dates = [tools explode:[[self dictionary] objectForKey:KEY_DATES] bySeparator:@","];
+    dates = [[self dictionary] objectForKey:@"dates"];
     
     // ...
     [self reloadTableData];
     
     NSString *strImg    = [NSString stringWithFormat:TITLE_BG, [self stringForPassColor:[self passColor]]];
     [imgHeader setImage:[UIImage imageNamed:strImg]];
+	[tableHeaderTitle setText:[[self dictionary] objectForKey:@"name"]];
+	//tableHeaderTitle.font = [UIFont fontWithName:FONT_REGULAR size:tableHeaderTitle.font.pointSize];
     
     [table setTableHeaderView:tableHeader];
     [table setTableFooterView:tableFooter];

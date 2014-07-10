@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PassForm">
@@ -13,6 +13,7 @@
                 <outlet property="table" destination="bO3-Bj-Z50" id="wpS-bC-ujO"/>
                 <outlet property="tableFooter" destination="zcr-OV-fmk" id="YxY-1l-ldM"/>
                 <outlet property="tableHeader" destination="ppn-lG-XCk" id="STY-X9-Gpr"/>
+                <outlet property="tableHeaderTitle" destination="Qdg-lu-1bo" id="jQt-YP-jsY"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -80,6 +81,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qdg-lu-1bo">
+                    <rect key="frame" x="20" y="19" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -116,44 +116,46 @@
 }
 - (void) saveEKEventOnCalendar:(NSDictionary*) panelist
 {
+	NSLog(@"[EKEVENT] ------");
     if ([self isAbleToSaveEKEvents])
     {
-        NSLog(@"EKEVENT: - Start to save to iCal");
-        NSArray *hoursToAdd = [panelist objectForKey:KEY_GMTC];
-        // ...
-        for (NSDictionary *dict in hoursToAdd)
-        {
-            int interval = [[dict objectForKey:KEY_MINUTES] intValue] * 60; // transform minutes into hours..
-            EKEventStore *eventStore    = [[EKEventStore alloc] init];
-            EKEvent *ekEvent            = [EKEvent eventWithEventStore:eventStore];
-            EKAlarm *alarm              = [EKAlarm alarmWithRelativeOffset:60.0f * -20.0f]; // 20 min
-            
-            NSString *eventTit  = [NSString stringWithFormat:@"HSM: %@ (Palestra)", [panelist objectForKey:KEY_NAME]];
-            
-            ekEvent.title       = eventTit;
-            ekEvent.startDate   = [dict objectForKey:KEY_DATE];
-            ekEvent.endDate     = [[NSDate alloc] initWithTimeInterval:interval sinceDate:ekEvent.startDate];
-            ekEvent.notes       = [panelist objectForKey:KEY_DESCRIPTION];
-            [ekEvent addAlarm:alarm];
-            
-            // save to ical..
-            NSError *err;
-            [ekEvent setCalendar:[eventStore defaultCalendarForNewEvents]];
-            if ([eventStore saveEvent:ekEvent span:EKSpanThisEvent error:&err])
-            {
-                NSLog(@"EKEVENT: - Saved to iCal");
-                // save to plist log..
-                NSMutableDictionary *logs = [tools propertyListRead:PLIST_LOGS];
-                NSString *logKey = [NSString stringWithFormat:@"%@_%@", KEY_EVENT_SCHEDULED, [panelist objectForKey:KEY_SLUG]];
-                [logs setObject:KEY_YES forKey:logKey];
-                [tools propertyListWrite:logs forFileName:PLIST_LOGS];
-                // read (again) and print..
-                NSDictionary *logs2 = [tools propertyListRead:PLIST_LOGS];
-                NSLog(@"%@", logs2);
-            }
-            else
-                NSLog(@"EKEVENT: - NOT Saved to iCal");
-        }
+		NSLog(@"EKEVENT: - Start to save to iCal");
+		
+		NSDateFormatter *df = [[NSDateFormatter alloc] init];
+		[df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+		NSDate *hourStart = [df dateFromString:[[panelist objectForKey:@"date"] objectForKey:@"start"]];
+		NSDate *hourEnd = [df dateFromString:[[panelist objectForKey:@"date"] objectForKey:@"end"]];
+		
+        //int interval = [self minutesBetween:hourStart and:hourEnd] * 60; // transform minutes into hours..
+		EKEventStore *eventStore    = [[EKEventStore alloc] init];
+		EKEvent *ekEvent            = [EKEvent eventWithEventStore:eventStore];
+		EKAlarm *alarm              = [EKAlarm alarmWithRelativeOffset:60.0f * -20.0f]; // 20 min
+		
+		NSString *eventTit  = [NSString stringWithFormat:@"HSM: %@ (Palestra)", [panelist objectForKey:KEY_NAME]];
+		
+		ekEvent.title       = eventTit;
+		ekEvent.startDate   = hourStart;
+		ekEvent.endDate     = hourEnd;//[[NSDate alloc] initWithTimeInterval:interval sinceDate:ekEvent.startDate];
+		ekEvent.notes       = [panelist objectForKey:KEY_DESCRIPTION];
+		[ekEvent addAlarm:alarm];
+		
+		// save to ical..
+		NSError *err;
+		[ekEvent setCalendar:[eventStore defaultCalendarForNewEvents]];
+		if ([eventStore saveEvent:ekEvent span:EKSpanThisEvent error:&err])
+		{
+			NSLog(@"EKEVENT: - Saved to iCal");
+			// save to plist log..
+			NSMutableDictionary *logs = [tools propertyListRead:PLIST_LOGS];
+			NSString *logKey = [NSString stringWithFormat:@"%@_%@", KEY_EVENT_SCHEDULED, [panelist objectForKey:KEY_SLUG]];
+			[logs setObject:KEY_YES forKey:logKey];
+			[tools propertyListWrite:logs forFileName:PLIST_LOGS];
+			// read (again) and print..
+			NSDictionary *logs2 = [tools propertyListRead:PLIST_LOGS];
+			NSLog(@"%@", logs2);
+		}
+		else
+			NSLog(@"EKEVENT: - NOT Saved to iCal");
     }
     else {
         // ask..
@@ -194,6 +196,14 @@
         return YES;
     
     return NO;
+}
+- (NSInteger) minutesBetween:(NSDate *)firstDate and:(NSDate *)secondDate
+{
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSUInteger unitFlags = NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSDateComponents *components = [gregorian components:unitFlags fromDate:firstDate toDate:secondDate options:0];
+    
+    return [components minute];
 }
 
 @end

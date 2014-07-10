@@ -10,6 +10,8 @@
 
 @interface Agenda : KDViewController <UITableViewDelegate, UITableViewDataSource>
 {
+	NSArray *dates;
+	
     NSArray *agendaDays;
     NSMutableArray *scheduleDays;
     NSArray *tableData;
@@ -18,6 +20,8 @@
     IBOutlet UIView *tableHeader;
     IBOutlet UISegmentedControl* segment;
 }
+
+@property (nonatomic, strong) NSArray *dates;
 
 #pragma mark -
 #pragma mark IBActions

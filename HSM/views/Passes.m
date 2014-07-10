@@ -32,20 +32,18 @@
     [super setConfigurations];
     [self setTitle:@"Passes"];
     
-    NSArray *orderPasses = @[@"green", @"gold", @"red"];
-    
     // ...
     NSInteger height = v.frame.size.height;
-    for (NSString *key in orderPasses)
+    for (NSDictionary *dict in [self array])
     {
+		NSString *key = [dict objectForKey:@"color"];
         // if exists...
-        NSDictionary *dict = [[self dictionary] objectForKey:key];
-        if (dict)
-        {
+        //if (dict)
+        //{
             // green
             if ([key isEqualToString:KEY_PASS_GREEN])
             {
-                [greenName setText:@"Passe Single"];
+                [greenName setText:[dict objectForKey:@"name"]];
                 [greenDescription setText:[dict objectForKey:KEY_DESCRIPTION]];
                 [greenValue setText:[NSString stringWithFormat:@"Preço Normal: R$%@", [dict objectForKey:@"price_from"]]];
                 [greenValueSpecial setText:[NSString stringWithFormat:@"R$%@", [dict objectForKey:@"price_to"]]];
@@ -63,7 +61,7 @@
             // gold
             if ([key isEqualToString:KEY_PASS_GOLD])
             {
-                [goldName setText:@"Passe Premium"];
+                [goldName setText:[dict objectForKey:@"name"]];
                 [goldDescription setText:[dict objectForKey:KEY_DESCRIPTION]];
                 [goldValue setText:[NSString stringWithFormat:@"Preço Normal: R$%@", [dict objectForKey:@"price_from"]]];
                 [goldValueSpecial setText:[NSString stringWithFormat:@"R$%@", [dict objectForKey:@"price_to"]]];
@@ -81,7 +79,7 @@
             // red
             if ([key isEqualToString:KEY_PASS_RED])
             {
-                [redName setText:@"Passe Corporate"];
+                [redName setText:[dict objectForKey:@"name"]];
                 [redDescription setText:[dict objectForKey:KEY_DESCRIPTION]];
                 [redValue setText:[NSString stringWithFormat:@"Preço Normal: R$%@", [dict objectForKey:@"price_from"]]];
                 [redValueSpecial setText:[NSString stringWithFormat:@"R$%@", [dict objectForKey:@"price_to"]]];
@@ -96,7 +94,7 @@
                 height += redView.frame.size.height;
                 [scr addSubview:redView];
             }
-        }
+        //}
     }
     
     // ..
@@ -112,15 +110,25 @@
 
 - (IBAction) pressGreen:(id)sender
 {
-    [self pushWithPassColor:kPassColorGreen dictionary:[[self dictionary] objectForKey:KEY_PASS_GREEN]];
+    [self pushWithPassColor:kPassColorGreen dictionary:[self passForColor:@"green"]];
 }
 - (IBAction) pressGold:(id)sender
 {
-    [self pushWithPassColor:kPassColorGold dictionary:[[self dictionary] objectForKey:KEY_PASS_GOLD]];
+    [self pushWithPassColor:kPassColorGold dictionary:[self passForColor:@"gold"]];
 }
 - (IBAction) pressRed:(id)sender
 {
-    [self pushWithPassColor:kPassColorRed dictionary:[[self dictionary] objectForKey:KEY_PASS_RED]];
+    [self pushWithPassColor:kPassColorRed dictionary:[self passForColor:@"red"]];
+}
+
+- (NSDictionary *) passForColor:(NSString *) color
+{
+	NSDictionary *pass = nil;
+	for (NSDictionary *dict in [self array])
+		if([[dict objectForKey:@"color"] isEqualToString:color])
+			pass = dict;
+	
+	return pass;
 }
 
 #pragma mark -

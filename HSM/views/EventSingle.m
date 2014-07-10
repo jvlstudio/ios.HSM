@@ -71,7 +71,8 @@ EventInfoType;
 - (void) setConfigurations
 {
     [super setConfigurations];
-    [self setTitle:[[self dictionary] objectForKey:KEY_NAME]];
+	eventDictionary = [[self dictionary] objectForKey:@"info"];
+    [self setTitle:[eventDictionary objectForKey:@"name"]];
     
     manager = [[EventManager alloc] initWithEvent:[self dictionary]];
     
@@ -89,12 +90,14 @@ EventInfoType;
         [adManager addAdTo:scr type:kAdBannerFooter];
     
     // configurate ..
-    if (![[[self dictionary] objectForKey:KEY_DID_HAPPEN] isEqualToString:KEY_NO])
+    if ([[HSMaster core] eventDidHappen:eventDictionary]
+	|| [[[self dictionary] objectForKey:@"passes"] count] == 0)
     {
         [butPasses setEnabled:NO];
         [butPasses setAlpha:0.5];
     }
     
+	/*
     if (![[[self dictionary] objectForKey:KEY_SHOW_PASSES] isEqualToString:KEY_YES])
     {
         [butPasses setTitle:@"Mais informações" forState:UIControlStateNormal];
@@ -102,18 +105,20 @@ EventInfoType;
         [butPanelist setEnabled:NO];
         [butPanelist setAlpha:0.5];
     }
+	*/
     
-    NSString *strImg    = [NSString stringWithFormat:@"hsm_v5_events_single_%@.png", [[self dictionary] objectForKey:KEY_SLUG]];
-    [imgCover setImage:[UIImage imageNamed:strImg]];
+    NSString *strImg    = [[eventDictionary objectForKey:@"images"] objectForKey:@"single"];
+    [imgCover setImageWithURL:[NSURL URLWithString:strImg]];
     [elasticView setBackgroundColor:[UIColor colorWithRed:35.0/255.0 green:34.0/255.0 blue:46.0/255.0 alpha:1]];
     
     NSArray *arrPan     = [[self dictionary] objectForKey:@"panelists"];
     if ([arrPan count] < 1)
     {
-        //[butPanelist setEnabled:NO];
-        //[butPanelist setAlpha:0.5];
+        [butPanelist setEnabled:NO];
+        [butPanelist setAlpha:0.5];
     }
     
+	/*
     // ...
     if ([self isMostra])
     {
@@ -128,19 +133,20 @@ EventInfoType;
         [scr addSubview:bottom2View];
     }
     else {
-        CGRect rect1        = bottomView.frame;
-        rect1.origin.y      = v.frame.size.height+v.frame.origin.y;
-        [bottomView setFrame:rect1];
-        
-        [scr addSubview:bottomView];
+     
     }
+	*/
+	CGRect rect1        = bottomView.frame;
+	rect1.origin.y      = v.frame.size.height+v.frame.origin.y;
+	[bottomView setFrame:rect1];
+	[scr addSubview:bottomView];
     
     // ..
     CGRect rect2        = elasticView.frame;
     rect2.size.height   = 1;
     rect2.origin.y      = v.frame.size.height+v.frame.origin.y-5;
-    if ([self isMostra])
-        rect2.origin.y  += NEGATIVE_INDEX;
+    //if ([self isMostra])
+	//   rect2.origin.y  += NEGATIVE_INDEX;
     [elasticView setFrame:rect2];
     
     // ..
@@ -162,10 +168,10 @@ EventInfoType;
     [datesView setAlpha:0];
     
     // ..
-    [tvDescription setText:[[self dictionary] objectForKey:KEY_DESCRIPTION]];
-    [labDates setText:[[self dictionary] objectForKey:KEY_DATES]];
-    [labHours setText:[[self dictionary] objectForKey:KEY_HOURS]];
-    [labLocal setText:[[self dictionary] objectForKey:KEY_LOCAL]];
+    [tvDescription setText:[eventDictionary objectForKey:KEY_DESCRIPTION]];
+    [labDates setText:[eventDictionary objectForKey:@"date_pretty"]];
+    [labHours setText:[eventDictionary objectForKey:@"hours"]];
+    [labLocal setText:[eventDictionary objectForKey:@"locale"]];
     
     [labDates setFont:[UIFont fontWithName:FONT_REGULAR size:16.0]];
     [labHours setFont:[UIFont fontWithName:FONT_REGULAR size:16.0]];
@@ -192,27 +198,27 @@ EventInfoType;
 
 - (IBAction) pressAgenda:(id)sender
 {
-    Agenda *vc = [[Agenda alloc] initWithNibName:NIB_AGENDA andDictionary:[manager event]];
+	NSArray *agenda = [[self dictionary] objectForKey:@"agenda"];
+    Agenda *vc = [[Agenda alloc] initWithNibName:NIB_AGENDA andArray:agenda];
+	vc.dates = [eventDictionary objectForKey:@"dates"];
     [[self navigationController] pushViewController:vc animated:YES];
 }
 - (IBAction) pressPanelist:(id)sender
 {
-    Panelist *vc = [[Panelist alloc] initWithNibName:NIB_PANELIST andArray:[manager panelists]];
+	NSArray *panelists = [[self dictionary] objectForKey:@"panelists"];
+    Panelist *vc = [[Panelist alloc] initWithNibName:NIB_PANELIST andArray:panelists];
     [[self navigationController] pushViewController:vc animated:YES];
 }
 - (IBAction) pressPasses:(id)sender
 {
-    if ([[[self dictionary] objectForKey:KEY_SHOW_PASSES] isEqualToString:KEY_YES])
-    {
+	NSArray *passes = [[self dictionary] objectForKey:@"passes"];
+	Passes *vc = [[Passes alloc] initWithNibName:NIB_PASSES andArray:passes];
+	[[self navigationController] pushViewController:vc animated:YES];
+	
+    //if ([[[self dictionary] objectForKey:KEY_SHOW_PASSES] isEqualToString:KEY_YES])
+    //{
         // passes..
-        UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        [indicator startAnimating];
-        [indicator setCenter:CGPointMake(WINDOW_WIDTH/2, WINDOW_HEIGHT/2)];
-        UIView *loaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT)];
-        [loaderView setAlpha:0.8];
-        [loaderView setBackgroundColor:[UIColor blackColor]];
-        [loaderView addSubview:indicator];
-        [[self view] addSubview:loaderView];
+		/*
         // ...
         [tools requestUpdateFrom:URL_PASSES success:^{
             [loaderView removeFromSuperview];
@@ -233,13 +239,14 @@ EventInfoType;
             else {
                 [tools dialogWithMessage:@"Não foi possível carregar os Passes deste evento. Por favor, verifique sua conexão à internet."];
             }
-        }];
-    }
-    else {
+        }];*/
+    //}
+	/*
+	else {
         EventEmpty *vc = [[EventEmpty alloc] initWithNibName:NIB_EVENT_EMPTY andDictionary:[self dictionary]];
         [vc setTitle:@"Mais informações"];
         [[self navigationController] pushViewController:vc animated:YES];
-    }
+    }*/
 }
 - (IBAction) pressRooms:(id)sender
 {
@@ -445,10 +452,12 @@ EventInfoType;
 
 - (BOOL) isMostra
 {
-    if ([[[self dictionary] objectForKey:KEY_SLUG] isEqualToString:@"mostra13"])
+    return NO;
+	/*
+	if ([[[self dictionary] objectForKey:KEY_SLUG] isEqualToString:@"mostra13"])
         return YES;
     else
-        return NO;
+        return NO;*/
 }
 
 /**/

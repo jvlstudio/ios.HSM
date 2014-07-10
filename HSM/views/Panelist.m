@@ -58,8 +58,9 @@
         NSArray *xib                = [[NSBundle mainBundle] loadNibNamed:XIB_RESOURCES owner:nil options:nil];
         PanelistCell *panelistView  = (PanelistCell*)[xib objectAtIndex:kCellPanelist];
         
-        NSString *strImg = [NSString stringWithFormat:@"p_%@_large.png", [dict objectForKey:KEY_SLUG]];
-        [[panelistView imgPicture] setImage:[UIImage imageNamed:strImg]];
+        NSString *strImg = [dict objectForKey:@"picture"];
+		if(strImg)
+			[[panelistView imgPicture] setImageWithURL:[NSURL URLWithString:strImg]];
         [[panelistView labText] setText:[dict objectForKey:KEY_NAME]];
         [[panelistView but] setTag:point];
         [[panelistView but] addTarget:self action:@selector(pressPanelist:) forControlEvents:UIControlEventTouchUpInside];
